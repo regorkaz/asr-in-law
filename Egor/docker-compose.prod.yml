@@ -1,0 +1,22 @@
+services:
+  asr_worker:
+    environment:
+      - MOCK_MODE=false
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  speaker_worker:
+    environment:
+      - MOCK_MODE=false
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]

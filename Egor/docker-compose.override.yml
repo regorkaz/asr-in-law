@@ -1,0 +1,15 @@
+services:
+  asr_worker:
+    volumes:
+      - ./asr_service:/app
+      - ./data/cache:/root/.cache
+    environment:
+      - MOCK_MODE=false
+
+  speaker_worker:
+    volumes:
+      - ./speaker_service:/app
+      - ./data/cache:/root/.cache
+    environment:
+      - MOCK_MODE=false
+      - HF_TOKEN=${HF_TOKEN}
