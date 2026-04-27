@@ -1,0 +1,41 @@
+{
+  "consultation": "consultation2",
+  "n_predicted_segments": 146,
+  "n_reference_segments": 39,
+  "metrics": {
+    "ref_words": 1743,
+    "hyp_words": 1769,
+    "wer": 0.0757314974182444,
+    "cer": 0.03593906777341969,
+    "equal": 1658,
+    "substitutions": 64,
+    "deletions": 21,
+    "insertions": 47,
+    "speaker_accuracy": 0.9343786295005807,
+    "speaker_compared_words": 1722,
+    "speaker_correct_words": 1609,
+    "per_speaker": {
+      "Lawyer": {
+        "accuracy": 0.9694232105628909,
+        "ref_words": 1439
+      },
+      "Client": {
+        "accuracy": 0.7561837455830389,
+        "ref_words": 283
+      }
+    }
+  },
+  "timing": {
+    "audio_duration_s": 800.4,
+    "wall_clock_s": 1138.36,
+    "rtf": 1.4222437832333175,
+    "n_chunks": 146,
+    "asr_mean_s": 1.0080198630136987,
+    "asr_max_s": 2.6298,
+    "speaker_mean_s": 0.3048232876712329,
+    "speaker_max_s": 1.0562,
+    "latency_mean_s": 1.043748643833742,
+    "latency_max_s": 2.688659999985248,
+    "chunk_duration_mean_s": 4.937671232876705
+  }
+}

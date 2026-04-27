@@ -1,4 +1,4 @@
-"""ASR Worker — listens to tasks:asr queue in Redis."""
+"""ASR Worker — listens to tasks:asr queue in Redis and runs GigaAM-v3 CTC."""
 
 import base64
 import json
@@ -9,14 +9,12 @@ import time
 
 import redis
 
-MOCK_MODE = os.getenv("MOCK_MODE", "true").lower() == "true"
 REDIS_HOST = os.getenv("REDIS_HOST", "redis")
 REDIS_PORT = int(os.getenv("REDIS_PORT", "6379"))
+LOG_DIR = os.getenv("LOG_DIR", "logs")
 
 TASK_QUEUE = "tasks:asr"
 RESULT_QUEUE = "results:asr"
-
-LOG_DIR = os.getenv("LOG_DIR", "logs")
 
 asr_model = None
 
@@ -50,48 +48,49 @@ def init_model() -> None:
     logging.info("ASR model loaded")
 
 
+def _to_text(obj) -> str:
+    if isinstance(obj, str):
+        return obj
+    for attr in ("text", "transcription"):
+        v = getattr(obj, attr, None)
+        if isinstance(v, str):
+            return v
+    return str(obj)
+
+
 def transcribe_audio(audio_bytes: bytes) -> str:
     with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as f:
         f.write(audio_bytes)
         tmp_path = f.name
 
     try:
-        text = asr_model.transcribe(tmp_path)
+        result = asr_model.transcribe(tmp_path)
     finally:
         os.unlink(tmp_path)
 
-    return text
+    return _to_text(result)
 
 
-def process_mock(task: dict) -> dict:
-    time.sleep(0.5)
-    return {
-        "chunk_id": task.get("chunk_id", "unknown"),
-        "text": f"Mock transcription for chunk {task.get('chunk_id', '?')}",
-        "language": "ru",
-        "confidence": 0.95,
-    }
-
-
-def process_real(task: dict) -> dict:
+def process_task(task: dict) -> dict:
     chunk_id = task.get("chunk_id", "unknown")
-    audio_b64 = task.get("audio_b64", "")
-    audio_bytes = base64.b64decode(audio_b64)
+    audio_bytes = base64.b64decode(task.get("audio_b64", ""))
 
+    t0 = time.perf_counter()
     text = transcribe_audio(audio_bytes)
     return {
         "chunk_id": chunk_id,
+        "seq_num": task.get("seq_num"),
         "text": text,
         "language": "ru",
+        "processing_time_s": round(time.perf_counter() - t0, 4),
     }
 
 
 def main() -> None:
     setup_logging()
-    logging.info("ASR Worker starting (MOCK_MODE=%s)", MOCK_MODE)
+    logging.info("ASR Worker starting")
 
-    if not MOCK_MODE:
-        init_model()
+    init_model()
 
     r = connect_redis()
     logging.info("Listening on queue: %s", TASK_QUEUE)
@@ -99,26 +98,42 @@ def main() -> None:
     while True:
         try:
             _, raw = r.blpop(TASK_QUEUE)
-            task = json.loads(raw)
-            chunk_id = task.get("chunk_id", "unknown")
-            logging.info("Received task: chunk_id=%s", chunk_id)
-
-            if MOCK_MODE:
-                result = process_mock(task)
-            else:
-                result = process_real(task)
-
-            r.rpush(RESULT_QUEUE, json.dumps(result))
-            logging.info("Result pushed: chunk_id=%s", chunk_id)
-
-        except json.JSONDecodeError as e:
-            logging.error("Bad JSON in task: %s", e)
         except redis.ConnectionError as e:
             logging.error("Redis connection lost: %s. Retrying in 3s...", e)
             time.sleep(3)
             r = connect_redis()
+            continue
+
+        try:
+            task = json.loads(raw)
+        except json.JSONDecodeError as e:
+            logging.error("Bad JSON in task: %s", e)
+            continue
+
+        chunk_id = task.get("chunk_id", "unknown")
+        seq_num = task.get("seq_num")
+        logging.info("Received task: chunk_id=%s", chunk_id)
+
+        try:
+            result = process_task(task)
         except Exception as e:
-            logging.error("Error processing chunk: %s", e)
+            logging.error("Error processing chunk %s: %s", chunk_id, e)
+            result = {
+                "chunk_id": chunk_id,
+                "seq_num": seq_num,
+                "text": "",
+                "language": "ru",
+                "processing_time_s": 0.0,
+                "error": str(e),
+            }
+
+        try:
+            r.rpush(RESULT_QUEUE, json.dumps(result))
+            logging.info("Result pushed: chunk_id=%s", chunk_id)
+        except redis.ConnectionError as e:
+            logging.error("Redis push failed (%s); reconnecting", e)
+            time.sleep(3)
+            r = connect_redis()
 
 
 if __name__ == "__main__":

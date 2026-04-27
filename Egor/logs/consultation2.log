@@ -1,0 +1,892 @@
+2026-04-27 20:55:04,329 [INFO] === Gateway Simulator (consultation=consultation2) ===
+2026-04-27 20:55:04,329 [INFO] Connecting to Redis at localhost:6379
+2026-04-27 20:55:04,365 [INFO] Redis connection OK
+2026-04-27 20:55:04,365 [INFO] Cleared queues: tasks:asr, tasks:speaker, results:asr, results:speaker, control:speaker
+2026-04-27 20:55:04,371 [INFO] Sent control:speaker reload -> /data/input/consultation2/voices
+2026-04-27 20:55:08,998 [INFO] Loading Silero VAD model...
+2026-04-27 20:55:09,133 [INFO] Silero VAD model loaded
+2026-04-27 20:55:09,143 [INFO] Loading audio file: ./data\input\consultation2\audio.mp3
+2026-04-27 20:55:13,164 [INFO] Audio loaded: 802751 ms, converted to 16kHz mono PCM16
+2026-04-27 20:55:13,167 [INFO] Streaming 25086 frames (32 ms each, realtime_factor=1.00)
+2026-04-27 20:55:38,494 [INFO] Streaming VAD segment #0: chunk_1.8s_16.9s (15.1 s)
+2026-04-27 20:55:38,494 [INFO] Produced segment: seq=0 chunk_id=chunk_1.8s_16.9s
+2026-04-27 20:55:38,598 [INFO] Sent chunk seq=0 (chunk_1.8s_16.9s) to workers
+2026-04-27 20:55:39,457 [INFO] Collected Speaker result: seq=0 chunk=chunk_1.8s_16.9s (1/0)
+2026-04-27 20:55:40,865 [INFO] Transcript [seq=0]: [Lawyer] (chunk_1.8s_16.9s): Андрей, добрый вечер. Давайте начнём нашу консультацию. Вы мне на почту скинули договор долевого участия и переписку с застройщиком. я всё посмотрел. Но хочу, чтобы вы своими словами рассказали, что случилось. Так мне будет проще понять, что вас беспокоит больше всего.
+2026-04-27 20:55:40,865 [INFO] Collected ASR result: seq=0 chunk=chunk_1.8s_16.9s (1/1)
+2026-04-27 20:55:42,472 [INFO] Streaming VAD segment #1: chunk_18.1s_19.6s (1.5 s)
+2026-04-27 20:55:42,472 [INFO] Produced segment: seq=1 chunk_id=chunk_18.1s_19.6s
+2026-04-27 20:55:42,567 [INFO] Sent chunk seq=1 (chunk_18.1s_19.6s) to workers
+2026-04-27 20:55:42,743 [INFO] Collected Speaker result: seq=1 chunk=chunk_18.1s_19.6s (2/1)
+2026-04-27 20:55:43,028 [INFO] Transcript [seq=1]: [Unknown] (chunk_18.1s_19.6s): Да, добрый вечер.
+2026-04-27 20:55:43,032 [INFO] Collected ASR result: seq=1 chunk=chunk_18.1s_19.6s (2/2)
+2026-04-27 20:55:53,283 [INFO] Streaming VAD segment #2: chunk_20.2s_26.9s (6.7 s)
+2026-04-27 20:55:53,285 [INFO] Produced segment: seq=2 chunk_id=chunk_20.2s_26.9s
+2026-04-27 20:55:53,389 [INFO] Sent chunk seq=2 (chunk_20.2s_26.9s) to workers
+2026-04-27 20:55:53,887 [INFO] Collected Speaker result: seq=2 chunk=chunk_20.2s_26.9s (3/2)
+2026-04-27 20:55:54,667 [INFO] Transcript [seq=2]: [Client] (chunk_20.2s_26.9s): Э-э, у меня в первую очередь вопрос по срокам. Я покупал квартиру у застройщика ООО «СтройИнвест».
+2026-04-27 20:55:54,667 [INFO] Collected ASR result: seq=2 chunk=chunk_20.2s_26.9s (3/3)
+2026-04-27 20:55:56,900 [INFO] Streaming VAD segment #3: chunk_27.2s_29.3s (2.1 s)
+2026-04-27 20:55:56,900 [INFO] Produced segment: seq=3 chunk_id=chunk_27.2s_29.3s
+2026-04-27 20:55:56,953 [INFO] Sent chunk seq=3 (chunk_27.2s_29.3s) to workers
+2026-04-27 20:55:57,105 [INFO] Collected Speaker result: seq=3 chunk=chunk_27.2s_29.3s (4/3)
+2026-04-27 20:55:57,459 [INFO] Transcript [seq=3]: [Client] (chunk_27.2s_29.3s): По ДДУ ещё в 2023 году.
+2026-04-27 20:55:57,459 [INFO] Collected ASR result: seq=3 chunk=chunk_27.2s_29.3s (4/4)
+2026-04-27 20:56:05,169 [INFO] Streaming VAD segment #4: chunk_29.7s_35.0s (5.3 s)
+2026-04-27 20:56:05,169 [INFO] Produced segment: seq=4 chunk_id=chunk_29.7s_35.0s
+2026-04-27 20:56:05,178 [INFO] Sent chunk seq=4 (chunk_29.7s_35.0s) to workers
+2026-04-27 20:56:05,387 [INFO] Collected Speaker result: seq=4 chunk=chunk_29.7s_35.0s (5/4)
+2026-04-27 20:56:06,048 [INFO] Transcript [seq=4]: [Client] (chunk_29.7s_35.0s): По договору квартиру мне должны были передать не позднее 30 июня 2025 года.
+2026-04-27 20:56:06,048 [INFO] Collected ASR result: seq=4 chunk=chunk_29.7s_35.0s (5/5)
+2026-04-27 20:56:10,027 [INFO] Streaming VAD segment #5: chunk_35.3s_38.2s (2.9 s)
+2026-04-27 20:56:10,027 [INFO] Produced segment: seq=5 chunk_id=chunk_35.3s_38.2s
+2026-04-27 20:56:10,084 [INFO] Sent chunk seq=5 (chunk_35.3s_38.2s) to workers
+2026-04-27 20:56:10,199 [INFO] Collected Speaker result: seq=5 chunk=chunk_35.3s_38.2s (6/6)
+2026-04-27 20:56:10,847 [INFO] Transcript [seq=5]: [Client] (chunk_35.3s_38.2s): Сейчас у нас апрель 2026 года.
+2026-04-27 20:56:10,849 [INFO] Collected ASR result: seq=5 chunk=chunk_35.3s_38.2s (6/6)
+2026-04-27 20:56:12,087 [INFO] Streaming VAD segment #6: chunk_38.4s_39.7s (1.3 s)
+2026-04-27 20:56:12,087 [INFO] Produced segment: seq=6 chunk_id=chunk_38.4s_39.7s
+2026-04-27 20:56:12,178 [INFO] Sent chunk seq=6 (chunk_38.4s_39.7s) to workers
+2026-04-27 20:56:12,247 [INFO] Collected Speaker result: seq=6 chunk=chunk_38.4s_39.7s (7/6)
+2026-04-27 20:56:12,673 [INFO] Transcript [seq=6]: [Unknown] (chunk_38.4s_39.7s): Почти год прошёл.
+2026-04-27 20:56:12,674 [INFO] Collected ASR result: seq=6 chunk=chunk_38.4s_39.7s (7/7)
+2026-04-27 20:56:14,321 [INFO] Streaming VAD segment #7: chunk_39.9s_41.3s (1.4 s)
+2026-04-27 20:56:14,322 [INFO] Produced segment: seq=7 chunk_id=chunk_39.9s_41.3s
+2026-04-27 20:56:14,328 [INFO] Sent chunk seq=7 (chunk_39.9s_41.3s) to workers
+2026-04-27 20:56:14,484 [INFO] Collected Speaker result: seq=7 chunk=chunk_39.9s_41.3s (8/7)
+2026-04-27 20:56:14,797 [INFO] Transcript [seq=7]: [Unknown] (chunk_39.9s_41.3s): А дом до сих пор не сдан.
+2026-04-27 20:56:14,797 [INFO] Collected ASR result: seq=7 chunk=chunk_39.9s_41.3s (8/8)
+2026-04-27 20:56:22,966 [INFO] Streaming VAD segment #8: chunk_41.7s_47.2s (5.5 s)
+2026-04-27 20:56:22,966 [INFO] Produced segment: seq=8 chunk_id=chunk_41.7s_47.2s
+2026-04-27 20:56:23,069 [INFO] Sent chunk seq=8 (chunk_41.7s_47.2s) to workers
+2026-04-27 20:56:23,710 [INFO] Collected Speaker result: seq=8 chunk=chunk_41.7s_47.2s (9/8)
+2026-04-27 20:56:24,422 [INFO] Transcript [seq=8]: [Client] (chunk_41.7s_47.2s): Они кормят меня завтраками, то присылают уведомления о переносе сроков, то вообще молчат.
+2026-04-27 20:56:24,422 [INFO] Collected ASR result: seq=8 chunk=chunk_41.7s_47.2s (9/9)
+2026-04-27 20:56:26,037 [INFO] Streaming VAD segment #9: chunk_47.7s_49.3s (1.6 s)
+2026-04-27 20:56:26,037 [INFO] Produced segment: seq=9 chunk_id=chunk_47.7s_49.3s
+2026-04-27 20:56:26,089 [INFO] Sent chunk seq=9 (chunk_47.7s_49.3s) to workers
+2026-04-27 20:56:26,195 [INFO] Collected Speaker result: seq=9 chunk=chunk_47.7s_49.3s (10/9)
+2026-04-27 20:56:26,556 [INFO] Transcript [seq=9]: [Unknown] (chunk_47.7s_49.3s): Я не понимаю, что мне делать.
+2026-04-27 20:56:26,556 [INFO] Collected ASR result: seq=9 chunk=chunk_47.7s_49.3s (10/10)
+2026-04-27 20:56:32,037 [INFO] Streaming VAD segment #10: chunk_49.4s_53.3s (3.9 s)
+2026-04-27 20:56:32,038 [INFO] Produced segment: seq=10 chunk_id=chunk_49.4s_53.3s
+2026-04-27 20:56:32,041 [INFO] Sent chunk seq=10 (chunk_49.4s_53.3s) to workers
+2026-04-27 20:56:32,180 [INFO] Collected Speaker result: seq=10 chunk=chunk_49.4s_53.3s (11/10)
+2026-04-27 20:56:32,738 [INFO] Transcript [seq=10]: [Client] (chunk_49.4s_53.3s): Э-э, ждать дальше, расторгать договор, в суд идти.
+2026-04-27 20:56:32,738 [INFO] Collected ASR result: seq=10 chunk=chunk_49.4s_53.3s (11/11)
+2026-04-27 20:56:38,900 [INFO] Streaming VAD segment #11: chunk_54.0s_58.0s (4.0 s)
+2026-04-27 20:56:38,900 [INFO] Produced segment: seq=11 chunk_id=chunk_54.0s_58.0s
+2026-04-27 20:56:38,909 [INFO] Sent chunk seq=11 (chunk_54.0s_58.0s) to workers
+2026-04-27 20:56:39,060 [INFO] Collected Speaker result: seq=11 chunk=chunk_54.0s_58.0s (12/11)
+2026-04-27 20:56:39,575 [INFO] Transcript [seq=11]: [Client] (chunk_54.0s_58.0s): Деньгиэти я уже все уплатил, почти 7 млн.
+2026-04-27 20:56:39,575 [INFO] Collected ASR result: seq=11 chunk=chunk_54.0s_58.0s (12/12)
+2026-04-27 20:56:48,580 [INFO] Streaming VAD segment #12: chunk_58.6s_64.5s (5.9 s)
+2026-04-27 20:56:48,583 [INFO] Produced segment: seq=12 chunk_id=chunk_58.6s_64.5s
+2026-04-27 20:56:48,645 [INFO] Sent chunk seq=12 (chunk_58.6s_64.5s) to workers
+2026-04-27 20:56:49,195 [INFO] Collected Speaker result: seq=12 chunk=chunk_58.6s_64.5s (13/12)
+2026-04-27 20:56:50,081 [INFO] Transcript [seq=12]: [Lawyer] (chunk_58.6s_64.5s): Ага, смотрите, э-э, ситуация классическая, к сожалению. Сразу скажу, у вас неплохая позиция.
+2026-04-27 20:56:50,081 [INFO] Collected ASR result: seq=12 chunk=chunk_58.6s_64.5s (13/13)
+2026-04-27 20:56:55,666 [INFO] Streaming VAD segment #13: chunk_64.7s_69.3s (4.6 s)
+2026-04-27 20:56:55,666 [INFO] Produced segment: seq=13 chunk_id=chunk_64.7s_69.3s
+2026-04-27 20:56:55,720 [INFO] Sent chunk seq=13 (chunk_64.7s_69.3s) to workers
+2026-04-27 20:56:55,784 [INFO] Collected Speaker result: seq=13 chunk=chunk_64.7s_69.3s (14/13)
+2026-04-27 20:56:56,730 [INFO] Transcript [seq=13]: [Lawyer] (chunk_64.7s_69.3s): 2014 ФЗ о долевом строительстве как раз для таких случаев и написан.
+2026-04-27 20:56:56,730 [INFO] Collected ASR result: seq=13 chunk=chunk_64.7s_69.3s (14/14)
+2026-04-27 20:56:57,896 [INFO] Streaming VAD segment #14: chunk_69.6s_70.8s (1.2 s)
+2026-04-27 20:56:57,896 [INFO] Produced segment: seq=14 chunk_id=chunk_69.6s_70.8s
+2026-04-27 20:56:57,991 [INFO] Sent chunk seq=14 (chunk_69.6s_70.8s) to workers
+2026-04-27 20:56:58,110 [INFO] Collected Speaker result: seq=14 chunk=chunk_69.6s_70.8s (15/14)
+2026-04-27 20:56:58,385 [INFO] Transcript [seq=14]: [Unknown] (chunk_69.6s_70.8s): Давайте по порядку.
+2026-04-27 20:56:58,387 [INFO] Collected ASR result: seq=14 chunk=chunk_69.6s_70.8s (15/15)
+2026-04-27 20:57:01,420 [INFO] Streaming VAD segment #15: chunk_71.1s_73.2s (2.1 s)
+2026-04-27 20:57:01,420 [INFO] Produced segment: seq=15 chunk_id=chunk_71.1s_73.2s
+2026-04-27 20:57:01,471 [INFO] Sent chunk seq=15 (chunk_71.1s_73.2s) to workers
+2026-04-27 20:57:01,618 [INFO] Collected Speaker result: seq=15 chunk=chunk_71.1s_73.2s (16/15)
+2026-04-27 20:57:01,996 [INFO] Transcript [seq=15]: [Lawyer] (chunk_71.1s_73.2s): Первое, что важно, застройщик
+2026-04-27 20:57:01,996 [INFO] Collected ASR result: seq=15 chunk=chunk_71.1s_73.2s (16/16)
+2026-04-27 20:57:08,845 [INFO] Streaming VAD segment #16: chunk_73.4s_78.2s (4.8 s)
+2026-04-27 20:57:08,847 [INFO] Produced segment: seq=16 chunk_id=chunk_73.4s_78.2s
+2026-04-27 20:57:08,954 [INFO] Sent chunk seq=16 (chunk_73.4s_78.2s) to workers
+2026-04-27 20:57:09,101 [INFO] Collected Speaker result: seq=16 chunk=chunk_73.4s_78.2s (17/16)
+2026-04-27 20:57:09,813 [INFO] Transcript [seq=16]: [Lawyer] (chunk_73.4s_78.2s): Присылал вам дополнительное соглашение об изменении сроков. И главное, вы его подписывали?
+2026-04-27 20:57:09,813 [INFO] Collected ASR result: seq=16 chunk=chunk_73.4s_78.2s (17/17)
+2026-04-27 20:57:12,940 [INFO] Streaming VAD segment #17: chunk_79.0s_81.0s (2.0 s)
+2026-04-27 20:57:12,941 [INFO] Produced segment: seq=17 chunk_id=chunk_79.0s_81.0s
+2026-04-27 20:57:12,951 [INFO] Sent chunk seq=17 (chunk_79.0s_81.0s) to workers
+2026-04-27 20:57:13,050 [INFO] Collected Speaker result: seq=17 chunk=chunk_79.0s_81.0s (18/17)
+2026-04-27 20:57:13,628 [INFO] Transcript [seq=17]: [Unknown] (chunk_79.0s_81.0s): Соглашение прислали, да.
+2026-04-27 20:57:13,630 [INFO] Collected ASR result: seq=17 chunk=chunk_79.0s_81.0s (18/18)
+2026-04-27 20:57:14,766 [INFO] Streaming VAD segment #18: chunk_81.2s_82.4s (1.2 s)
+2026-04-27 20:57:14,766 [INFO] Produced segment: seq=18 chunk_id=chunk_81.2s_82.4s
+2026-04-27 20:57:14,858 [INFO] Sent chunk seq=18 (chunk_81.2s_82.4s) to workers
+2026-04-27 20:57:15,066 [INFO] Collected Speaker result: seq=18 chunk=chunk_81.2s_82.4s (19/18)
+2026-04-27 20:57:15,324 [INFO] Transcript [seq=18]: [Unknown] (chunk_81.2s_82.4s): Два раза даже.
+2026-04-27 20:57:15,324 [INFO] Collected ASR result: seq=18 chunk=chunk_81.2s_82.4s (19/19)
+2026-04-27 20:57:23,946 [INFO] Streaming VAD segment #19: chunk_82.7s_89.3s (6.6 s)
+2026-04-27 20:57:23,947 [INFO] Produced segment: seq=19 chunk_id=chunk_82.7s_89.3s
+2026-04-27 20:57:23,962 [INFO] Sent chunk seq=19 (chunk_82.7s_89.3s) to workers
+2026-04-27 20:57:24,201 [INFO] Collected Speaker result: seq=19 chunk=chunk_82.7s_89.3s (20/19)
+2026-04-27 20:57:24,945 [INFO] Transcript [seq=19]: [Client] (chunk_82.7s_89.3s): Первый раз в мае прошлого года. Там новый срок стоял 31 декабря 2025 го.
+2026-04-27 20:57:24,946 [INFO] Collected ASR result: seq=19 chunk=chunk_82.7s_89.3s (20/20)
+2026-04-27 20:57:32,027 [INFO] Streaming VAD segment #20: chunk_89.7s_95.3s (5.6 s)
+2026-04-27 20:57:32,027 [INFO] Produced segment: seq=20 chunk_id=chunk_89.7s_95.3s
+2026-04-27 20:57:32,146 [INFO] Sent chunk seq=20 (chunk_89.7s_95.3s) to workers
+2026-04-27 20:57:32,282 [INFO] Collected Speaker result: seq=20 chunk=chunk_89.7s_95.3s (21/20)
+2026-04-27 20:57:33,058 [INFO] Transcript [seq=20]: [Client] (chunk_89.7s_95.3s): Второй раз уже в ноябре. Сдвинули на 30 июня 2026 года.
+2026-04-27 20:57:33,058 [INFO] Collected ASR result: seq=20 chunk=chunk_89.7s_95.3s (21/21)
+2026-04-27 20:57:33,510 [INFO] Streaming VAD segment #21: chunk_95.7s_96.5s (0.8 s)
+2026-04-27 20:57:33,510 [INFO] Produced segment: seq=21 chunk_id=chunk_95.7s_96.5s
+2026-04-27 20:57:33,599 [INFO] Sent chunk seq=21 (chunk_95.7s_96.5s) to workers
+2026-04-27 20:57:33,734 [INFO] Collected Speaker result: seq=21 chunk=chunk_95.7s_96.5s (22/21)
+2026-04-27 20:57:34,012 [INFO] Transcript [seq=21]: [Unknown] (chunk_95.7s_96.5s): Ну я
+2026-04-27 20:57:34,012 [INFO] Collected ASR result: seq=21 chunk=chunk_95.7s_96.5s (22/22)
+2026-04-27 20:57:39,101 [INFO] Streaming VAD segment #22: chunk_97.2s_100.7s (3.5 s)
+2026-04-27 20:57:39,101 [INFO] Produced segment: seq=22 chunk_id=chunk_97.2s_100.7s
+2026-04-27 20:57:39,162 [INFO] Sent chunk seq=22 (chunk_97.2s_100.7s) to workers
+2026-04-27 20:57:39,268 [INFO] Collected Speaker result: seq=22 chunk=chunk_97.2s_100.7s (23/22)
+2026-04-27 20:57:39,862 [INFO] Transcript [seq=22]: [Client] (chunk_97.2s_100.7s): Ни то, ни другое не подписывал, просто проигнорировал.
+2026-04-27 20:57:39,864 [INFO] Collected ASR result: seq=22 chunk=chunk_97.2s_100.7s (23/23)
+2026-04-27 20:57:52,791 [INFO] Streaming VAD segment #23: chunk_101.7s_111.1s (9.4 s)
+2026-04-27 20:57:52,791 [INFO] Produced segment: seq=23 chunk_id=chunk_101.7s_111.1s
+2026-04-27 20:57:52,892 [INFO] Sent chunk seq=23 (chunk_101.7s_111.1s) to workers
+2026-04-27 20:57:53,456 [INFO] Collected Speaker result: seq=23 chunk=chunk_101.7s_111.1s (24/23)
+2026-04-27 20:57:54,538 [INFO] Transcript [seq=23]: [Lawyer] (chunk_101.7s_111.1s): Вот это очень важный момент, и это вам в плюс. Смотрите, по 214-му ФЗ, срок передачи объекта долевого строительства можно изменить только по соглашению сторон.
+2026-04-27 20:57:54,538 [INFO] Collected ASR result: seq=23 chunk=chunk_101.7s_111.1s (24/24)
+2026-04-27 20:57:57,018 [INFO] Streaming VAD segment #24: chunk_111.3s_114.3s (3.0 s)
+2026-04-27 20:57:57,022 [INFO] Produced segment: seq=24 chunk_id=chunk_111.3s_114.3s
+2026-04-27 20:57:57,118 [INFO] Sent chunk seq=24 (chunk_111.3s_114.3s) to workers
+2026-04-27 20:57:57,255 [INFO] Collected Speaker result: seq=24 chunk=chunk_111.3s_114.3s (25/24)
+2026-04-27 20:57:57,771 [INFO] Transcript [seq=24]: [Lawyer] (chunk_111.3s_114.3s): То есть односторонний застройщик.
+2026-04-27 20:57:57,771 [INFO] Collected ASR result: seq=24 chunk=chunk_111.3s_114.3s (25/25)
+2026-04-27 20:58:04,483 [INFO] Streaming VAD segment #25: chunk_115.4s_120.1s (4.7 s)
+2026-04-27 20:58:04,484 [INFO] Produced segment: seq=25 chunk_id=chunk_115.4s_120.1s
+2026-04-27 20:58:04,540 [INFO] Sent chunk seq=25 (chunk_115.4s_120.1s) to workers
+2026-04-27 20:58:04,678 [INFO] Collected Speaker result: seq=25 chunk=chunk_115.4s_120.1s (26/25)
+2026-04-27 20:58:05,380 [INFO] Transcript [seq=25]: [Lawyer] (chunk_115.4s_120.1s): Этого сделать не может. Он обязан направить вам уведомление за 2 месяца.
+2026-04-27 20:58:05,380 [INFO] Collected ASR result: seq=25 chunk=chunk_115.4s_120.1s (26/26)
+2026-04-27 20:58:10,172 [INFO] Streaming VAD segment #26: chunk_120.2s_124.3s (4.1 s)
+2026-04-27 20:58:10,172 [INFO] Produced segment: seq=26 chunk_id=chunk_120.2s_124.3s
+2026-04-27 20:58:10,183 [INFO] Sent chunk seq=26 (chunk_120.2s_124.3s) to workers
+2026-04-27 20:58:10,311 [INFO] Collected Speaker result: seq=26 chunk=chunk_120.2s_124.3s (27/26)
+2026-04-27 20:58:10,959 [INFO] Transcript [seq=26]: [Lawyer] (chunk_120.2s_124.3s): Но само изменение срока происходит только через подписание дополнительного соглашения.
+2026-04-27 20:58:10,959 [INFO] Collected ASR result: seq=26 chunk=chunk_120.2s_124.3s (27/27)
+2026-04-27 20:58:19,134 [INFO] Streaming VAD segment #27: chunk_124.7s_131.1s (6.4 s)
+2026-04-27 20:58:19,134 [INFO] Produced segment: seq=27 chunk_id=chunk_124.7s_131.1s
+2026-04-27 20:58:19,148 [INFO] Sent chunk seq=27 (chunk_124.7s_131.1s) to workers
+2026-04-27 20:58:19,365 [INFO] Collected Speaker result: seq=27 chunk=chunk_124.7s_131.1s (28/27)
+2026-04-27 20:58:20,238 [INFO] Transcript [seq=27]: [Lawyer] (chunk_124.7s_131.1s): Раз вы его не подписали, срок остаётся прежний, тот, что в основном договоре. То есть 30 июня 2025 года.
+2026-04-27 20:58:20,239 [INFO] Collected ASR result: seq=27 chunk=chunk_124.7s_131.1s (28/28)
+2026-04-27 20:58:25,898 [INFO] Streaming VAD segment #28: chunk_131.3s_136.0s (4.7 s)
+2026-04-27 20:58:25,898 [INFO] Produced segment: seq=28 chunk_id=chunk_131.3s_136.0s
+2026-04-27 20:58:25,953 [INFO] Sent chunk seq=28 (chunk_131.3s_136.0s) to workers
+2026-04-27 20:58:26,109 [INFO] Collected Speaker result: seq=28 chunk=chunk_131.3s_136.0s (29/28)
+2026-04-27 20:58:26,876 [INFO] Transcript [seq=28]: [Lawyer] (chunk_131.3s_136.0s): И всё время с 1 июля 2025 года — это уже просрочка застройщика.
+2026-04-27 20:58:26,876 [INFO] Collected ASR result: seq=28 chunk=chunk_131.3s_136.0s (29/29)
+2026-04-27 20:58:38,660 [INFO] Streaming VAD segment #29: chunk_136.7s_144.9s (8.2 s)
+2026-04-27 20:58:38,660 [INFO] Produced segment: seq=29 chunk_id=chunk_136.7s_144.9s
+2026-04-27 20:58:38,680 [INFO] Sent chunk seq=29 (chunk_136.7s_144.9s) to workers
+2026-04-27 20:58:39,172 [INFO] Collected Speaker result: seq=29 chunk=chunk_136.7s_144.9s (30/30)
+2026-04-27 20:58:40,162 [INFO] Transcript [seq=29]: [Lawyer] (chunk_136.7s_144.9s): То есть почти 10 месяцев просрочки получается? Совершенно верно. И теперь самое интересное, что вам с этой просрочки полагается?
+2026-04-27 20:58:40,162 [INFO] Collected ASR result: seq=29 chunk=chunk_136.7s_144.9s (30/30)
+2026-04-27 20:58:45,996 [INFO] Streaming VAD segment #30: chunk_145.2s_150.0s (4.8 s)
+2026-04-27 20:58:45,996 [INFO] Produced segment: seq=30 chunk_id=chunk_145.2s_150.0s
+2026-04-27 20:58:46,086 [INFO] Sent chunk seq=30 (chunk_145.2s_150.0s) to workers
+2026-04-27 20:58:46,262 [INFO] Collected Speaker result: seq=30 chunk=chunk_145.2s_150.0s (31/30)
+2026-04-27 20:58:46,956 [INFO] Transcript [seq=30]: [Lawyer] (chunk_145.2s_150.0s): По статье 6 Федерального закона 214 ФЗ «За каждый день
+2026-04-27 20:58:46,956 [INFO] Collected ASR result: seq=30 chunk=chunk_145.2s_150.0s (31/31)
+2026-04-27 20:58:57,626 [INFO] Streaming VAD segment #31: chunk_150.5s_158.0s (7.5 s)
+2026-04-27 20:58:57,626 [INFO] Produced segment: seq=31 chunk_id=chunk_150.5s_158.0s
+2026-04-27 20:58:57,642 [INFO] Sent chunk seq=31 (chunk_150.5s_158.0s) to workers
+2026-04-27 20:58:58,185 [INFO] Collected Speaker result: seq=31 chunk=chunk_150.5s_158.0s (32/31)
+2026-04-27 20:58:59,075 [INFO] Transcript [seq=31]: [Lawyer] (chunk_150.5s_158.0s): По рассрочке застройщик платит вам неустойку. Размер 1,15 ключевой ставки Центробанка от цены договора за каждый день.
+2026-04-27 20:58:59,075 [INFO] Collected ASR result: seq=31 chunk=chunk_150.5s_158.0s (32/32)
+2026-04-27 20:59:02,946 [INFO] Streaming VAD segment #32: chunk_158.1s_161.7s (3.6 s)
+2026-04-27 20:59:02,946 [INFO] Produced segment: seq=32 chunk_id=chunk_158.1s_161.7s
+2026-04-27 20:59:02,994 [INFO] Sent chunk seq=32 (chunk_158.1s_161.7s) to workers
+2026-04-27 20:59:03,151 [INFO] Collected Speaker result: seq=32 chunk=chunk_158.1s_161.7s (33/33)
+2026-04-27 20:59:03,752 [INFO] Transcript [seq=32]: [Lawyer] (chunk_158.1s_161.7s): Причём для физлиц в двойном размере. Это существенная сумма.
+2026-04-27 20:59:03,752 [INFO] Collected ASR result: seq=32 chunk=chunk_158.1s_161.7s (33/33)
+2026-04-27 20:59:06,890 [INFO] Streaming VAD segment #33: chunk_162.4s_164.5s (2.1 s)
+2026-04-27 20:59:06,892 [INFO] Produced segment: seq=33 chunk_id=chunk_162.4s_164.5s
+2026-04-27 20:59:06,944 [INFO] Sent chunk seq=33 (chunk_162.4s_164.5s) to workers
+2026-04-27 20:59:07,106 [INFO] Collected Speaker result: seq=33 chunk=chunk_162.4s_164.5s (34/33)
+2026-04-27 20:59:07,491 [INFO] Transcript [seq=33]: [Unknown] (chunk_162.4s_164.5s): А посчитать можно примерно?
+2026-04-27 20:59:07,491 [INFO] Collected ASR result: seq=33 chunk=chunk_162.4s_164.5s (34/34)
+2026-04-27 20:59:10,342 [INFO] Streaming VAD segment #34: chunk_166.0s_166.9s (0.9 s)
+2026-04-27 20:59:10,342 [INFO] Produced segment: seq=34 chunk_id=chunk_166.0s_166.9s
+2026-04-27 20:59:10,442 [INFO] Sent chunk seq=34 (chunk_166.0s_166.9s) to workers
+2026-04-27 20:59:10,582 [INFO] Collected Speaker result: seq=34 chunk=chunk_166.0s_166.9s (35/34)
+2026-04-27 20:59:10,830 [INFO] Transcript [seq=34]: [Unknown] (chunk_166.0s_166.9s): Конечно.
+2026-04-27 20:59:10,830 [INFO] Collected ASR result: seq=34 chunk=chunk_166.0s_166.9s (35/35)
+2026-04-27 20:59:13,262 [INFO] Streaming VAD segment #35: chunk_167.7s_168.9s (1.2 s)
+2026-04-27 20:59:13,262 [INFO] Produced segment: seq=35 chunk_id=chunk_167.7s_168.9s
+2026-04-27 20:59:13,359 [INFO] Sent chunk seq=35 (chunk_167.7s_168.9s) to workers
+2026-04-27 20:59:13,500 [INFO] Collected Speaker result: seq=35 chunk=chunk_167.7s_168.9s (36/35)
+2026-04-27 20:59:13,793 [INFO] Transcript [seq=35]: [Unknown] (chunk_167.7s_168.9s): Давайте прикинем.
+2026-04-27 20:59:13,794 [INFO] Collected ASR result: seq=35 chunk=chunk_167.7s_168.9s (36/36)
+2026-04-27 20:59:19,886 [INFO] Streaming VAD segment #36: chunk_169.1s_173.6s (4.5 s)
+2026-04-27 20:59:19,886 [INFO] Produced segment: seq=36 chunk_id=chunk_169.1s_173.6s
+2026-04-27 20:59:19,900 [INFO] Sent chunk seq=36 (chunk_169.1s_173.6s) to workers
+2026-04-27 20:59:20,041 [INFO] Collected Speaker result: seq=36 chunk=chunk_169.1s_173.6s (37/36)
+2026-04-27 20:59:20,795 [INFO] Transcript [seq=36]: [Lawyer] (chunk_169.1s_173.6s): Цена договора у вас 6,95 млн руб.
+2026-04-27 20:59:20,795 [INFO] Collected ASR result: seq=36 chunk=chunk_169.1s_173.6s (37/37)
+2026-04-27 20:59:22,082 [INFO] Streaming VAD segment #37: chunk_173.9s_175.2s (1.3 s)
+2026-04-27 20:59:22,082 [INFO] Produced segment: seq=37 chunk_id=chunk_173.9s_175.2s
+2026-04-27 20:59:22,137 [INFO] Sent chunk seq=37 (chunk_173.9s_175.2s) to workers
+2026-04-27 20:59:22,239 [INFO] Collected Speaker result: seq=37 chunk=chunk_173.9s_175.2s (38/37)
+2026-04-27 20:59:22,585 [INFO] Transcript [seq=37]: [Unknown] (chunk_173.9s_175.2s): Ключевая ставка.
+2026-04-27 20:59:22,585 [INFO] Collected ASR result: seq=37 chunk=chunk_173.9s_175.2s (38/38)
+2026-04-27 20:59:24,583 [INFO] Streaming VAD segment #38: chunk_175.4s_177.0s (1.6 s)
+2026-04-27 20:59:24,583 [INFO] Produced segment: seq=38 chunk_id=chunk_175.4s_177.0s
+2026-04-27 20:59:24,687 [INFO] Sent chunk seq=38 (chunk_175.4s_177.0s) to workers
+2026-04-27 20:59:24,837 [INFO] Collected Speaker result: seq=38 chunk=chunk_175.4s_177.0s (39/38)
+2026-04-27 20:59:25,232 [INFO] Transcript [seq=38]: [Unknown] (chunk_175.4s_177.0s): Сейчас.
+2026-04-27 20:59:25,232 [INFO] Collected ASR result: seq=38 chunk=chunk_175.4s_177.0s (39/39)
+2026-04-27 20:59:27,723 [INFO] Streaming VAD segment #39: chunk_178.1s_179.1s (1.0 s)
+2026-04-27 20:59:27,723 [INFO] Produced segment: seq=39 chunk_id=chunk_178.1s_179.1s
+2026-04-27 20:59:27,818 [INFO] Sent chunk seq=39 (chunk_178.1s_179.1s) to workers
+2026-04-27 20:59:27,966 [INFO] Collected Speaker result: seq=39 chunk=chunk_178.1s_179.1s (40/39)
+2026-04-27 20:59:28,289 [INFO] Transcript [seq=39]: [Unknown] (chunk_178.1s_179.1s): Секунду.
+2026-04-27 20:59:28,289 [INFO] Collected ASR result: seq=39 chunk=chunk_178.1s_179.1s (40/40)
+2026-04-27 20:59:30,003 [INFO] Streaming VAD segment #40: chunk_179.4s_180.7s (1.3 s)
+2026-04-27 20:59:30,003 [INFO] Produced segment: seq=40 chunk_id=chunk_179.4s_180.7s
+2026-04-27 20:59:30,093 [INFO] Sent chunk seq=40 (chunk_179.4s_180.7s) to workers
+2026-04-27 20:59:30,365 [INFO] Collected Speaker result: seq=40 chunk=chunk_179.4s_180.7s (41/41)
+2026-04-27 20:59:30,834 [INFO] Transcript [seq=40]: [Unknown] (chunk_179.4s_180.7s): Уточню актуальную.
+2026-04-27 20:59:30,834 [INFO] Collected ASR result: seq=40 chunk=chunk_179.4s_180.7s (41/41)
+2026-04-27 20:59:32,234 [INFO] Streaming VAD segment #41: chunk_181.6s_182.3s (0.7 s)
+2026-04-27 20:59:32,234 [INFO] Produced segment: seq=41 chunk_id=chunk_181.6s_182.3s
+2026-04-27 20:59:32,327 [INFO] Sent chunk seq=41 (chunk_181.6s_182.3s) to workers
+2026-04-27 20:59:32,498 [INFO] Collected Speaker result: seq=41 chunk=chunk_181.6s_182.3s (42/41)
+2026-04-27 20:59:32,728 [INFO] Transcript [seq=41]: [Unknown] (chunk_181.6s_182.3s): Ты.
+2026-04-27 20:59:32,730 [INFO] Collected ASR result: seq=41 chunk=chunk_181.6s_182.3s (42/42)
+2026-04-27 20:59:37,755 [INFO] Streaming VAD segment #42: chunk_183.3s_186.3s (3.0 s)
+2026-04-27 20:59:37,755 [INFO] Produced segment: seq=42 chunk_id=chunk_183.3s_186.3s
+2026-04-27 20:59:37,769 [INFO] Sent chunk seq=42 (chunk_183.3s_186.3s) to workers
+2026-04-27 20:59:37,850 [INFO] Collected Speaker result: seq=42 chunk=chunk_183.3s_186.3s (43/42)
+2026-04-27 20:59:38,435 [INFO] Transcript [seq=42]: [Lawyer] (chunk_183.3s_186.3s): Да, сейчас она на уровне 21%.
+2026-04-27 20:59:38,435 [INFO] Collected ASR result: seq=42 chunk=chunk_183.3s_186.3s (43/43)
+2026-04-27 20:59:53,821 [INFO] Streaming VAD segment #43: chunk_186.5s_197.3s (10.8 s)
+2026-04-27 20:59:53,823 [INFO] Produced segment: seq=43 chunk_id=chunk_186.5s_197.3s
+2026-04-27 20:59:53,862 [INFO] Sent chunk seq=43 (chunk_186.5s_197.3s) to workers
+2026-04-27 20:59:54,661 [INFO] Collected Speaker result: seq=43 chunk=chunk_186.5s_197.3s (44/43)
+2026-04-27 20:59:55,808 [INFO] Transcript [seq=43]: [Lawyer] (chunk_186.5s_197.3s): Считаем. 6 950 000 умножаем на 21%, делим на 300. Это уже с учётом удвоения для физлица. Получается примерно 4 865 0.
+2026-04-27 20:59:55,809 [INFO] Collected ASR result: seq=43 chunk=chunk_186.5s_197.3s (44/44)
+2026-04-27 21:00:01,913 [INFO] Streaming VAD segment #44: chunk_199.0s_202.9s (3.9 s)
+2026-04-27 21:00:01,917 [INFO] Produced segment: seq=44 chunk_id=chunk_199.0s_202.9s
+2026-04-27 21:00:01,968 [INFO] Sent chunk seq=44 (chunk_199.0s_202.9s) to workers
+2026-04-27 21:00:02,082 [INFO] Collected Speaker result: seq=44 chunk=chunk_199.0s_202.9s (45/44)
+2026-04-27 21:00:02,672 [INFO] Transcript [seq=44]: [Lawyer] (chunk_199.0s_202.9s): Прошу прощения, 4 865 000 ₽ в день.
+2026-04-27 21:00:02,672 [INFO] Collected ASR result: seq=44 chunk=chunk_199.0s_202.9s (45/45)
+2026-04-27 21:00:11,392 [INFO] Streaming VAD segment #45: chunk_203.4s_209.6s (6.2 s)
+2026-04-27 21:00:11,392 [INFO] Produced segment: seq=45 chunk_id=chunk_203.4s_209.6s
+2026-04-27 21:00:11,410 [INFO] Sent chunk seq=45 (chunk_203.4s_209.6s) to workers
+2026-04-27 21:00:12,065 [INFO] Collected Speaker result: seq=45 chunk=chunk_203.4s_209.6s (46/45)
+2026-04-27 21:00:12,768 [INFO] Transcript [seq=45]: [Lawyer] (chunk_203.4s_209.6s): Умножаем на, скажем, 300 дней просрочки, выходит под 146 млн ₽ неустойки.
+2026-04-27 21:00:12,768 [INFO] Collected ASR result: seq=45 chunk=chunk_203.4s_209.6s (46/46)
+2026-04-27 21:00:14,221 [INFO] Streaming VAD segment #46: chunk_209.9s_211.6s (1.7 s)
+2026-04-27 21:00:14,221 [INFO] Produced segment: seq=46 chunk_id=chunk_209.9s_211.6s
+2026-04-27 21:00:14,318 [INFO] Sent chunk seq=46 (chunk_209.9s_211.6s) to workers
+2026-04-27 21:00:14,564 [INFO] Collected Speaker result: seq=46 chunk=chunk_209.9s_211.6s (47/46)
+2026-04-27 21:00:14,857 [INFO] Transcript [seq=46]: [Lawyer] (chunk_209.9s_211.6s): Это чистая арифметика по закону.
+2026-04-27 21:00:14,857 [INFO] Collected ASR result: seq=46 chunk=chunk_209.9s_211.6s (47/47)
+2026-04-27 21:00:16,691 [INFO] Streaming VAD segment #47: chunk_212.4s_213.4s (1.0 s)
+2026-04-27 21:00:16,691 [INFO] Produced segment: seq=47 chunk_id=chunk_212.4s_213.4s
+2026-04-27 21:00:16,783 [INFO] Sent chunk seq=47 (chunk_212.4s_213.4s) to workers
+2026-04-27 21:00:16,924 [INFO] Collected Speaker result: seq=47 chunk=chunk_212.4s_213.4s (48/48)
+2026-04-27 21:00:17,174 [INFO] Transcript [seq=47]: [Unknown] (chunk_212.4s_213.4s): Ого.
+2026-04-27 21:00:17,174 [INFO] Collected ASR result: seq=47 chunk=chunk_212.4s_213.4s (48/48)
+2026-04-27 21:00:20,298 [INFO] Streaming VAD segment #48: chunk_213.9s_216.1s (2.2 s)
+2026-04-27 21:00:20,298 [INFO] Produced segment: seq=48 chunk_id=chunk_213.9s_216.1s
+2026-04-27 21:00:20,306 [INFO] Sent chunk seq=48 (chunk_213.9s_216.1s) to workers
+2026-04-27 21:00:20,411 [INFO] Collected Speaker result: seq=48 chunk=chunk_213.9s_216.1s (49/48)
+2026-04-27 21:00:20,843 [INFO] Transcript [seq=48]: [Unknown] (chunk_213.9s_216.1s): Я даже не ожидал, что столько.
+2026-04-27 21:00:20,845 [INFO] Collected ASR result: seq=48 chunk=chunk_213.9s_216.1s (49/49)
+2026-04-27 21:00:22,621 [INFO] Streaming VAD segment #49: chunk_216.4s_217.7s (1.3 s)
+2026-04-27 21:00:22,621 [INFO] Produced segment: seq=49 chunk_id=chunk_216.4s_217.7s
+2026-04-27 21:00:22,712 [INFO] Sent chunk seq=49 (chunk_216.4s_217.7s) to workers
+2026-04-27 21:00:23,110 [INFO] Collected Speaker result: seq=49 chunk=chunk_216.4s_217.7s (50/50)
+2026-04-27 21:00:23,396 [INFO] Transcript [seq=49]: [Unknown] (chunk_216.4s_217.7s): Они реально заплатят?
+2026-04-27 21:00:23,396 [INFO] Collected ASR result: seq=49 chunk=chunk_216.4s_217.7s (50/50)
+2026-04-27 21:00:40,259 [INFO] Streaming VAD segment #50: chunk_218.7s_229.7s (11.0 s)
+2026-04-27 21:00:40,259 [INFO] Produced segment: seq=50 chunk_id=chunk_218.7s_229.7s
+2026-04-27 21:00:40,302 [INFO] Sent chunk seq=50 (chunk_218.7s_229.7s) to workers
+2026-04-27 21:00:40,896 [INFO] Collected Speaker result: seq=50 chunk=chunk_218.7s_229.7s (51/50)
+2026-04-27 21:00:41,927 [INFO] Transcript [seq=50]: [Lawyer] (chunk_218.7s_229.7s): Вот тут нужно быть реалистом. Есть несколько нюансов. Во-первых, суд почти всегда применяет статью 333 Гражданского кодекса. Это снижение неустойки по мотиву несоразмерности.
+2026-04-27 21:00:41,928 [INFO] Collected ASR result: seq=50 chunk=chunk_218.7s_229.7s (51/51)
+2026-04-27 21:00:56,813 [INFO] Streaming VAD segment #51: chunk_229.9s_240.9s (11.0 s)
+2026-04-27 21:00:56,815 [INFO] Produced segment: seq=51 chunk_id=chunk_229.9s_240.9s
+2026-04-27 21:00:56,834 [INFO] Sent chunk seq=51 (chunk_229.9s_240.9s) to workers
+2026-04-27 21:00:57,525 [INFO] Collected Speaker result: seq=51 chunk=chunk_229.9s_240.9s (52/51)
+2026-04-27 21:00:58,552 [INFO] Transcript [seq=51]: [Lawyer] (chunk_229.9s_240.9s): А по дольщикам практика такая: суды режут неустойку в среднем на 30—50%. То есть рассчитывать стоит не на 1 и46 млн, а реалистично на 700—900 тыс..
+2026-04-27 21:00:58,552 [INFO] Collected ASR result: seq=51 chunk=chunk_229.9s_240.9s (52/52)
+2026-04-27 21:01:08,384 [INFO] Streaming VAD segment #52: chunk_241.1s_248.9s (7.8 s)
+2026-04-27 21:01:08,386 [INFO] Produced segment: seq=52 chunk_id=chunk_241.1s_248.9s
+2026-04-27 21:01:08,489 [INFO] Sent chunk seq=52 (chunk_241.1s_248.9s) to workers
+2026-04-27 21:01:08,844 [INFO] Collected Speaker result: seq=52 chunk=chunk_241.1s_248.9s (53/53)
+2026-04-27 21:01:09,804 [INFO] Transcript [seq=52]: [Lawyer] (chunk_241.1s_248.9s): Во-вторых, очень важный момент. А-а, с 2024 года было постановление правительства о моратории на взыскание неустоек застройщиков.
+2026-04-27 21:01:09,806 [INFO] Collected ASR result: seq=52 chunk=chunk_241.1s_248.9s (53/53)
+2026-04-27 21:01:10,734 [INFO] Streaming VAD segment #53: chunk_249.2s_250.6s (1.4 s)
+2026-04-27 21:01:10,734 [INFO] Produced segment: seq=53 chunk_id=chunk_249.2s_250.6s
+2026-04-27 21:01:10,788 [INFO] Sent chunk seq=53 (chunk_249.2s_250.6s) to workers
+2026-04-27 21:01:10,837 [INFO] Collected Speaker result: seq=53 chunk=chunk_249.2s_250.6s (54/53)
+2026-04-27 21:01:11,160 [INFO] Transcript [seq=53]: [Unknown] (chunk_249.2s_250.6s): Оно действовало.
+2026-04-27 21:01:11,162 [INFO] Collected ASR result: seq=53 chunk=chunk_249.2s_250.6s (54/54)
+2026-04-27 21:01:12,976 [INFO] Streaming VAD segment #54: chunk_250.9s_252.1s (1.2 s)
+2026-04-27 21:01:12,976 [INFO] Produced segment: seq=54 chunk_id=chunk_250.9s_252.1s
+2026-04-27 21:01:13,068 [INFO] Sent chunk seq=54 (chunk_250.9s_252.1s) to workers
+2026-04-27 21:01:13,196 [INFO] Collected Speaker result: seq=54 chunk=chunk_250.9s_252.1s (55/54)
+2026-04-27 21:01:13,535 [INFO] Transcript [seq=54]: [Unknown] (chunk_250.9s_252.1s): В определённые периоды.
+2026-04-27 21:01:13,537 [INFO] Collected ASR result: seq=54 chunk=chunk_250.9s_252.1s (55/55)
+2026-04-27 21:01:25,700 [INFO] Streaming VAD segment #55: chunk_252.8s_261.0s (8.2 s)
+2026-04-27 21:01:25,701 [INFO] Produced segment: seq=55 chunk_id=chunk_252.8s_261.0s
+2026-04-27 21:01:25,750 [INFO] Sent chunk seq=55 (chunk_252.8s_261.0s) to workers
+2026-04-27 21:01:26,705 [INFO] Collected Speaker result: seq=55 chunk=chunk_252.8s_261.0s (56/55)
+2026-04-27 21:01:27,645 [INFO] Transcript [seq=55]: [Lawyer] (chunk_252.8s_261.0s): Нужно точно проверить, какими, какие именно периоды просрочки под этот мораторий попадают, потому что за эти дни неустойку начислить нельзя.
+2026-04-27 21:01:27,645 [INFO] Collected ASR result: seq=55 chunk=chunk_252.8s_261.0s (56/56)
+2026-04-27 21:01:31,263 [INFO] Streaming VAD segment #56: chunk_262.1s_264.9s (2.8 s)
+2026-04-27 21:01:31,266 [INFO] Produced segment: seq=56 chunk_id=chunk_262.1s_264.9s
+2026-04-27 21:01:31,321 [INFO] Sent chunk seq=56 (chunk_262.1s_264.9s) to workers
+2026-04-27 21:01:31,424 [INFO] Collected Speaker result: seq=56 chunk=chunk_262.1s_264.9s (57/56)
+2026-04-27 21:01:31,854 [INFO] Transcript [seq=56]: [Client] (chunk_262.1s_264.9s): Кроме неустойки, ещё что-то можно требовать?
+2026-04-27 21:01:31,854 [INFO] Collected ASR result: seq=56 chunk=chunk_262.1s_264.9s (57/57)
+2026-04-27 21:01:49,483 [INFO] Streaming VAD segment #57: chunk_265.7s_277.5s (11.8 s)
+2026-04-27 21:01:49,484 [INFO] Produced segment: seq=57 chunk_id=chunk_265.7s_277.5s
+2026-04-27 21:01:49,503 [INFO] Sent chunk seq=57 (chunk_265.7s_277.5s) to workers
+2026-04-27 21:01:50,234 [INFO] Collected Speaker result: seq=57 chunk=chunk_265.7s_277.5s (58/58)
+2026-04-27 21:01:51,501 [INFO] Transcript [seq=57]: [Lawyer] (chunk_265.7s_277.5s): Да, это часто забывают. Помимо неустойки по 214-му ФЗ у вас есть право потребителя. Действует закон о защите прав потребителя. Поскольку вы физлицо, покупающее жильё для личных нужд,
+2026-04-27 21:01:51,501 [INFO] Collected ASR result: seq=57 chunk=chunk_265.7s_277.5s (58/58)
+2026-04-27 21:01:56,881 [INFO] Streaming VAD segment #58: chunk_278.0s_282.7s (4.7 s)
+2026-04-27 21:01:56,881 [INFO] Produced segment: seq=58 chunk_id=chunk_278.0s_282.7s
+2026-04-27 21:01:56,894 [INFO] Sent chunk seq=58 (chunk_278.0s_282.7s) to workers
+2026-04-27 21:01:57,026 [INFO] Collected Speaker result: seq=58 chunk=chunk_278.0s_282.7s (59/58)
+2026-04-27 21:01:57,721 [INFO] Transcript [seq=58]: [Lawyer] (chunk_278.0s_282.7s): А-а, и вот там вам полагается ещё несколько вещей. Первое — компенсация морального вреда.
+2026-04-27 21:01:57,721 [INFO] Collected ASR result: seq=58 chunk=chunk_278.0s_282.7s (59/59)
+2026-04-27 21:02:08,543 [INFO] Streaming VAD segment #59: chunk_282.9s_290.9s (8.0 s)
+2026-04-27 21:02:08,543 [INFO] Produced segment: seq=59 chunk_id=chunk_282.9s_290.9s
+2026-04-27 21:02:08,560 [INFO] Sent chunk seq=59 (chunk_282.9s_290.9s) to workers
+2026-04-27 21:02:09,134 [INFO] Collected Speaker result: seq=59 chunk=chunk_282.9s_290.9s (60/59)
+2026-04-27 21:02:10,081 [INFO] Transcript [seq=59]: [Lawyer] (chunk_282.9s_290.9s): Суммы небольшие, обычно суды присуждают от 10 до 50 000 ₽, но всё равно. Второе, и это существенно
+2026-04-27 21:02:10,082 [INFO] Collected ASR result: seq=59 chunk=chunk_282.9s_290.9s (60/60)
+2026-04-27 21:02:22,799 [INFO] Streaming VAD segment #60: chunk_291.5s_300.9s (9.4 s)
+2026-04-27 21:02:22,799 [INFO] Produced segment: seq=60 chunk_id=chunk_291.5s_300.9s
+2026-04-27 21:02:22,909 [INFO] Sent chunk seq=60 (chunk_291.5s_300.9s) to workers
+2026-04-27 21:02:23,589 [INFO] Collected Speaker result: seq=60 chunk=chunk_291.5s_300.9s (61/60)
+2026-04-27 21:02:24,557 [INFO] Transcript [seq=60]: [Lawyer] (chunk_291.5s_300.9s): Штраф 50% от всей присуждённой суммы за неисполнение требований потребителя в добровольном порядке. Это статья 13 ЗОЗПП.
+2026-04-27 21:02:24,557 [INFO] Collected ASR result: seq=60 chunk=chunk_291.5s_300.9s (61/61)
+2026-04-27 21:02:33,467 [INFO] Streaming VAD segment #61: chunk_302.4s_308.4s (6.0 s)
+2026-04-27 21:02:33,467 [INFO] Produced segment: seq=61 chunk_id=chunk_302.4s_308.4s
+2026-04-27 21:02:33,575 [INFO] Sent chunk seq=61 (chunk_302.4s_308.4s) to workers
+2026-04-27 21:02:34,023 [INFO] Collected Speaker result: seq=61 chunk=chunk_302.4s_308.4s (62/61)
+2026-04-27 21:02:34,886 [INFO] Transcript [seq=61]: [Lawyer] (chunk_302.4s_308.4s): То есть, если суд присудит вам условно 800 000 неустойки плюс 30 000 морального, а-а-..
+2026-04-27 21:02:34,886 [INFO] Collected ASR result: seq=61 chunk=chunk_302.4s_308.4s (62/62)
+2026-04-27 21:02:38,078 [INFO] Streaming VAD segment #62: chunk_308.6s_311.7s (3.1 s)
+2026-04-27 21:02:38,078 [INFO] Produced segment: seq=62 chunk_id=chunk_308.6s_311.7s
+2026-04-27 21:02:38,087 [INFO] Sent chunk seq=62 (chunk_308.6s_311.7s) to workers
+2026-04-27 21:02:38,208 [INFO] Collected Speaker result: seq=62 chunk=chunk_308.6s_311.7s (63/62)
+2026-04-27 21:02:38,780 [INFO] Transcript [seq=62]: [Lawyer] (chunk_308.6s_311.7s): А сверху ещё 415 000 штрафа.
+2026-04-27 21:02:38,780 [INFO] Collected ASR result: seq=62 chunk=chunk_308.6s_311.7s (63/63)
+2026-04-27 21:02:54,731 [INFO] Streaming VAD segment #63: chunk_312.6s_323.6s (11.0 s)
+2026-04-27 21:02:54,731 [INFO] Produced segment: seq=63 chunk_id=chunk_312.6s_323.6s
+2026-04-27 21:02:54,772 [INFO] Sent chunk seq=63 (chunk_312.6s_323.6s) to workers
+2026-04-27 21:02:55,543 [INFO] Collected Speaker result: seq=63 chunk=chunk_312.6s_323.6s (64/64)
+2026-04-27 21:02:56,648 [INFO] Transcript [seq=63]: [Lawyer] (chunk_312.6s_323.6s): А третье — убытки, если они у вас есть. Например, если вы из-за просрочки снимаете квартиру, аренду тоже можно взыскать, но нужны документы: договор найма, расписки или выписки по счёту.
+2026-04-27 21:02:56,649 [INFO] Collected ASR result: seq=63 chunk=chunk_312.6s_323.6s (64/64)
+2026-04-27 21:03:00,834 [INFO] Streaming VAD segment #64: chunk_324.1s_327.9s (3.8 s)
+2026-04-27 21:03:00,834 [INFO] Produced segment: seq=64 chunk_id=chunk_324.1s_327.9s
+2026-04-27 21:03:00,891 [INFO] Sent chunk seq=64 (chunk_324.1s_327.9s) to workers
+2026-04-27 21:03:01,007 [INFO] Collected Speaker result: seq=64 chunk=chunk_324.1s_327.9s (65/64)
+2026-04-27 21:03:01,681 [INFO] Transcript [seq=64]: [Client] (chunk_324.1s_327.9s): Я как раз снимаю. Плачу 50 55 ты00 в месяц.
+2026-04-27 21:03:01,681 [INFO] Collected ASR result: seq=64 chunk=chunk_324.1s_327.9s (65/65)
+2026-04-27 21:03:04,132 [INFO] Streaming VAD segment #65: chunk_328.3s_330.2s (1.9 s)
+2026-04-27 21:03:04,134 [INFO] Produced segment: seq=65 chunk_id=chunk_328.3s_330.2s
+2026-04-27 21:03:04,186 [INFO] Sent chunk seq=65 (chunk_328.3s_330.2s) to workers
+2026-04-27 21:03:04,316 [INFO] Collected Speaker result: seq=65 chunk=chunk_328.3s_330.2s (66/65)
+2026-04-27 21:03:04,716 [INFO] Transcript [seq=65]: [Unknown] (chunk_328.3s_330.2s): Договор есть официальный.
+2026-04-27 21:03:04,716 [INFO] Collected ASR result: seq=65 chunk=chunk_328.3s_330.2s (66/66)
+2026-04-27 21:03:07,689 [INFO] Streaming VAD segment #66: chunk_330.6s_332.7s (2.1 s)
+2026-04-27 21:03:07,689 [INFO] Produced segment: seq=66 chunk_id=chunk_330.6s_332.7s
+2026-04-27 21:03:07,746 [INFO] Sent chunk seq=66 (chunk_330.6s_332.7s) to workers
+2026-04-27 21:03:07,889 [INFO] Collected Speaker result: seq=66 chunk=chunk_330.6s_332.7s (67/66)
+2026-04-27 21:03:08,281 [INFO] Transcript [seq=66]: [Lawyer] (chunk_330.6s_332.7s): Отлично. Это прям в дело.
+2026-04-27 21:03:08,282 [INFO] Collected ASR result: seq=66 chunk=chunk_330.6s_332.7s (67/67)
+2026-04-27 21:03:17,687 [INFO] Streaming VAD segment #67: chunk_333.0s_339.9s (6.9 s)
+2026-04-27 21:03:17,689 [INFO] Produced segment: seq=67 chunk_id=chunk_333.0s_339.9s
+2026-04-27 21:03:17,741 [INFO] Sent chunk seq=67 (chunk_333.0s_339.9s) to workers
+2026-04-27 21:03:18,262 [INFO] Collected Speaker result: seq=67 chunk=chunk_333.0s_339.9s (68/67)
+2026-04-27 21:03:19,081 [INFO] Transcript [seq=67]: [Lawyer] (chunk_333.0s_339.9s): Только нюанс. Нужно доказать причинно-следственную связь. о есть что вы снимаете квартиру именно потому, что застройщик не передал свою.
+2026-04-27 21:03:19,082 [INFO] Collected ASR result: seq=67 chunk=chunk_333.0s_339.9s (68/68)
+2026-04-27 21:03:29,455 [INFO] Streaming VAD segment #68: chunk_340.1s_348.0s (7.9 s)
+2026-04-27 21:03:29,455 [INFO] Produced segment: seq=68 chunk_id=chunk_340.1s_348.0s
+2026-04-27 21:03:29,464 [INFO] Sent chunk seq=68 (chunk_340.1s_348.0s) to workers
+2026-04-27 21:03:29,980 [INFO] Collected Speaker result: seq=68 chunk=chunk_340.1s_348.0s (69/68)
+2026-04-27 21:03:30,952 [INFO] Transcript [seq=68]: [Lawyer] (chunk_340.1s_348.0s): Если у вас другого жилья в собственности в этом городе нет, то связь очевидная. А если есть, будет сложнее, суд может отказать. У вас как?
+2026-04-27 21:03:30,952 [INFO] Collected ASR result: seq=68 chunk=chunk_340.1s_348.0s (69/69)
+2026-04-27 21:03:33,768 [INFO] Streaming VAD segment #69: chunk_348.3s_351.0s (2.7 s)
+2026-04-27 21:03:33,771 [INFO] Produced segment: seq=69 chunk_id=chunk_348.3s_351.0s
+2026-04-27 21:03:33,783 [INFO] Sent chunk seq=69 (chunk_348.3s_351.0s) to workers
+2026-04-27 21:03:33,930 [INFO] Collected Speaker result: seq=69 chunk=chunk_348.3s_351.0s (70/69)
+2026-04-27 21:03:34,416 [INFO] Transcript [seq=69]: [Unknown] (chunk_348.3s_351.0s): Своего жилья нет, только родительское.
+2026-04-27 21:03:34,416 [INFO] Collected ASR result: seq=69 chunk=chunk_348.3s_351.0s (70/70)
+2026-04-27 21:03:37,761 [INFO] Streaming VAD segment #70: chunk_351.2s_353.9s (2.7 s)
+2026-04-27 21:03:37,761 [INFO] Produced segment: seq=70 chunk_id=chunk_351.2s_353.9s
+2026-04-27 21:03:37,894 [INFO] Sent chunk seq=70 (chunk_351.2s_353.9s) to workers
+2026-04-27 21:03:38,048 [INFO] Collected Speaker result: seq=70 chunk=chunk_351.2s_353.9s (71/70)
+2026-04-27 21:03:38,614 [INFO] Transcript [seq=70]: [Client] (chunk_351.2s_353.9s): Но я там не прописан и живу отдельно.
+2026-04-27 21:03:38,614 [INFO] Collected ASR result: seq=70 chunk=chunk_351.2s_353.9s (71/71)
+2026-04-27 21:03:44,484 [INFO] Streaming VAD segment #71: chunk_356.7s_358.6s (1.9 s)
+2026-04-27 21:03:44,484 [INFO] Produced segment: seq=71 chunk_id=chunk_356.7s_358.6s
+2026-04-27 21:03:44,497 [INFO] Sent chunk seq=71 (chunk_356.7s_358.6s) to workers
+2026-04-27 21:03:44,666 [INFO] Collected Speaker result: seq=71 chunk=chunk_356.7s_358.6s (72/71)
+2026-04-27 21:03:45,068 [INFO] Transcript [seq=71]: [Unknown] (chunk_356.7s_358.6s): Тогда нормально. Возьмём в работу.
+2026-04-27 21:03:45,068 [INFO] Collected ASR result: seq=71 chunk=chunk_356.7s_358.6s (72/72)
+2026-04-27 21:03:46,957 [INFO] Streaming VAD segment #72: chunk_358.9s_360.4s (1.5 s)
+2026-04-27 21:03:46,959 [INFO] Produced segment: seq=72 chunk_id=chunk_358.9s_360.4s
+2026-04-27 21:03:47,011 [INFO] Sent chunk seq=72 (chunk_358.9s_360.4s) to workers
+2026-04-27 21:03:47,170 [INFO] Collected Speaker result: seq=72 chunk=chunk_358.9s_360.4s (73/73)
+2026-04-27 21:03:47,486 [INFO] Transcript [seq=72]: [Unknown] (chunk_358.9s_360.4s): Теперь давайте про стратегию.
+2026-04-27 21:03:47,486 [INFO] Collected ASR result: seq=72 chunk=chunk_358.9s_360.4s (73/73)
+2026-04-27 21:03:56,422 [INFO] Streaming VAD segment #73: chunk_360.9s_367.0s (6.1 s)
+2026-04-27 21:03:56,422 [INFO] Produced segment: seq=73 chunk_id=chunk_360.9s_367.0s
+2026-04-27 21:03:56,446 [INFO] Sent chunk seq=73 (chunk_360.9s_367.0s) to workers
+2026-04-27 21:03:56,682 [INFO] Collected Speaker result: seq=73 chunk=chunk_360.9s_367.0s (74/73)
+2026-04-27 21:03:57,538 [INFO] Transcript [seq=73]: [Lawyer] (chunk_360.9s_367.0s): А у вас есть несколько вариантов действий, и их надо обсудить, потому что они реально разные по последствиям.
+2026-04-27 21:03:57,538 [INFO] Collected ASR result: seq=73 chunk=chunk_360.9s_367.0s (74/74)
+2026-04-27 21:04:00,842 [INFO] Streaming VAD segment #74: chunk_368.8s_370.1s (1.3 s)
+2026-04-27 21:04:00,842 [INFO] Produced segment: seq=74 chunk_id=chunk_368.8s_370.1s
+2026-04-27 21:04:00,852 [INFO] Sent chunk seq=74 (chunk_368.8s_370.1s) to workers
+2026-04-27 21:04:01,020 [INFO] Collected Speaker result: seq=74 chunk=chunk_368.8s_370.1s (75/74)
+2026-04-27 21:04:01,408 [INFO] Transcript [seq=74]: [Unknown] (chunk_368.8s_370.1s): А, слушаю.
+2026-04-27 21:04:01,408 [INFO] Collected ASR result: seq=74 chunk=chunk_368.8s_370.1s (75/75)
+2026-04-27 21:04:04,811 [INFO] Streaming VAD segment #75: chunk_371.1s_373.0s (1.9 s)
+2026-04-27 21:04:04,812 [INFO] Produced segment: seq=75 chunk_id=chunk_371.1s_373.0s
+2026-04-27 21:04:04,819 [INFO] Sent chunk seq=75 (chunk_371.1s_373.0s) to workers
+2026-04-27 21:04:05,015 [INFO] Collected Speaker result: seq=75 chunk=chunk_371.1s_373.0s (76/75)
+2026-04-27 21:04:05,373 [INFO] Transcript [seq=75]: [Unknown] (chunk_371.1s_373.0s): Вариант первый — самый радикальный.
+2026-04-27 21:04:05,373 [INFO] Collected ASR result: seq=75 chunk=chunk_371.1s_373.0s (76/76)
+2026-04-27 21:04:08,268 [INFO] Streaming VAD segment #76: chunk_373.1s_375.4s (2.3 s)
+2026-04-27 21:04:08,270 [INFO] Produced segment: seq=76 chunk_id=chunk_373.1s_375.4s
+2026-04-27 21:04:08,365 [INFO] Sent chunk seq=76 (chunk_373.1s_375.4s) to workers
+2026-04-27 21:04:08,482 [INFO] Collected Speaker result: seq=76 chunk=chunk_373.1s_375.4s (77/76)
+2026-04-27 21:04:08,898 [INFO] Transcript [seq=76]: [Lawyer] (chunk_373.1s_375.4s): Расторжение договора в одностороннем порядке.
+2026-04-27 21:04:08,898 [INFO] Collected ASR result: seq=76 chunk=chunk_373.1s_375.4s (77/77)
+2026-04-27 21:04:19,425 [INFO] Streaming VAD segment #77: chunk_375.6s_383.3s (7.7 s)
+2026-04-27 21:04:19,426 [INFO] Produced segment: seq=77 chunk_id=chunk_375.6s_383.3s
+2026-04-27 21:04:19,484 [INFO] Sent chunk seq=77 (chunk_375.6s_383.3s) to workers
+2026-04-27 21:04:19,855 [INFO] Collected Speaker result: seq=77 chunk=chunk_375.6s_383.3s (78/77)
+2026-04-27 21:04:20,851 [INFO] Transcript [seq=77]: [Lawyer] (chunk_375.6s_383.3s): Право у вас такое есть по части 1.1 статьи 9 Закона 214 ФЗри просрочке передачи более чем на
+2026-04-27 21:04:20,851 [INFO] Collected ASR result: seq=77 chunk=chunk_375.6s_383.3s (78/78)
+2026-04-27 21:04:26,124 [INFO] Streaming VAD segment #78: chunk_383.6s_387.9s (4.3 s)
+2026-04-27 21:04:26,124 [INFO] Produced segment: seq=78 chunk_id=chunk_383.6s_387.9s
+2026-04-27 21:04:26,134 [INFO] Sent chunk seq=78 (chunk_383.6s_387.9s) to workers
+2026-04-27 21:04:26,270 [INFO] Collected Speaker result: seq=78 chunk=chunk_383.6s_387.9s (79/78)
+2026-04-27 21:04:26,853 [INFO] Transcript [seq=78]: [Lawyer] (chunk_383.6s_387.9s): Два месяца, э-э, у вас она уже почти год, так что основание железное.
+2026-04-27 21:04:26,853 [INFO] Collected ASR result: seq=78 chunk=chunk_383.6s_387.9s (79/79)
+2026-04-27 21:04:36,320 [INFO] Streaming VAD segment #79: chunk_388.1s_394.9s (6.8 s)
+2026-04-27 21:04:36,320 [INFO] Produced segment: seq=79 chunk_id=chunk_388.1s_394.9s
+2026-04-27 21:04:36,371 [INFO] Sent chunk seq=79 (chunk_388.1s_394.9s) to workers
+2026-04-27 21:04:36,992 [INFO] Collected Speaker result: seq=79 chunk=chunk_388.1s_394.9s (80/80)
+2026-04-27 21:04:37,684 [INFO] Transcript [seq=79]: [Lawyer] (chunk_388.1s_394.9s): Что это даёт? Вы требуете назад всю уплаченную сумму — 7 млн плюс проценты за пользование вашими деньгами.
+2026-04-27 21:04:37,684 [INFO] Collected ASR result: seq=79 chunk=chunk_388.1s_394.9s (80/80)
+2026-04-27 21:04:39,540 [INFO] Streaming VAD segment #80: chunk_395.1s_397.1s (2.0 s)
+2026-04-27 21:04:39,540 [INFO] Produced segment: seq=80 chunk_id=chunk_395.1s_397.1s
+2026-04-27 21:04:39,546 [INFO] Sent chunk seq=80 (chunk_395.1s_397.1s) to workers
+2026-04-27 21:04:39,685 [INFO] Collected Speaker result: seq=80 chunk=chunk_395.1s_397.1s (81/80)
+2026-04-27 21:04:40,079 [INFO] Transcript [seq=80]: [Lawyer] (chunk_395.1s_397.1s): Плюс неустойку и всё остальное.
+2026-04-27 21:04:40,079 [INFO] Collected ASR result: seq=80 chunk=chunk_395.1s_397.1s (81/81)
+2026-04-27 21:04:48,926 [INFO] Streaming VAD segment #81: chunk_397.3s_403.5s (6.2 s)
+2026-04-27 21:04:48,926 [INFO] Produced segment: seq=81 chunk_id=chunk_397.3s_403.5s
+2026-04-27 21:04:48,938 [INFO] Sent chunk seq=81 (chunk_397.3s_403.5s) to workers
+2026-04-27 21:04:49,183 [INFO] Collected Speaker result: seq=81 chunk=chunk_397.3s_403.5s (82/81)
+2026-04-27 21:04:49,949 [INFO] Transcript [seq=81]: [Lawyer] (chunk_397.3s_403.5s): Но есть большой минус. Если застройщик идёт на банкротство, а к стройинвестору надо присмотреться, то
+2026-04-27 21:04:49,949 [INFO] Collected ASR result: seq=81 chunk=chunk_397.3s_403.5s (82/82)
+2026-04-27 21:04:55,271 [INFO] Streaming VAD segment #82: chunk_403.7s_407.8s (4.1 s)
+2026-04-27 21:04:55,272 [INFO] Produced segment: seq=82 chunk_id=chunk_403.7s_407.8s
+2026-04-27 21:04:55,386 [INFO] Sent chunk seq=82 (chunk_403.7s_407.8s) to workers
+2026-04-27 21:04:55,712 [INFO] Collected Speaker result: seq=82 chunk=chunk_403.7s_407.8s (83/82)
+2026-04-27 21:04:56,175 [INFO] Transcript [seq=82]: [Lawyer] (chunk_403.7s_407.8s): То из банкротной массы вы как кредитор третьей очереди получаете копейки.
+2026-04-27 21:04:56,177 [INFO] Collected ASR result: seq=82 chunk=chunk_403.7s_407.8s (83/83)
+2026-04-27 21:05:05,559 [INFO] Streaming VAD segment #83: chunk_409.0s_414.9s (5.9 s)
+2026-04-27 21:05:05,559 [INFO] Produced segment: seq=83 chunk_id=chunk_409.0s_414.9s
+2026-04-27 21:05:05,654 [INFO] Sent chunk seq=83 (chunk_409.0s_414.9s) to workers
+2026-04-27 21:05:06,196 [INFO] Collected Speaker result: seq=83 chunk=chunk_409.0s_414.9s (84/83)
+2026-04-27 21:05:06,716 [INFO] Transcript [seq=83]: [Lawyer] (chunk_409.0s_414.9s): Тогда как собственник ещё недостроенной квартиры, вы защищены гораздо лучше. Там работают специальные нормы.
+2026-04-27 21:05:06,716 [INFO] Collected ASR result: seq=83 chunk=chunk_409.0s_414.9s (84/84)
+2026-04-27 21:05:10,722 [INFO] Streaming VAD segment #84: chunk_415.1s_418.4s (3.3 s)
+2026-04-27 21:05:10,722 [INFO] Produced segment: seq=84 chunk_id=chunk_415.1s_418.4s
+2026-04-27 21:05:10,770 [INFO] Sent chunk seq=84 (chunk_415.1s_418.4s) to workers
+2026-04-27 21:05:10,995 [INFO] Collected Speaker result: seq=84 chunk=chunk_415.1s_418.4s (85/84)
+2026-04-27 21:05:11,387 [INFO] Transcript [seq=84]: [Lawyer] (chunk_415.1s_418.4s): Н нормы о защите прав участников строительства.
+2026-04-27 21:05:11,387 [INFO] Collected ASR result: seq=84 chunk=chunk_415.1s_418.4s (85/85)
+2026-04-27 21:05:13,783 [INFO] Streaming VAD segment #85: chunk_419.5s_420.5s (1.0 s)
+2026-04-27 21:05:13,784 [INFO] Produced segment: seq=85 chunk_id=chunk_419.5s_420.5s
+2026-04-27 21:05:13,871 [INFO] Sent chunk seq=85 (chunk_419.5s_420.5s) to workers
+2026-04-27 21:05:14,129 [INFO] Collected Speaker result: seq=85 chunk=chunk_419.5s_420.5s (86/85)
+2026-04-27 21:05:14,332 [INFO] Transcript [seq=85]: [Unknown] (chunk_419.5s_420.5s): Второй вариант.
+2026-04-27 21:05:14,332 [INFO] Collected ASR result: seq=85 chunk=chunk_419.5s_420.5s (86/86)
+2026-04-27 21:05:28,337 [INFO] Streaming VAD segment #86: chunk_421.1s_430.5s (9.4 s)
+2026-04-27 21:05:28,337 [INFO] Produced segment: seq=86 chunk_id=chunk_421.1s_430.5s
+2026-04-27 21:05:28,439 [INFO] Sent chunk seq=86 (chunk_421.1s_430.5s) to workers
+2026-04-27 21:05:29,196 [INFO] Collected Speaker result: seq=86 chunk=chunk_421.1s_430.5s (87/87)
+2026-04-27 21:05:30,239 [INFO] Transcript [seq=86]: [Lawyer] (chunk_421.1s_430.5s): Второй — ждать сдачи дома и параллельно судиться за неустойку. То есть договор не расторгаете, квартиру в итоге получаете, но за период просрочки взыскиваете все компенсации через суд.
+2026-04-27 21:05:30,241 [INFO] Collected ASR result: seq=86 chunk=chunk_421.1s_430.5s (87/87)
+2026-04-27 21:05:35,673 [INFO] Streaming VAD segment #87: chunk_430.7s_435.5s (4.8 s)
+2026-04-27 21:05:35,673 [INFO] Produced segment: seq=87 chunk_id=chunk_430.7s_435.5s
+2026-04-27 21:05:35,771 [INFO] Sent chunk seq=87 (chunk_430.7s_435.5s) to workers
+2026-04-27 21:05:36,310 [INFO] Collected Speaker result: seq=87 chunk=chunk_430.7s_435.5s (88/87)
+2026-04-27 21:05:36,978 [INFO] Transcript [seq=87]: [Lawyer] (chunk_430.7s_435.5s): Это более консервативный путь. Я его чаще рекомендую, особенно если объект строится и есть реальная
+2026-04-27 21:05:36,979 [INFO] Collected ASR result: seq=87 chunk=chunk_430.7s_435.5s (88/88)
+2026-04-27 21:05:46,481 [INFO] Streaming VAD segment #88: chunk_435.6s_442.8s (7.2 s)
+2026-04-27 21:05:46,485 [INFO] Produced segment: seq=88 chunk_id=chunk_435.6s_442.8s
+2026-04-27 21:05:46,495 [INFO] Sent chunk seq=88 (chunk_435.6s_442.8s) to workers
+2026-04-27 21:05:47,098 [INFO] Collected Speaker result: seq=88 chunk=chunk_435.6s_442.8s (89/88)
+2026-04-27 21:05:47,832 [INFO] Transcript [seq=88]: [Lawyer] (chunk_435.6s_442.8s): РРеальные признаки завершения. То есть дом стоит, фасады готовы, коммуникации подводят. Вы, кстати, на стройке когда в последний раз были?
+2026-04-27 21:05:47,832 [INFO] Collected ASR result: seq=88 chunk=chunk_435.6s_442.8s (89/89)
+2026-04-27 21:05:59,607 [INFO] Streaming VAD segment #89: chunk_443.5s_451.7s (8.2 s)
+2026-04-27 21:05:59,609 [INFO] Produced segment: seq=89 chunk_id=chunk_443.5s_451.7s
+2026-04-27 21:05:59,617 [INFO] Sent chunk seq=89 (chunk_443.5s_451.7s) to workers
+2026-04-27 21:06:00,383 [INFO] Collected Speaker result: seq=89 chunk=chunk_443.5s_451.7s (90/90)
+2026-04-27 21:06:01,052 [INFO] Transcript [seq=89]: [Client] (chunk_443.5s_451.7s): Э-э, в феврале ездил, дом стоит, окна вставлены, но внутри ещё работы. Я через знакомого прораба узнавал.
+2026-04-27 21:06:01,052 [INFO] Collected ASR result: seq=89 chunk=chunk_443.5s_451.7s (90/90)
+2026-04-27 21:06:05,211 [INFO] Streaming VAD segment #90: chunk_452.3s_455.5s (3.2 s)
+2026-04-27 21:06:05,212 [INFO] Produced segment: seq=90 chunk_id=chunk_452.3s_455.5s
+2026-04-27 21:06:05,262 [INFO] Sent chunk seq=90 (chunk_452.3s_455.5s) to workers
+2026-04-27 21:06:05,788 [INFO] Collected Speaker result: seq=90 chunk=chunk_452.3s_455.5s (91/90)
+2026-04-27 21:06:06,131 [INFO] Transcript [seq=90]: [Client] (chunk_452.3s_455.5s): Сказал, что реально июль-август, дача.
+2026-04-27 21:06:06,131 [INFO] Collected ASR result: seq=90 chunk=chunk_452.3s_455.5s (91/91)
+2026-04-27 21:06:11,958 [INFO] Streaming VAD segment #91: chunk_455.8s_460.2s (4.4 s)
+2026-04-27 21:06:11,958 [INFO] Produced segment: seq=91 chunk_id=chunk_455.8s_460.2s
+2026-04-27 21:06:11,965 [INFO] Sent chunk seq=91 (chunk_455.8s_460.2s) to workers
+2026-04-27 21:06:12,143 [INFO] Collected Speaker result: seq=91 chunk=chunk_455.8s_460.2s (92/91)
+2026-04-27 21:06:12,761 [INFO] Transcript [seq=91]: [Lawyer] (chunk_455.8s_460.2s): Это важная информация, значит, риск долгостроя умеренный.
+2026-04-27 21:06:12,761 [INFO] Collected ASR result: seq=91 chunk=chunk_455.8s_460.2s (92/92)
+2026-04-27 21:06:34,775 [INFO] Streaming VAD segment #92: chunk_460.5s_475.8s (15.3 s)
+2026-04-27 21:06:34,777 [INFO] Produced segment: seq=92 chunk_id=chunk_460.5s_475.8s
+2026-04-27 21:06:34,854 [INFO] Sent chunk seq=92 (chunk_460.5s_475.8s) to workers
+2026-04-27 21:06:35,681 [INFO] Collected Speaker result: seq=92 chunk=chunk_460.5s_475.8s (93/93)
+2026-04-27 21:06:36,960 [INFO] Transcript [seq=92]: [Lawyer] (chunk_460.5s_475.8s): я бы в вашем случае склонялся ко второму варианту. Получаете квартиру и параллельно или сразу после подписания передаточного акта подаёте иск о взыскании неустойки, морального вреда, штрафа и убытков в виде аренды. Это самая спокойная и выгодная стратегия.
+2026-04-27 21:06:36,960 [INFO] Collected ASR result: seq=92 chunk=chunk_460.5s_475.8s (93/93)
+2026-04-27 21:06:45,093 [INFO] Streaming VAD segment #93: chunk_477.1s_482.9s (5.8 s)
+2026-04-27 21:06:45,093 [INFO] Produced segment: seq=93 chunk_id=chunk_477.1s_482.9s
+2026-04-27 21:06:45,151 [INFO] Sent chunk seq=93 (chunk_477.1s_482.9s) to workers
+2026-04-27 21:06:45,364 [INFO] Collected Speaker result: seq=93 chunk=chunk_477.1s_482.9s (94/93)
+2026-04-27 21:06:46,112 [INFO] Transcript [seq=93]: [Client] (chunk_477.1s_482.9s): А есть ещё какой-то третий вариант, например, договориться с ними по-хорошему?
+2026-04-27 21:06:46,112 [INFO] Collected ASR result: seq=93 chunk=chunk_477.1s_482.9s (94/94)
+2026-04-27 21:06:49,629 [INFO] Streaming VAD segment #94: chunk_483.5s_485.9s (2.4 s)
+2026-04-27 21:06:49,629 [INFO] Produced segment: seq=94 chunk_id=chunk_483.5s_485.9s
+2026-04-27 21:06:49,678 [INFO] Sent chunk seq=94 (chunk_483.5s_485.9s) to workers
+2026-04-27 21:06:49,813 [INFO] Collected Speaker result: seq=94 chunk=chunk_483.5s_485.9s (95/94)
+2026-04-27 21:06:50,381 [INFO] Transcript [seq=94]: [Unknown] (chunk_483.5s_485.9s): Обязательно. Я как раз хотел сказать.
+2026-04-27 21:06:50,382 [INFO] Collected ASR result: seq=94 chunk=chunk_483.5s_485.9s (95/95)
+2026-04-27 21:06:55,825 [INFO] Streaming VAD segment #95: chunk_486.3s_490.2s (3.9 s)
+2026-04-27 21:06:55,825 [INFO] Produced segment: seq=95 chunk_id=chunk_486.3s_490.2s
+2026-04-27 21:06:55,922 [INFO] Sent chunk seq=95 (chunk_486.3s_490.2s) to workers
+2026-04-27 21:06:56,093 [INFO] Collected Speaker result: seq=95 chunk=chunk_486.3s_490.2s (96/95)
+2026-04-27 21:06:56,586 [INFO] Transcript [seq=95]: [Lawyer] (chunk_486.3s_490.2s): Первое процессуальное действие в любом случае — это досудебная претензия.
+2026-04-27 21:06:56,586 [INFO] Collected ASR result: seq=95 chunk=chunk_486.3s_490.2s (96/96)
+2026-04-27 21:07:01,455 [INFO] Streaming VAD segment #96: chunk_490.4s_494.1s (3.7 s)
+2026-04-27 21:07:01,455 [INFO] Produced segment: seq=96 chunk_id=chunk_490.4s_494.1s
+2026-04-27 21:07:01,554 [INFO] Sent chunk seq=96 (chunk_490.4s_494.1s) to workers
+2026-04-27 21:07:01,729 [INFO] Collected Speaker result: seq=96 chunk=chunk_490.4s_494.1s (97/96)
+2026-04-27 21:07:02,294 [INFO] Transcript [seq=96]: [Lawyer] (chunk_490.4s_494.1s): Это не просто формальность. По ЗОЗПП
+2026-04-27 21:07:02,294 [INFO] Collected ASR result: seq=96 chunk=chunk_490.4s_494.1s (97/97)
+2026-04-27 21:07:12,068 [INFO] Streaming VAD segment #97: chunk_494.2s_501.3s (7.1 s)
+2026-04-27 21:07:12,069 [INFO] Produced segment: seq=97 chunk_id=chunk_494.2s_501.3s
+2026-04-27 21:07:12,126 [INFO] Sent chunk seq=97 (chunk_494.2s_501.3s) to workers
+2026-04-27 21:07:13,096 [INFO] Collected Speaker result: seq=97 chunk=chunk_494.2s_501.3s (98/98)
+2026-04-27 21:07:13,525 [INFO] Streaming VAD segment #98: chunk_501.5s_502.3s (0.8 s)
+2026-04-27 21:07:13,526 [INFO] Produced segment: seq=98 chunk_id=chunk_501.5s_502.3s
+2026-04-27 21:07:13,614 [INFO] Sent chunk seq=98 (chunk_501.5s_502.3s) to workers
+2026-04-27 21:07:13,754 [INFO] Collected Speaker result: seq=98 chunk=chunk_501.5s_502.3s (99/98)
+2026-04-27 21:07:13,926 [INFO] Transcript [seq=97]: [Lawyer] (chunk_494.2s_501.3s): Перед иском вы обязаны дать контрагенту 10 дней на добровольное удовлетворение требований. Если он в этот срок не платит,
+2026-04-27 21:07:13,926 [INFO] Collected ASR result: seq=97 chunk=chunk_494.2s_501.3s (98/99)
+2026-04-27 21:07:14,278 [INFO] Transcript [seq=98]: [Unknown] (chunk_501.5s_502.3s): Вот тогда
+2026-04-27 21:07:14,278 [INFO] Collected ASR result: seq=98 chunk=chunk_501.5s_502.3s (99/99)
+2026-04-27 21:07:18,333 [INFO] Streaming VAD segment #99: chunk_502.5s_505.6s (3.1 s)
+2026-04-27 21:07:18,333 [INFO] Produced segment: seq=99 chunk_id=chunk_502.5s_505.6s
+2026-04-27 21:07:18,344 [INFO] Sent chunk seq=99 (chunk_502.5s_505.6s) to workers
+2026-04-27 21:07:18,508 [INFO] Collected Speaker result: seq=99 chunk=chunk_502.5s_505.6s (100/99)
+2026-04-27 21:07:19,016 [INFO] Transcript [seq=99]: [Lawyer] (chunk_502.5s_505.6s): У суда появляется основание взыскать пятидесятипроцентный штраф.
+2026-04-27 21:07:19,017 [INFO] Collected ASR result: seq=99 chunk=chunk_502.5s_505.6s (100/100)
+2026-04-27 21:07:22,818 [INFO] Streaming VAD segment #100: chunk_505.8s_508.7s (2.9 s)
+2026-04-27 21:07:22,818 [INFO] Produced segment: seq=100 chunk_id=chunk_505.8s_508.7s
+2026-04-27 21:07:22,868 [INFO] Sent chunk seq=100 (chunk_505.8s_508.7s) to workers
+2026-04-27 21:07:22,987 [INFO] Collected Speaker result: seq=100 chunk=chunk_505.8s_508.7s (101/100)
+2026-04-27 21:07:23,476 [INFO] Transcript [seq=100]: [Lawyer] (chunk_505.8s_508.7s): То есть без претензий вы теряете штраф, а это огромные деньги.
+2026-04-27 21:07:23,477 [INFO] Collected ASR result: seq=100 chunk=chunk_505.8s_508.7s (101/101)
+2026-04-27 21:07:39,166 [INFO] Streaming VAD segment #101: chunk_508.8s_519.8s (11.0 s)
+2026-04-27 21:07:39,166 [INFO] Produced segment: seq=101 chunk_id=chunk_508.8s_519.8s
+2026-04-27 21:07:39,213 [INFO] Sent chunk seq=101 (chunk_508.8s_519.8s) to workers
+2026-04-27 21:07:39,777 [INFO] Collected Speaker result: seq=101 chunk=chunk_508.8s_519.8s (102/102)
+2026-04-27 21:07:40,870 [INFO] Transcript [seq=101]: [Lawyer] (chunk_508.8s_519.8s): Претензию составляем грамотно, с расчётом, с реквизитами для перечисления, отправляем ценным письмом с описью, вложения и уведомлением. Это чтобы в суде факт отправки подтвердить.
+2026-04-27 21:07:40,871 [INFO] Collected ASR result: seq=101 chunk=chunk_508.8s_519.8s (102/102)
+2026-04-27 21:07:56,822 [INFO] Streaming VAD segment #102: chunk_521.5s_531.9s (10.4 s)
+2026-04-27 21:07:56,822 [INFO] Produced segment: seq=102 chunk_id=chunk_521.5s_531.9s
+2026-04-27 21:07:56,884 [INFO] Sent chunk seq=102 (chunk_521.5s_531.9s) to workers
+2026-04-27 21:07:57,588 [INFO] Collected Speaker result: seq=102 chunk=chunk_521.5s_531.9s (103/103)
+2026-04-27 21:07:58,740 [INFO] Transcript [seq=102]: [Lawyer] (chunk_521.5s_531.9s): И иногда, иногда на этом этапе застройщик сам предлагает компромисс. Например, готов заплатить 300—400 тыс., лишь бы не доводить до суда. У них там штрафы накладываются, юристы считают
+2026-04-27 21:07:58,741 [INFO] Collected ASR result: seq=102 chunk=chunk_521.5s_531.9s (103/103)
+2026-04-27 21:07:58,774 [INFO] Streaming VAD segment #103: chunk_532.3s_533.3s (1.0 s)
+2026-04-27 21:07:58,775 [INFO] Produced segment: seq=103 chunk_id=chunk_532.3s_533.3s
+2026-04-27 21:07:58,873 [INFO] Sent chunk seq=103 (chunk_532.3s_533.3s) to workers
+2026-04-27 21:07:58,959 [INFO] Collected Speaker result: seq=103 chunk=chunk_532.3s_533.3s (104/103)
+2026-04-27 21:07:59,277 [INFO] Transcript [seq=103]: [Unknown] (chunk_532.3s_533.3s): Перспективы.
+2026-04-27 21:07:59,277 [INFO] Collected ASR result: seq=103 chunk=chunk_532.3s_533.3s (104/104)
+2026-04-27 21:08:03,618 [INFO] Streaming VAD segment #104: chunk_534.1s_536.5s (2.4 s)
+2026-04-27 21:08:03,619 [INFO] Produced segment: seq=104 chunk_id=chunk_534.1s_536.5s
+2026-04-27 21:08:03,671 [INFO] Sent chunk seq=104 (chunk_534.1s_536.5s) to workers
+2026-04-27 21:08:03,794 [INFO] Collected Speaker result: seq=104 chunk=chunk_534.1s_536.5s (105/104)
+2026-04-27 21:08:04,284 [INFO] Transcript [seq=104]: [Unknown] (chunk_534.1s_536.5s): А если они предложат соглашаться?
+2026-04-27 21:08:04,284 [INFO] Collected ASR result: seq=104 chunk=chunk_534.1s_536.5s (105/105)
+2026-04-27 21:08:29,556 [INFO] Streaming VAD segment #105: chunk_539.4s_554.2s (14.8 s)
+2026-04-27 21:08:29,556 [INFO] Produced segment: seq=105 chunk_id=chunk_539.4s_554.2s
+2026-04-27 21:08:29,619 [INFO] Sent chunk seq=105 (chunk_539.4s_554.2s) to workers
+2026-04-27 21:08:30,684 [INFO] Collected Speaker result: seq=105 chunk=chunk_539.4s_554.2s (106/105)
+2026-04-27 21:08:32,251 [INFO] Transcript [seq=105]: [Lawyer] (chunk_539.4s_554.2s): Вот это зависит от суммы. Если предложат меньше 30%ваш от вашего полного расчёта, я бы отказывался и шёл в суд. Если 50—60%, уже можно думать, потому что в суде, с учётом статьи 333, которую я упоминал, можно и меньше получить.
+2026-04-27 21:08:32,252 [INFO] Collected ASR result: seq=105 chunk=chunk_539.4s_554.2s (106/106)
+2026-04-27 21:08:34,322 [INFO] Streaming VAD segment #106: chunk_555.0s_557.4s (2.4 s)
+2026-04-27 21:08:34,322 [INFO] Produced segment: seq=106 chunk_id=chunk_555.0s_557.4s
+2026-04-27 21:08:34,378 [INFO] Sent chunk seq=106 (chunk_555.0s_557.4s) to workers
+2026-04-27 21:08:34,529 [INFO] Collected Speaker result: seq=106 chunk=chunk_555.0s_557.4s (107/106)
+2026-04-27 21:08:35,035 [INFO] Transcript [seq=106]: [Lawyer] (chunk_555.0s_557.4s): Плюс год процесса: нервы, апелляция.
+2026-04-27 21:08:35,035 [INFO] Collected ASR result: seq=106 chunk=chunk_555.0s_557.4s (107/107)
+2026-04-27 21:08:41,433 [INFO] Streaming VAD segment #107: chunk_557.7s_562.2s (4.5 s)
+2026-04-27 21:08:41,433 [INFO] Produced segment: seq=107 chunk_id=chunk_557.7s_562.2s
+2026-04-27 21:08:41,444 [INFO] Sent chunk seq=107 (chunk_557.7s_562.2s) to workers
+2026-04-27 21:08:41,562 [INFO] Collected Speaker result: seq=107 chunk=chunk_557.7s_562.2s (108/107)
+2026-04-27 21:08:42,262 [INFO] Transcript [seq=107]: [Lawyer] (chunk_557.7s_562.2s): Цифры мы с вами прикинем, если предложение поступит. Без него спекулятировать смысла нет.
+2026-04-27 21:08:42,263 [INFO] Collected ASR result: seq=107 chunk=chunk_557.7s_562.2s (108/108)
+2026-04-27 21:08:49,719 [INFO] Streaming VAD segment #108: chunk_563.2s_568.3s (5.1 s)
+2026-04-27 21:08:49,719 [INFO] Produced segment: seq=108 chunk_id=chunk_563.2s_568.3s
+2026-04-27 21:08:49,820 [INFO] Sent chunk seq=108 (chunk_563.2s_568.3s) to workers
+2026-04-27 21:08:49,984 [INFO] Collected Speaker result: seq=108 chunk=chunk_563.2s_568.3s (109/108)
+2026-04-27 21:08:50,815 [INFO] Transcript [seq=108]: [Client] (chunk_563.2s_568.3s): Понял. А по срокам сколько это всё занимает, если через суд?
+2026-04-27 21:08:50,816 [INFO] Collected ASR result: seq=108 chunk=chunk_563.2s_568.3s (109/109)
+2026-04-27 21:08:58,759 [INFO] Streaming VAD segment #109: chunk_569.1s_575.2s (6.1 s)
+2026-04-27 21:08:58,759 [INFO] Produced segment: seq=109 chunk_id=chunk_569.1s_575.2s
+2026-04-27 21:08:58,814 [INFO] Sent chunk seq=109 (chunk_569.1s_575.2s) to workers
+2026-04-27 21:08:59,007 [INFO] Collected Speaker result: seq=109 chunk=chunk_569.1s_575.2s (110/110)
+2026-04-27 21:08:59,840 [INFO] Transcript [seq=109]: [Lawyer] (chunk_569.1s_575.2s): Реалистично, претензия — 10 дней на ответ. Если отказ или молчание, готовим иск, подаём в суд.
+2026-04-27 21:08:59,840 [INFO] Collected ASR result: seq=109 chunk=chunk_569.1s_575.2s (110/110)
+2026-04-27 21:09:13,764 [INFO] Streaming VAD segment #110: chunk_575.4s_586.5s (11.1 s)
+2026-04-27 21:09:13,764 [INFO] Produced segment: seq=110 chunk_id=chunk_575.4s_586.5s
+2026-04-27 21:09:13,850 [INFO] Sent chunk seq=110 (chunk_575.4s_586.5s) to workers
+2026-04-27 21:09:14,574 [INFO] Collected Speaker result: seq=110 chunk=chunk_575.4s_586.5s (111/111)
+2026-04-27 21:09:15,613 [INFO] Transcript [seq=110]: [Lawyer] (chunk_575.4s_586.5s): Районный суд по месту жительства истца, а-а, то есть вашему — это удобно. Ехать никуда не надо и госпошлина по ЗОЗПП не платится. Если сумма иска до миллиона рублей.
+2026-04-27 21:09:15,614 [INFO] Collected ASR result: seq=110 chunk=chunk_575.4s_586.5s (111/111)
+2026-04-27 21:09:18,337 [INFO] Streaming VAD segment #111: chunk_587.2s_590.0s (2.8 s)
+2026-04-27 21:09:18,338 [INFO] Produced segment: seq=111 chunk_id=chunk_587.2s_590.0s
+2026-04-27 21:09:18,348 [INFO] Sent chunk seq=111 (chunk_587.2s_590.0s) to workers
+2026-04-27 21:09:18,489 [INFO] Collected Speaker result: seq=111 chunk=chunk_587.2s_590.0s (112/111)
+2026-04-27 21:09:19,782 [INFO] Transcript [seq=111]: [Lawyer] (chunk_587.2s_590.0s): А если выше, платите только с превышением.
+2026-04-27 21:09:19,783 [INFO] Collected ASR result: seq=111 chunk=chunk_587.2s_590.0s (112/112)
+2026-04-27 21:09:28,359 [INFO] Streaming VAD segment #112: chunk_590.3s_597.4s (7.1 s)
+2026-04-27 21:09:28,359 [INFO] Produced segment: seq=112 chunk_id=chunk_590.3s_597.4s
+2026-04-27 21:09:28,420 [INFO] Sent chunk seq=112 (chunk_590.3s_597.4s) to workers
+2026-04-27 21:09:28,865 [INFO] Collected Speaker result: seq=112 chunk=chunk_590.3s_597.4s (113/112)
+2026-04-27 21:09:29,791 [INFO] Transcript [seq=112]: [Lawyer] (chunk_590.3s_597.4s): Первое заседание обычно через полтора-два месяца после подачи. Дальше одно, редко два заседание по существу.
+2026-04-27 21:09:29,792 [INFO] Collected ASR result: seq=112 chunk=chunk_590.3s_597.4s (113/113)
+2026-04-27 21:09:34,303 [INFO] Streaming VAD segment #113: chunk_597.7s_602.0s (4.3 s)
+2026-04-27 21:09:34,303 [INFO] Produced segment: seq=113 chunk_id=chunk_597.7s_602.0s
+2026-04-27 21:09:34,313 [INFO] Sent chunk seq=113 (chunk_597.7s_602.0s) to workers
+2026-04-27 21:09:34,450 [INFO] Collected Speaker result: seq=113 chunk=chunk_597.7s_602.0s (114/113)
+2026-04-27 21:09:35,181 [INFO] Transcript [seq=113]: [Lawyer] (chunk_597.7s_602.0s): Решение плюс ещё месяц на вступление в законную силу, если не обжалуют.
+2026-04-27 21:09:35,181 [INFO] Collected ASR result: seq=113 chunk=chunk_597.7s_602.0s (114/114)
+2026-04-27 21:09:44,572 [INFO] Streaming VAD segment #114: chunk_602.3s_610.1s (7.8 s)
+2026-04-27 21:09:44,572 [INFO] Produced segment: seq=114 chunk_id=chunk_602.3s_610.1s
+2026-04-27 21:09:44,638 [INFO] Sent chunk seq=114 (chunk_602.3s_610.1s) to workers
+2026-04-27 21:09:45,303 [INFO] Collected Speaker result: seq=114 chunk=chunk_602.3s_610.1s (115/114)
+2026-04-27 21:09:46,205 [INFO] Transcript [seq=114]: [Lawyer] (chunk_602.3s_610.1s): Итого от подачи претензия до исполнительного листа реалистично полгода. Если застройщик будет упираться и подавать апелляцию, может растянуться до года.
+2026-04-27 21:09:46,205 [INFO] Collected ASR result: seq=114 chunk=chunk_602.3s_610.1s (115/115)
+2026-04-27 21:09:53,190 [INFO] Streaming VAD segment #115: chunk_611.9s_616.7s (4.8 s)
+2026-04-27 21:09:53,192 [INFO] Produced segment: seq=115 chunk_id=chunk_611.9s_616.7s
+2026-04-27 21:09:53,285 [INFO] Sent chunk seq=115 (chunk_611.9s_616.7s) to workers
+2026-04-27 21:09:53,408 [INFO] Collected Speaker result: seq=115 chunk=chunk_611.9s_616.7s (116/115)
+2026-04-27 21:09:54,168 [INFO] Transcript [seq=115]: [Client] (chunk_611.9s_616.7s): А исполнить решение реально, а то присудят, и что?
+2026-04-27 21:09:54,168 [INFO] Collected ASR result: seq=115 chunk=chunk_611.9s_616.7s (116/116)
+2026-04-27 21:10:09,268 [INFO] Streaming VAD segment #116: chunk_616.9s_628.9s (12.0 s)
+2026-04-27 21:10:09,271 [INFO] Produced segment: seq=116 chunk_id=chunk_616.9s_628.9s
+2026-04-27 21:10:09,304 [INFO] Sent chunk seq=116 (chunk_616.9s_628.9s) to workers
+2026-04-27 21:10:09,837 [INFO] Collected Speaker result: seq=116 chunk=chunk_616.9s_628.9s (117/116)
+2026-04-27 21:10:11,205 [INFO] Transcript [seq=116]: [Lawyer] (chunk_616.9s_628.9s): Хороший вопрос,то ключевая проблема по таким делам. Если у застройщика есть активы и он работает, взыскиваем через приставов или напрямую через банк по исполнительному листу. Статья 8е Закона об исполнительном производстве.
+2026-04-27 21:10:11,205 [INFO] Collected ASR result: seq=116 chunk=chunk_616.9s_628.9s (117/117)
+2026-04-27 21:10:30,445 [INFO] Streaming VAD segment #117: chunk_629.1s_645.1s (16.0 s)
+2026-04-27 21:10:30,448 [INFO] Produced segment: seq=117 chunk_id=chunk_629.1s_645.1s
+2026-04-27 21:10:30,478 [INFO] Sent chunk seq=117 (chunk_629.1s_645.1s) to workers
+2026-04-27 21:10:31,375 [INFO] Collected Speaker result: seq=117 chunk=chunk_629.1s_645.1s (118/117)
+2026-04-27 21:10:32,862 [INFO] Transcript [seq=117]: [Lawyer] (chunk_629.1s_645.1s): Сейчас, когда все расчёты через эксроу-счета, у застройщиков деньги появляются после сдачи дома. И в этот момент наш исполнительный лист должен уже быть готов и предъявлен. Тогда получаем быстро. Если же начинается банкротство, встаём в реестр кредиторов, и тут уже сильно сложнее.
+2026-04-27 21:10:32,864 [INFO] Collected ASR result: seq=117 chunk=chunk_629.1s_645.1s (118/118)
+2026-04-27 21:10:35,112 [INFO] Streaming VAD segment #118: chunk_645.2s_648.5s (3.3 s)
+2026-04-27 21:10:35,113 [INFO] Produced segment: seq=118 chunk_id=chunk_645.2s_648.5s
+2026-04-27 21:10:35,123 [INFO] Sent chunk seq=118 (chunk_645.2s_648.5s) to workers
+2026-04-27 21:10:35,308 [INFO] Collected Speaker result: seq=118 chunk=chunk_645.2s_648.5s (119/118)
+2026-04-27 21:10:35,896 [INFO] Transcript [seq=118]: [Lawyer] (chunk_645.2s_648.5s): А поэтому я за то, чтобы не затягивать с претензией и иском.
+2026-04-27 21:10:35,896 [INFO] Collected ASR result: seq=118 chunk=chunk_645.2s_648.5s (119/119)
+2026-04-27 21:10:37,538 [INFO] Streaming VAD segment #119: chunk_649.5s_650.4s (0.9 s)
+2026-04-27 21:10:37,538 [INFO] Produced segment: seq=119 chunk_id=chunk_649.5s_650.4s
+2026-04-27 21:10:37,629 [INFO] Sent chunk seq=119 (chunk_649.5s_650.4s) to workers
+2026-04-27 21:10:37,805 [INFO] Collected Speaker result: seq=119 chunk=chunk_649.5s_650.4s (120/119)
+2026-04-27 21:10:38,014 [INFO] Transcript [seq=119]: [Unknown] (chunk_649.5s_650.4s): Понял.
+2026-04-27 21:10:38,014 [INFO] Collected ASR result: seq=119 chunk=chunk_649.5s_650.4s (120/120)
+2026-04-27 21:10:42,841 [INFO] Streaming VAD segment #120: chunk_651.1s_654.5s (3.4 s)
+2026-04-27 21:10:42,842 [INFO] Produced segment: seq=120 chunk_id=chunk_651.1s_654.5s
+2026-04-27 21:10:42,854 [INFO] Sent chunk seq=120 (chunk_651.1s_654.5s) to workers
+2026-04-27 21:10:42,925 [INFO] Collected Speaker result: seq=120 chunk=chunk_651.1s_654.5s (121/120)
+2026-04-27 21:10:43,407 [INFO] Streaming VAD segment #121: chunk_654.7s_654.9s (0.2 s)
+2026-04-27 21:10:43,408 [INFO] Produced segment: seq=121 chunk_id=chunk_654.7s_654.9s
+2026-04-27 21:10:43,495 [INFO] Sent chunk seq=121 (chunk_654.7s_654.9s) to workers
+2026-04-27 21:10:43,576 [INFO] Collected Speaker result: seq=121 chunk=chunk_654.7s_654.9s (122/121)
+2026-04-27 21:10:43,717 [INFO] Transcript [seq=120]: [Client] (chunk_651.1s_654.5s): Скажите, а что мне в ближайшую неделю делать?
+2026-04-27 21:10:43,719 [INFO] Collected ASR result: seq=120 chunk=chunk_651.1s_654.5s (121/122)
+2026-04-27 21:10:44,128 [INFO] Transcript [seq=121]: [Unknown] (chunk_654.7s_654.9s): 
+2026-04-27 21:10:44,131 [INFO] Collected ASR result: seq=121 chunk=chunk_654.7s_654.9s (122/122)
+2026-04-27 21:10:57,156 [INFO] Streaming VAD segment #122: chunk_655.1s_665.5s (10.4 s)
+2026-04-27 21:10:57,156 [INFO] Produced segment: seq=122 chunk_id=chunk_655.1s_665.5s
+2026-04-27 21:10:57,257 [INFO] Sent chunk seq=122 (chunk_655.1s_665.5s) to workers
+2026-04-27 21:10:58,080 [INFO] Collected Speaker result: seq=122 chunk=chunk_655.1s_665.5s (123/122)
+2026-04-27 21:10:59,225 [INFO] Transcript [seq=122]: [Lawyer] (chunk_655.1s_665.5s): Хорошо, по пунктам. Первое: соберите все документы, ДДУ, все приложения, все платёжки, каждое перечисление, что чтобы мы факт полной оплаты подтвердили.
+2026-04-27 21:10:59,225 [INFO] Collected ASR result: seq=122 chunk=chunk_655.1s_665.5s (123/123)
+2026-04-27 21:11:10,204 [INFO] Streaming VAD segment #123: chunk_666.4s_675.2s (8.8 s)
+2026-04-27 21:11:10,206 [INFO] Produced segment: seq=123 chunk_id=chunk_666.4s_675.2s
+2026-04-27 21:11:10,260 [INFO] Sent chunk seq=123 (chunk_666.4s_675.2s) to workers
+2026-04-27 21:11:10,799 [INFO] Collected Speaker result: seq=123 chunk=chunk_666.4s_675.2s (124/123)
+2026-04-27 21:11:11,763 [INFO] Transcript [seq=123]: [Lawyer] (chunk_666.4s_675.2s): Переписку с застройщиком распечатайте, и все уведомления о переносе сроков, копии неподписанных соглашений. Это доказательство того, что сроки вы не согласовывали.
+2026-04-27 21:11:11,763 [INFO] Collected ASR result: seq=123 chunk=chunk_666.4s_675.2s (124/124)
+2026-04-27 21:11:31,354 [INFO] Streaming VAD segment #124: chunk_675.6s_691.4s (15.8 s)
+2026-04-27 21:11:31,354 [INFO] Produced segment: seq=124 chunk_id=chunk_675.6s_691.4s
+2026-04-27 21:11:31,440 [INFO] Sent chunk seq=124 (chunk_675.6s_691.4s) to workers
+2026-04-27 21:11:32,341 [INFO] Collected Speaker result: seq=124 chunk=chunk_675.6s_691.4s (125/125)
+2026-04-27 21:11:33,757 [INFO] Transcript [seq=124]: [Lawyer] (chunk_675.6s_691.4s): Второе — договор аренды вашей съёмной квартиры и платежи за последние 10 месяцев, по возможности безнал, квитанции, расписки. Третье, я вам в течение дву—-трёх дней подготовлю проект досудебной претензии с полным расчётом неустойки, с учётом моратория, актуальной ставки всех периодов.
+2026-04-27 21:11:33,757 [INFO] Collected ASR result: seq=124 chunk=chunk_675.6s_691.4s (125/125)
+2026-04-27 21:11:35,192 [INFO] Streaming VAD segment #125: chunk_691.9s_694.0s (2.1 s)
+2026-04-27 21:11:35,194 [INFO] Produced segment: seq=125 chunk_id=chunk_691.9s_694.0s
+2026-04-27 21:11:35,204 [INFO] Sent chunk seq=125 (chunk_691.9s_694.0s) to workers
+2026-04-27 21:11:35,316 [INFO] Collected Speaker result: seq=125 chunk=chunk_691.9s_694.0s (126/125)
+2026-04-27 21:11:35,848 [INFO] Transcript [seq=125]: [Lawyer] (chunk_691.9s_694.0s): Вы её проверите, мы подпишем и отправим.
+2026-04-27 21:11:35,848 [INFO] Collected ASR result: seq=125 chunk=chunk_691.9s_694.0s (126/126)
+2026-04-27 21:11:45,336 [INFO] Streaming VAD segment #126: chunk_694.1s_701.5s (7.4 s)
+2026-04-27 21:11:45,337 [INFO] Produced segment: seq=126 chunk_id=chunk_694.1s_701.5s
+2026-04-27 21:11:45,350 [INFO] Sent chunk seq=126 (chunk_694.1s_701.5s) to workers
+2026-04-27 21:11:45,545 [INFO] Collected Speaker result: seq=126 chunk=chunk_694.1s_701.5s (127/126)
+2026-04-27 21:11:46,428 [INFO] Transcript [seq=126]: [Lawyer] (chunk_694.1s_701.5s): И ещё, ни в коем случае сейчас не подписывайте никаких доп-соглашений, которые вам будут присылать. Даже если обещают компенсацию или бонус.
+2026-04-27 21:11:46,428 [INFO] Collected ASR result: seq=126 chunk=chunk_694.1s_701.5s (127/127)
+2026-04-27 21:11:52,392 [INFO] Streaming VAD segment #127: chunk_702.2s_706.9s (4.7 s)
+2026-04-27 21:11:52,392 [INFO] Produced segment: seq=127 chunk_id=chunk_702.2s_706.9s
+2026-04-27 21:11:52,447 [INFO] Sent chunk seq=127 (chunk_702.2s_706.9s) to workers
+2026-04-27 21:11:52,592 [INFO] Collected Speaker result: seq=127 chunk=chunk_702.2s_706.9s (128/128)
+2026-04-27 21:11:53,394 [INFO] Transcript [seq=127]: [Lawyer] (chunk_702.2s_706.9s): Там часто в текст зашивают отказ от претензии по неустойке. Если что-то пришлют,
+2026-04-27 21:11:53,394 [INFO] Collected ASR result: seq=127 chunk=chunk_702.2s_706.9s (128/128)
+2026-04-27 21:11:57,089 [INFO] Streaming VAD segment #128: chunk_707.1s_710.5s (3.4 s)
+2026-04-27 21:11:57,089 [INFO] Produced segment: seq=128 chunk_id=chunk_707.1s_710.5s
+2026-04-27 21:11:57,098 [INFO] Sent chunk seq=128 (chunk_707.1s_710.5s) to workers
+2026-04-27 21:11:57,161 [INFO] Collected Speaker result: seq=128 chunk=chunk_707.1s_710.5s (129/128)
+2026-04-27 21:11:58,016 [INFO] Transcript [seq=128]: [Lawyer] (chunk_707.1s_710.5s): Сначала мне на почту, я посмотрю формулировки.
+2026-04-27 21:11:58,017 [INFO] Collected ASR result: seq=128 chunk=chunk_707.1s_710.5s (129/129)
+2026-04-27 21:11:59,165 [INFO] Streaming VAD segment #129: chunk_711.2s_712.1s (0.9 s)
+2026-04-27 21:11:59,166 [INFO] Produced segment: seq=129 chunk_id=chunk_711.2s_712.1s
+2026-04-27 21:11:59,256 [INFO] Sent chunk seq=129 (chunk_711.2s_712.1s) to workers
+2026-04-27 21:11:59,377 [INFO] Collected Speaker result: seq=129 chunk=chunk_711.2s_712.1s (130/129)
+2026-04-27 21:11:59,981 [INFO] Transcript [seq=129]: [Unknown] (chunk_711.2s_712.1s): Понятно.
+2026-04-27 21:11:59,983 [INFO] Collected ASR result: seq=129 chunk=chunk_711.2s_712.1s (130/130)
+2026-04-27 21:12:04,701 [INFO] Streaming VAD segment #130: chunk_712.4s_716.2s (3.8 s)
+2026-04-27 21:12:04,702 [INFO] Produced segment: seq=130 chunk_id=chunk_712.4s_716.2s
+2026-04-27 21:12:04,756 [INFO] Sent chunk seq=130 (chunk_712.4s_716.2s) to workers
+2026-04-27 21:12:04,884 [INFO] Collected Speaker result: seq=130 chunk=chunk_712.4s_716.2s (131/130)
+2026-04-27 21:12:05,613 [INFO] Transcript [seq=130]: [Client] (chunk_712.4s_716.2s): Последний вопрос. Ваши услуги во сколько обойдутся?
+2026-04-27 21:12:05,613 [INFO] Collected ASR result: seq=130 chunk=chunk_712.4s_716.2s (131/131)
+2026-04-27 21:12:11,388 [INFO] Streaming VAD segment #131: chunk_717.1s_721.0s (3.9 s)
+2026-04-27 21:12:11,389 [INFO] Produced segment: seq=131 chunk_id=chunk_717.1s_721.0s
+2026-04-27 21:12:11,477 [INFO] Sent chunk seq=131 (chunk_717.1s_721.0s) to workers
+2026-04-27 21:12:11,632 [INFO] Collected Speaker result: seq=131 chunk=chunk_717.1s_721.0s (132/131)
+2026-04-27 21:12:12,291 [INFO] Transcript [seq=131]: [Lawyer] (chunk_717.1s_721.0s): По таким делам. У нас два варианта оплаты, обсудим и выберем удобный.
+2026-04-27 21:12:12,291 [INFO] Collected ASR result: seq=131 chunk=chunk_717.1s_721.0s (132/132)
+2026-04-27 21:12:21,747 [INFO] Streaming VAD segment #132: chunk_721.2s_729.0s (7.8 s)
+2026-04-27 21:12:21,747 [INFO] Produced segment: seq=132 chunk_id=chunk_721.2s_729.0s
+2026-04-27 21:12:21,762 [INFO] Sent chunk seq=132 (chunk_721.2s_729.0s) to workers
+2026-04-27 21:12:22,357 [INFO] Collected Speaker result: seq=132 chunk=chunk_721.2s_729.0s (133/132)
+2026-04-27 21:12:23,331 [INFO] Transcript [seq=132]: [Lawyer] (chunk_721.2s_729.0s): Первый. фиксированная оплата поэтапно. Претензия отдельно, иски о ведение дела в первой инстанции отдельно, апелляция при необходимости отдельно.
+2026-04-27 21:12:23,331 [INFO] Collected ASR result: seq=132 chunk=chunk_721.2s_729.0s (133/133)
+2026-04-27 21:12:23,605 [INFO] Streaming VAD segment #133: chunk_729.3s_730.3s (1.0 s)
+2026-04-27 21:12:23,605 [INFO] Produced segment: seq=133 chunk_id=chunk_729.3s_730.3s
+2026-04-27 21:12:23,702 [INFO] Sent chunk seq=133 (chunk_729.3s_730.3s) to workers
+2026-04-27 21:12:23,870 [INFO] Collected Speaker result: seq=133 chunk=chunk_729.3s_730.3s (134/133)
+2026-04-27 21:12:24,147 [INFO] Transcript [seq=133]: [Unknown] (chunk_729.3s_730.3s): А второй..
+2026-04-27 21:12:24,147 [INFO] Collected ASR result: seq=133 chunk=chunk_729.3s_730.3s (134/134)
+2026-04-27 21:12:29,433 [INFO] Streaming VAD segment #134: chunk_730.5s_734.9s (4.4 s)
+2026-04-27 21:12:29,434 [INFO] Produced segment: seq=134 chunk_id=chunk_730.5s_734.9s
+2026-04-27 21:12:29,488 [INFO] Sent chunk seq=134 (chunk_730.5s_734.9s) to workers
+2026-04-27 21:12:29,649 [INFO] Collected Speaker result: seq=134 chunk=chunk_730.5s_734.9s (135/134)
+2026-04-27 21:12:30,214 [INFO] Transcript [seq=134]: [Lawyer] (chunk_730.5s_734.9s): Гонорар успеха. Небольшая фиксированная часть сейчас плюс процент от взысканного.
+2026-04-27 21:12:30,214 [INFO] Collected ASR result: seq=134 chunk=chunk_730.5s_734.9s (135/135)
+2026-04-27 21:12:45,175 [INFO] Streaming VAD segment #135: chunk_735.0s_747.2s (12.2 s)
+2026-04-27 21:12:45,175 [INFO] Produced segment: seq=135 chunk_id=chunk_735.0s_747.2s
+2026-04-27 21:12:45,209 [INFO] Sent chunk seq=135 (chunk_735.0s_747.2s) to workers
+2026-04-27 21:12:45,947 [INFO] Collected Speaker result: seq=135 chunk=chunk_735.0s_747.2s (136/135)
+2026-04-27 21:12:47,379 [INFO] Transcript [seq=135]: [Lawyer] (chunk_735.0s_747.2s): По вашему делу, где потенциал взыскания миллион с лишним, второй вариант обычно выгоднее клиенту и мотивирует юрисста. Но это обсудим отдельно, я вам вышлю варианты в письменном виде вместе с проектом соглашения об оказании юридической помощи.
+2026-04-27 21:12:47,379 [INFO] Collected ASR result: seq=135 chunk=chunk_735.0s_747.2s (136/136)
+2026-04-27 21:12:47,931 [INFO] Streaming VAD segment #136: chunk_747.4s_749.3s (1.9 s)
+2026-04-27 21:12:47,933 [INFO] Produced segment: seq=136 chunk_id=chunk_747.4s_749.3s
+2026-04-27 21:12:47,944 [INFO] Sent chunk seq=136 (chunk_747.4s_749.3s) to workers
+2026-04-27 21:12:48,175 [INFO] Collected Speaker result: seq=136 chunk=chunk_747.4s_749.3s (137/136)
+2026-04-27 21:12:48,544 [INFO] Transcript [seq=136]: [Unknown] (chunk_747.4s_749.3s): Изучите спокойно, без давления.
+2026-04-27 21:12:48,544 [INFO] Collected ASR result: seq=136 chunk=chunk_747.4s_749.3s (137/137)
+2026-04-27 21:12:55,825 [INFO] Streaming VAD segment #137: chunk_750.0s_755.0s (5.0 s)
+2026-04-27 21:12:55,825 [INFO] Produced segment: seq=137 chunk_id=chunk_750.0s_755.0s
+2026-04-27 21:12:55,926 [INFO] Sent chunk seq=137 (chunk_750.0s_755.0s) to workers
+2026-04-27 21:12:56,109 [INFO] Collected Speaker result: seq=137 chunk=chunk_750.0s_755.0s (138/137)
+2026-04-27 21:12:56,852 [INFO] Transcript [seq=137]: [Client] (chunk_750.0s_755.0s): Хорошо, договорились. Спасибо вам большое, стало намного понятнее.
+2026-04-27 21:12:56,852 [INFO] Collected ASR result: seq=137 chunk=chunk_750.0s_755.0s (138/138)
+2026-04-27 21:13:00,933 [INFO] Streaming VAD segment #138: chunk_755.6s_758.9s (3.3 s)
+2026-04-27 21:13:00,933 [INFO] Produced segment: seq=138 chunk_id=chunk_755.6s_758.9s
+2026-04-27 21:13:00,943 [INFO] Sent chunk seq=138 (chunk_755.6s_758.9s) to workers
+2026-04-27 21:13:01,026 [INFO] Collected Speaker result: seq=138 chunk=chunk_755.6s_758.9s (139/138)
+2026-04-27 21:13:01,680 [INFO] Transcript [seq=138]: [Client] (chunk_755.6s_758.9s): То я уже думал, всё, потерял деньги.
+2026-04-27 21:13:01,680 [INFO] Collected ASR result: seq=138 chunk=chunk_755.6s_758.9s (139/139)
+2026-04-27 21:13:06,620 [INFO] Streaming VAD segment #139: chunk_759.8s_763.2s (3.4 s)
+2026-04-27 21:13:06,634 [INFO] Produced segment: seq=139 chunk_id=chunk_759.8s_763.2s
+2026-04-27 21:13:06,656 [INFO] Sent chunk seq=139 (chunk_759.8s_763.2s) to workers
+2026-04-27 21:13:06,792 [INFO] Collected Speaker result: seq=139 chunk=chunk_759.8s_763.2s (140/139)
+2026-04-27 21:13:07,412 [INFO] Transcript [seq=139]: [Lawyer] (chunk_759.8s_763.2s): Нет, у вас как раз вполне рабочая ситуация, и шансы хорошие.
+2026-04-27 21:13:07,412 [INFO] Collected ASR result: seq=139 chunk=chunk_759.8s_763.2s (140/140)
+2026-04-27 21:13:22,037 [INFO] Streaming VAD segment #140: chunk_763.5s_775.1s (11.6 s)
+2026-04-27 21:13:22,037 [INFO] Produced segment: seq=140 chunk_id=chunk_763.5s_775.1s
+2026-04-27 21:13:22,084 [INFO] Sent chunk seq=140 (chunk_763.5s_775.1s) to workers
+2026-04-27 21:13:22,938 [INFO] Collected Speaker result: seq=140 chunk=chunk_763.5s_775.1s (141/140)
+2026-04-27 21:13:24,462 [INFO] Transcript [seq=140]: [Lawyer] (chunk_763.5s_775.1s): А-а, главное — действовать организованно и не пропускать сроки. Я сегодня-завтра вам на почту пришлю список документов в структурированном виде и проект соглашения. Как только всё получу от вас, начинаю работу над претензией.
+2026-04-27 21:13:24,462 [INFO] Collected ASR result: seq=140 chunk=chunk_763.5s_775.1s (141/141)
+2026-04-27 21:13:43,641 [INFO] Streaming VAD segment #141: chunk_775.4s_790.8s (15.4 s)
+2026-04-27 21:13:43,641 [INFO] Produced segment: seq=141 chunk_id=chunk_775.4s_790.8s
+2026-04-27 21:13:43,727 [INFO] Sent chunk seq=141 (chunk_775.4s_790.8s) to workers
+2026-04-27 21:13:44,681 [INFO] Collected Speaker result: seq=141 chunk=chunk_775.4s_790.8s (142/141)
+2026-04-27 21:13:45,984 [INFO] Transcript [seq=141]: [Lawyer] (chunk_775.4s_790.8s): Если появятся вопросы по ходу дела, звоните или пишите. По текущим клиентам я обычно отвечаю в течение дня. Ну ещё один момент на будущее: храните всю переписку с застройщиком, все SMS, все электронные письма. Ничего не удаляйте. Любая мелочь может пригодиться как доказательство в суде.
+2026-04-27 21:13:45,984 [INFO] Collected ASR result: seq=141 chunk=chunk_775.4s_790.8s (142/142)
+2026-04-27 21:13:50,638 [INFO] Streaming VAD segment #142: chunk_792.1s_795.5s (3.4 s)
+2026-04-27 21:13:50,638 [INFO] Produced segment: seq=142 chunk_id=chunk_792.1s_795.5s
+2026-04-27 21:13:50,696 [INFO] Sent chunk seq=142 (chunk_792.1s_795.5s) to workers
+2026-04-27 21:13:50,877 [INFO] Collected Speaker result: seq=142 chunk=chunk_792.1s_795.5s (143/142)
+2026-04-27 21:13:51,359 [INFO] Transcript [seq=142]: [Client] (chunk_792.1s_795.5s): Всё понял, Антон Сергеевич, спасибо.
+2026-04-27 21:13:51,359 [INFO] Collected ASR result: seq=142 chunk=chunk_792.1s_795.5s (143/143)
+2026-04-27 21:13:53,410 [INFO] Streaming VAD segment #143: chunk_795.7s_797.4s (1.7 s)
+2026-04-27 21:13:53,412 [INFO] Produced segment: seq=143 chunk_id=chunk_795.7s_797.4s
+2026-04-27 21:13:53,419 [INFO] Sent chunk seq=143 (chunk_795.7s_797.4s) to workers
+2026-04-27 21:13:53,618 [INFO] Collected Speaker result: seq=143 chunk=chunk_795.7s_797.4s (144/143)
+2026-04-27 21:13:54,010 [INFO] Transcript [seq=143]: [Unknown] (chunk_795.7s_797.4s): Буду ждать документы.
+2026-04-27 21:13:54,010 [INFO] Collected ASR result: seq=143 chunk=chunk_795.7s_797.4s (144/144)
+2026-04-27 21:13:54,119 [INFO] Streaming VAD segment #144: chunk_797.6s_797.9s (0.3 s)
+2026-04-27 21:13:54,119 [INFO] Produced segment: seq=144 chunk_id=chunk_797.6s_797.9s
+2026-04-27 21:13:54,211 [INFO] Sent chunk seq=144 (chunk_797.6s_797.9s) to workers
+2026-04-27 21:13:54,342 [INFO] Collected Speaker result: seq=144 chunk=chunk_797.6s_797.9s (145/144)
+2026-04-27 21:13:54,535 [INFO] Transcript [seq=144]: [Unknown] (chunk_797.6s_797.9s): 
+2026-04-27 21:13:54,535 [INFO] Collected ASR result: seq=144 chunk=chunk_797.6s_797.9s (145/145)
+2026-04-27 21:13:57,829 [INFO] Streaming VAD segment #145: chunk_798.1s_800.4s (2.3 s)
+2026-04-27 21:13:57,830 [INFO] Produced segment: seq=145 chunk_id=chunk_798.1s_800.4s
+2026-04-27 21:13:57,840 [INFO] Sent chunk seq=145 (chunk_798.1s_800.4s) to workers
+2026-04-27 21:13:58,055 [INFO] Collected Speaker result: seq=145 chunk=chunk_798.1s_800.4s (146/145)
+2026-04-27 21:13:58,607 [INFO] Transcript [seq=145]: [Lawyer] (chunk_798.1s_800.4s): Хорошего вам вечера, Андрей. До связи.
+2026-04-27 21:13:58,607 [INFO] Collected ASR result: seq=145 chunk=chunk_798.1s_800.4s (146/146)
+2026-04-27 21:14:00,740 [INFO] Sender: end of stream, 146 chunks sent
+2026-04-27 21:14:02,748 [INFO] Timings written: ./data\output\consultation2_timings.json
+2026-04-27 21:14:02,750 [INFO] Transcript file closed: ./data\output\consultation2_transcript.txt
+2026-04-27 21:14:02,750 [INFO] Pipeline complete: 146 chunks sent, 146 lines written, 0 buffered (orphan), wall=1138.36s
+2026-04-27 21:14:02,843 [INFO] Metrics report saved: ./data\output\consultation2_metrics.json
+2026-04-27 21:14:02,843 [INFO] === Done ===

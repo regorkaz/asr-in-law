@@ -1,0 +1,1467 @@
+{
+  "audio_duration_s": 800.4,
+  "wall_clock_s": 1138.3639240999473,
+  "n_chunks": 146,
+  "chunks": [
+    {
+      "seq": 0,
+      "chunk_id": "chunk_1.8s_16.9s",
+      "start_s": 1.8,
+      "end_s": 16.9,
+      "duration_s": 15.099999999999998,
+      "asr_processing_s": 2.2973,
+      "speaker_processing_s": 0.8444,
+      "end_to_end_latency_s": 2.3628652000334114
+    },
+    {
+      "seq": 1,
+      "chunk_id": "chunk_18.1s_19.6s",
+      "start_s": 18.1,
+      "end_s": 19.6,
+      "duration_s": 1.5,
+      "asr_processing_s": 0.5059,
+      "speaker_processing_s": 0.1695,
+      "end_to_end_latency_s": 0.5581088999751955
+    },
+    {
+      "seq": 2,
+      "chunk_id": "chunk_20.2s_26.9s",
+      "start_s": 20.2,
+      "end_s": 26.9,
+      "duration_s": 6.699999999999999,
+      "asr_processing_s": 1.3153,
+      "speaker_processing_s": 0.4935,
+      "end_to_end_latency_s": 1.379290800075978
+    },
+    {
+      "seq": 3,
+      "chunk_id": "chunk_27.2s_29.3s",
+      "start_s": 27.2,
+      "end_s": 29.3,
+      "duration_s": 2.1000000000000014,
+      "asr_processing_s": 0.5499,
+      "speaker_processing_s": 0.1502,
+      "end_to_end_latency_s": 0.5570639000507072
+    },
+    {
+      "seq": 4,
+      "chunk_id": "chunk_29.7s_35.0s",
+      "start_s": 29.7,
+      "end_s": 35.0,
+      "duration_s": 5.300000000000001,
+      "asr_processing_s": 0.868,
+      "speaker_processing_s": 0.2034,
+      "end_to_end_latency_s": 0.8766960999928415
+    },
+    {
+      "seq": 5,
+      "chunk_id": "chunk_35.3s_38.2s",
+      "start_s": 35.3,
+      "end_s": 38.2,
+      "duration_s": 2.9000000000000057,
+      "asr_processing_s": 0.8095,
+      "speaker_processing_s": 0.1098,
+      "end_to_end_latency_s": 0.8176482999697328
+    },
+    {
+      "seq": 6,
+      "chunk_id": "chunk_38.4s_39.7s",
+      "start_s": 38.4,
+      "end_s": 39.7,
+      "duration_s": 1.3000000000000043,
+      "asr_processing_s": 0.5361,
+      "speaker_processing_s": 0.0648,
+      "end_to_end_latency_s": 0.5848441999405622
+    },
+    {
+      "seq": 7,
+      "chunk_id": "chunk_39.9s_41.3s",
+      "start_s": 39.9,
+      "end_s": 41.3,
+      "duration_s": 1.3999999999999986,
+      "asr_processing_s": 0.4689,
+      "speaker_processing_s": 0.1539,
+      "end_to_end_latency_s": 0.4751625000499189
+    },
+    {
+      "seq": 8,
+      "chunk_id": "chunk_41.7s_47.2s",
+      "start_s": 41.7,
+      "end_s": 47.2,
+      "duration_s": 5.5,
+      "asr_processing_s": 1.3995,
+      "speaker_processing_s": 0.6353,
+      "end_to_end_latency_s": 1.4509898000396788
+    },
+    {
+      "seq": 9,
+      "chunk_id": "chunk_47.7s_49.3s",
+      "start_s": 47.7,
+      "end_s": 49.3,
+      "duration_s": 1.5999999999999943,
+      "asr_processing_s": 0.5097,
+      "speaker_processing_s": 0.1024,
+      "end_to_end_latency_s": 0.5170397000620142
+    },
+    {
+      "seq": 10,
+      "chunk_id": "chunk_49.4s_53.3s",
+      "start_s": 49.4,
+      "end_s": 53.3,
+      "duration_s": 3.8999999999999986,
+      "asr_processing_s": 0.6895,
+      "speaker_processing_s": 0.1289,
+      "end_to_end_latency_s": 0.6979071999667212
+    },
+    {
+      "seq": 11,
+      "chunk_id": "chunk_54.0s_58.0s",
+      "start_s": 54.0,
+      "end_s": 58.0,
+      "duration_s": 4.0,
+      "asr_processing_s": 0.6625,
+      "speaker_processing_s": 0.1417,
+      "end_to_end_latency_s": 0.6722662000684068
+    },
+    {
+      "seq": 12,
+      "chunk_id": "chunk_58.6s_64.5s",
+      "start_s": 58.6,
+      "end_s": 64.5,
+      "duration_s": 5.899999999999999,
+      "asr_processing_s": 1.4402,
+      "speaker_processing_s": 0.5393,
+      "end_to_end_latency_s": 1.495184400002472
+    },
+    {
+      "seq": 13,
+      "chunk_id": "chunk_64.7s_69.3s",
+      "start_s": 64.7,
+      "end_s": 69.3,
+      "duration_s": 4.599999999999994,
+      "asr_processing_s": 1.0532,
+      "speaker_processing_s": 0.0602,
+      "end_to_end_latency_s": 1.0614531999453902
+    },
+    {
+      "seq": 14,
+      "chunk_id": "chunk_69.6s_70.8s",
+      "start_s": 69.6,
+      "end_s": 70.8,
+      "duration_s": 1.2000000000000028,
+      "asr_processing_s": 0.4374,
+      "speaker_processing_s": 0.1166,
+      "end_to_end_latency_s": 0.4875395999988541
+    },
+    {
+      "seq": 15,
+      "chunk_id": "chunk_71.1s_73.2s",
+      "start_s": 71.1,
+      "end_s": 73.2,
+      "duration_s": 2.1000000000000085,
+      "asr_processing_s": 0.5648,
+      "speaker_processing_s": 0.144,
+      "end_to_end_latency_s": 0.5723529999377206
+    },
+    {
+      "seq": 16,
+      "chunk_id": "chunk_73.4s_78.2s",
+      "start_s": 73.4,
+      "end_s": 78.2,
+      "duration_s": 4.799999999999997,
+      "asr_processing_s": 0.9086,
+      "speaker_processing_s": 0.1437,
+      "end_to_end_latency_s": 0.9632250999566168
+    },
+    {
+      "seq": 17,
+      "chunk_id": "chunk_79.0s_81.0s",
+      "start_s": 79.0,
+      "end_s": 81.0,
+      "duration_s": 2.0,
+      "asr_processing_s": 0.6785,
+      "speaker_processing_s": 0.0938,
+      "end_to_end_latency_s": 0.6862043999135494
+    },
+    {
+      "seq": 18,
+      "chunk_id": "chunk_81.2s_82.4s",
+      "start_s": 81.2,
+      "end_s": 82.4,
+      "duration_s": 1.2000000000000028,
+      "asr_processing_s": 0.5023,
+      "speaker_processing_s": 0.1865,
+      "end_to_end_latency_s": 0.5546957000624388
+    },
+    {
+      "seq": 19,
+      "chunk_id": "chunk_82.7s_89.3s",
+      "start_s": 82.7,
+      "end_s": 89.3,
+      "duration_s": 6.599999999999994,
+      "asr_processing_s": 0.9826,
+      "speaker_processing_s": 0.2347,
+      "end_to_end_latency_s": 0.9916820999933407
+    },
+    {
+      "seq": 20,
+      "chunk_id": "chunk_89.7s_95.3s",
+      "start_s": 89.7,
+      "end_s": 95.3,
+      "duration_s": 5.599999999999994,
+      "asr_processing_s": 0.9522,
+      "speaker_processing_s": 0.1217,
+      "end_to_end_latency_s": 1.0291103000054136
+    },
+    {
+      "seq": 21,
+      "chunk_id": "chunk_95.7s_96.5s",
+      "start_s": 95.7,
+      "end_s": 96.5,
+      "duration_s": 0.7999999999999972,
+      "asr_processing_s": 0.4505,
+      "speaker_processing_s": 0.1295,
+      "end_to_end_latency_s": 0.4999246000079438
+    },
+    {
+      "seq": 22,
+      "chunk_id": "chunk_97.2s_100.7s",
+      "start_s": 97.2,
+      "end_s": 100.7,
+      "duration_s": 3.5,
+      "asr_processing_s": 0.7088,
+      "speaker_processing_s": 0.1028,
+      "end_to_end_latency_s": 0.7578356999438256
+    },
+    {
+      "seq": 23,
+      "chunk_id": "chunk_101.7s_111.1s",
+      "start_s": 101.7,
+      "end_s": 111.1,
+      "duration_s": 9.399999999999991,
+      "asr_processing_s": 1.6844,
+      "speaker_processing_s": 0.5588,
+      "end_to_end_latency_s": 1.7401709000114352
+    },
+    {
+      "seq": 24,
+      "chunk_id": "chunk_111.3s_114.3s",
+      "start_s": 111.3,
+      "end_s": 114.3,
+      "duration_s": 3.0,
+      "asr_processing_s": 0.6973,
+      "speaker_processing_s": 0.1335,
+      "end_to_end_latency_s": 0.7472173999994993
+    },
+    {
+      "seq": 25,
+      "chunk_id": "chunk_115.4s_120.1s",
+      "start_s": 115.4,
+      "end_s": 120.1,
+      "duration_s": 4.699999999999989,
+      "asr_processing_s": 0.8797,
+      "speaker_processing_s": 0.1301,
+      "end_to_end_latency_s": 0.8959894999861717
+    },
+    {
+      "seq": 26,
+      "chunk_id": "chunk_120.2s_124.3s",
+      "start_s": 120.2,
+      "end_s": 124.3,
+      "duration_s": 4.099999999999994,
+      "asr_processing_s": 0.7727,
+      "speaker_processing_s": 0.1239,
+      "end_to_end_latency_s": 0.783309799968265
+    },
+    {
+      "seq": 27,
+      "chunk_id": "chunk_124.7s_131.1s",
+      "start_s": 124.7,
+      "end_s": 131.1,
+      "duration_s": 6.3999999999999915,
+      "asr_processing_s": 1.0923,
+      "speaker_processing_s": 0.2133,
+      "end_to_end_latency_s": 1.0993836999405175
+    },
+    {
+      "seq": 28,
+      "chunk_id": "chunk_131.3s_136.0s",
+      "start_s": 131.3,
+      "end_s": 136.0,
+      "duration_s": 4.699999999999989,
+      "asr_processing_s": 0.964,
+      "speaker_processing_s": 0.1477,
+      "end_to_end_latency_s": 0.9737764000892639
+    },
+    {
+      "seq": 29,
+      "chunk_id": "chunk_136.7s_144.9s",
+      "start_s": 136.7,
+      "end_s": 144.9,
+      "duration_s": 8.200000000000017,
+      "asr_processing_s": 1.4844,
+      "speaker_processing_s": 0.4874,
+      "end_to_end_latency_s": 1.4999629999510944
+    },
+    {
+      "seq": 30,
+      "chunk_id": "chunk_145.2s_150.0s",
+      "start_s": 145.2,
+      "end_s": 150.0,
+      "duration_s": 4.800000000000011,
+      "asr_processing_s": 0.9086,
+      "speaker_processing_s": 0.1718,
+      "end_to_end_latency_s": 0.9573501000413671
+    },
+    {
+      "seq": 31,
+      "chunk_id": "chunk_150.5s_158.0s",
+      "start_s": 150.5,
+      "end_s": 158.0,
+      "duration_s": 7.5,
+      "asr_processing_s": 1.4302,
+      "speaker_processing_s": 0.5292,
+      "end_to_end_latency_s": 1.4447101999539882
+    },
+    {
+      "seq": 32,
+      "chunk_id": "chunk_158.1s_161.7s",
+      "start_s": 158.1,
+      "end_s": 161.7,
+      "duration_s": 3.5999999999999943,
+      "asr_processing_s": 0.7526,
+      "speaker_processing_s": 0.1491,
+      "end_to_end_latency_s": 0.8018834999529645
+    },
+    {
+      "seq": 33,
+      "chunk_id": "chunk_162.4s_164.5s",
+      "start_s": 162.4,
+      "end_s": 164.5,
+      "duration_s": 2.0999999999999943,
+      "asr_processing_s": 0.5347,
+      "speaker_processing_s": 0.1553,
+      "end_to_end_latency_s": 0.5982669999357313
+    },
+    {
+      "seq": 34,
+      "chunk_id": "chunk_166.0s_166.9s",
+      "start_s": 166.0,
+      "end_s": 166.9,
+      "duration_s": 0.9000000000000057,
+      "asr_processing_s": 0.4287,
+      "speaker_processing_s": 0.1322,
+      "end_to_end_latency_s": 0.48505389993079007
+    },
+    {
+      "seq": 35,
+      "chunk_id": "chunk_167.7s_168.9s",
+      "start_s": 167.7,
+      "end_s": 168.9,
+      "duration_s": 1.200000000000017,
+      "asr_processing_s": 0.4752,
+      "speaker_processing_s": 0.1388,
+      "end_to_end_latency_s": 0.5293589999200776
+    },
+    {
+      "seq": 36,
+      "chunk_id": "chunk_169.1s_173.6s",
+      "start_s": 169.1,
+      "end_s": 173.6,
+      "duration_s": 4.5,
+      "asr_processing_s": 0.8925,
+      "speaker_processing_s": 0.139,
+      "end_to_end_latency_s": 0.9037060999544337
+    },
+    {
+      "seq": 37,
+      "chunk_id": "chunk_173.9s_175.2s",
+      "start_s": 173.9,
+      "end_s": 175.2,
+      "duration_s": 1.299999999999983,
+      "asr_processing_s": 0.4504,
+      "speaker_processing_s": 0.0964,
+      "end_to_end_latency_s": 0.49976290005724877
+    },
+    {
+      "seq": 38,
+      "chunk_id": "chunk_175.4s_177.0s",
+      "start_s": 175.4,
+      "end_s": 177.0,
+      "duration_s": 1.5999999999999943,
+      "asr_processing_s": 0.5802,
+      "speaker_processing_s": 0.1431,
+      "end_to_end_latency_s": 0.6464166999794543
+    },
+    {
+      "seq": 39,
+      "chunk_id": "chunk_178.1s_179.1s",
+      "start_s": 178.1,
+      "end_s": 179.1,
+      "duration_s": 1.0,
+      "asr_processing_s": 0.5106,
+      "speaker_processing_s": 0.1381,
+      "end_to_end_latency_s": 0.5631385000888258
+    },
+    {
+      "seq": 40,
+      "chunk_id": "chunk_179.4s_180.7s",
+      "start_s": 179.4,
+      "end_s": 180.7,
+      "duration_s": 1.299999999999983,
+      "asr_processing_s": 0.7762,
+      "speaker_processing_s": 0.2505,
+      "end_to_end_latency_s": 0.8270919000497088
+    },
+    {
+      "seq": 41,
+      "chunk_id": "chunk_181.6s_182.3s",
+      "start_s": 181.6,
+      "end_s": 182.3,
+      "duration_s": 0.700000000000017,
+      "asr_processing_s": 0.4443,
+      "speaker_processing_s": 0.1663,
+      "end_to_end_latency_s": 0.49247200007084757
+    },
+    {
+      "seq": 42,
+      "chunk_id": "chunk_183.3s_186.3s",
+      "start_s": 183.3,
+      "end_s": 186.3,
+      "duration_s": 3.0,
+      "asr_processing_s": 0.6643,
+      "speaker_processing_s": 0.0756,
+      "end_to_end_latency_s": 0.6734924999764189
+    },
+    {
+      "seq": 43,
+      "chunk_id": "chunk_186.5s_197.3s",
+      "start_s": 186.5,
+      "end_s": 197.3,
+      "duration_s": 10.800000000000011,
+      "asr_processing_s": 1.9514,
+      "speaker_processing_s": 0.7893,
+      "end_to_end_latency_s": 1.9796656999969855
+    },
+    {
+      "seq": 44,
+      "chunk_id": "chunk_199.0s_202.9s",
+      "start_s": 199.0,
+      "end_s": 202.9,
+      "duration_s": 3.9000000000000057,
+      "asr_processing_s": 0.7437,
+      "speaker_processing_s": 0.1088,
+      "end_to_end_latency_s": 0.7519138000207022
+    },
+    {
+      "seq": 45,
+      "chunk_id": "chunk_203.4s_209.6s",
+      "start_s": 203.4,
+      "end_s": 209.6,
+      "duration_s": 6.199999999999989,
+      "asr_processing_s": 1.361,
+      "speaker_processing_s": 0.6455,
+      "end_to_end_latency_s": 1.3717136000050232
+    },
+    {
+      "seq": 46,
+      "chunk_id": "chunk_209.9s_211.6s",
+      "start_s": 209.9,
+      "end_s": 211.6,
+      "duration_s": 1.6999999999999886,
+      "asr_processing_s": 0.583,
+      "speaker_processing_s": 0.2368,
+      "end_to_end_latency_s": 0.6342288999585435
+    },
+    {
+      "seq": 47,
+      "chunk_id": "chunk_212.4s_213.4s",
+      "start_s": 212.4,
+      "end_s": 213.4,
+      "duration_s": 1.0,
+      "asr_processing_s": 0.4292,
+      "speaker_processing_s": 0.138,
+      "end_to_end_latency_s": 0.4811465999810025
+    },
+    {
+      "seq": 48,
+      "chunk_id": "chunk_213.9s_216.1s",
+      "start_s": 213.9,
+      "end_s": 216.1,
+      "duration_s": 2.1999999999999886,
+      "asr_processing_s": 0.5361,
+      "speaker_processing_s": 0.0992,
+      "end_to_end_latency_s": 0.544220200041309
+    },
+    {
+      "seq": 49,
+      "chunk_id": "chunk_216.4s_217.7s",
+      "start_s": 216.4,
+      "end_s": 217.7,
+      "duration_s": 1.299999999999983,
+      "asr_processing_s": 0.724,
+      "speaker_processing_s": 0.396,
+      "end_to_end_latency_s": 0.7720658999169245
+    },
+    {
+      "seq": 50,
+      "chunk_id": "chunk_218.7s_229.7s",
+      "start_s": 218.7,
+      "end_s": 229.7,
+      "duration_s": 11.0,
+      "asr_processing_s": 1.6217,
+      "speaker_processing_s": 0.5898,
+      "end_to_end_latency_s": 1.6603640000103042
+    },
+    {
+      "seq": 51,
+      "chunk_id": "chunk_229.9s_240.9s",
+      "start_s": 229.9,
+      "end_s": 240.9,
+      "duration_s": 11.0,
+      "asr_processing_s": 1.7186,
+      "speaker_processing_s": 0.6851,
+      "end_to_end_latency_s": 1.7320738000562415
+    },
+    {
+      "seq": 52,
+      "chunk_id": "chunk_241.1s_248.9s",
+      "start_s": 241.1,
+      "end_s": 248.9,
+      "duration_s": 7.800000000000011,
+      "asr_processing_s": 1.3573,
+      "speaker_processing_s": 0.3504,
+      "end_to_end_latency_s": 1.4129224000498652
+    },
+    {
+      "seq": 53,
+      "chunk_id": "chunk_249.2s_250.6s",
+      "start_s": 249.2,
+      "end_s": 250.6,
+      "duration_s": 1.4000000000000057,
+      "asr_processing_s": 0.4183,
+      "speaker_processing_s": 0.0462,
+      "end_to_end_latency_s": 0.42493029998149723
+    },
+    {
+      "seq": 54,
+      "chunk_id": "chunk_250.9s_252.1s",
+      "start_s": 250.9,
+      "end_s": 252.1,
+      "duration_s": 1.1999999999999886,
+      "asr_processing_s": 0.5052,
+      "speaker_processing_s": 0.1265,
+      "end_to_end_latency_s": 0.5584853999316692
+    },
+    {
+      "seq": 55,
+      "chunk_id": "chunk_252.8s_261.0s",
+      "start_s": 252.8,
+      "end_s": 261.0,
+      "duration_s": 8.199999999999989,
+      "asr_processing_s": 1.9333,
+      "speaker_processing_s": 0.9472,
+      "end_to_end_latency_s": 1.9423788000131026
+    },
+    {
+      "seq": 56,
+      "chunk_id": "chunk_262.1s_264.9s",
+      "start_s": 262.1,
+      "end_s": 264.9,
+      "duration_s": 2.7999999999999545,
+      "asr_processing_s": 0.579,
+      "speaker_processing_s": 0.1006,
+      "end_to_end_latency_s": 0.5864757000235841
+    },
+    {
+      "seq": 57,
+      "chunk_id": "chunk_265.7s_277.5s",
+      "start_s": 265.7,
+      "end_s": 277.5,
+      "duration_s": 11.800000000000011,
+      "asr_processing_s": 1.992,
+      "speaker_processing_s": 0.7218,
+      "end_to_end_latency_s": 2.0099805999780074
+    },
+    {
+      "seq": 58,
+      "chunk_id": "chunk_278.0s_282.7s",
+      "start_s": 278.0,
+      "end_s": 282.7,
+      "duration_s": 4.699999999999989,
+      "asr_processing_s": 0.8263,
+      "speaker_processing_s": 0.1258,
+      "end_to_end_latency_s": 0.835279899998568
+    },
+    {
+      "seq": 59,
+      "chunk_id": "chunk_282.9s_290.9s",
+      "start_s": 282.9,
+      "end_s": 290.9,
+      "duration_s": 8.0,
+      "asr_processing_s": 1.5169,
+      "speaker_processing_s": 0.5678,
+      "end_to_end_latency_s": 1.531057700049132
+    },
+    {
+      "seq": 60,
+      "chunk_id": "chunk_291.5s_300.9s",
+      "start_s": 291.5,
+      "end_s": 300.9,
+      "duration_s": 9.399999999999977,
+      "asr_processing_s": 1.6981,
+      "speaker_processing_s": 0.6757,
+      "end_to_end_latency_s": 1.7508737000171095
+    },
+    {
+      "seq": 61,
+      "chunk_id": "chunk_302.4s_308.4s",
+      "start_s": 302.4,
+      "end_s": 308.4,
+      "duration_s": 6.0,
+      "asr_processing_s": 1.349,
+      "speaker_processing_s": 0.4422,
+      "end_to_end_latency_s": 1.4134787999792024
+    },
+    {
+      "seq": 62,
+      "chunk_id": "chunk_308.6s_311.7s",
+      "start_s": 308.6,
+      "end_s": 311.7,
+      "duration_s": 3.099999999999966,
+      "asr_processing_s": 0.6913,
+      "speaker_processing_s": 0.1165,
+      "end_to_end_latency_s": 0.6991256000474095
+    },
+    {
+      "seq": 63,
+      "chunk_id": "chunk_312.6s_323.6s",
+      "start_s": 312.6,
+      "end_s": 323.6,
+      "duration_s": 11.0,
+      "asr_processing_s": 1.8667,
+      "speaker_processing_s": 0.7674,
+      "end_to_end_latency_s": 1.9103784000035375
+    },
+    {
+      "seq": 64,
+      "chunk_id": "chunk_324.1s_327.9s",
+      "start_s": 324.1,
+      "end_s": 327.9,
+      "duration_s": 3.7999999999999545,
+      "asr_processing_s": 0.8331,
+      "speaker_processing_s": 0.1129,
+      "end_to_end_latency_s": 0.8429405000060797
+    },
+    {
+      "seq": 65,
+      "chunk_id": "chunk_328.3s_330.2s",
+      "start_s": 328.3,
+      "end_s": 330.2,
+      "duration_s": 1.8999999999999773,
+      "asr_processing_s": 0.5319,
+      "speaker_processing_s": 0.1241,
+      "end_to_end_latency_s": 0.5814233000855893
+    },
+    {
+      "seq": 66,
+      "chunk_id": "chunk_330.6s_332.7s",
+      "start_s": 330.6,
+      "end_s": 332.7,
+      "duration_s": 2.099999999999966,
+      "asr_processing_s": 0.5797,
+      "speaker_processing_s": 0.1416,
+      "end_to_end_latency_s": 0.5874535000184551
+    },
+    {
+      "seq": 67,
+      "chunk_id": "chunk_333.0s_339.9s",
+      "start_s": 333.0,
+      "end_s": 339.9,
+      "duration_s": 6.899999999999977,
+      "asr_processing_s": 1.3786,
+      "speaker_processing_s": 0.5147,
+      "end_to_end_latency_s": 1.3893120000138879
+    },
+    {
+      "seq": 68,
+      "chunk_id": "chunk_340.1s_348.0s",
+      "start_s": 340.1,
+      "end_s": 348.0,
+      "duration_s": 7.899999999999977,
+      "asr_processing_s": 1.4789,
+      "speaker_processing_s": 0.4987,
+      "end_to_end_latency_s": 1.4897848999826238
+    },
+    {
+      "seq": 69,
+      "chunk_id": "chunk_348.3s_351.0s",
+      "start_s": 348.3,
+      "end_s": 351.0,
+      "duration_s": 2.6999999999999886,
+      "asr_processing_s": 0.632,
+      "speaker_processing_s": 0.1403,
+      "end_to_end_latency_s": 0.6434582000365481
+    },
+    {
+      "seq": 70,
+      "chunk_id": "chunk_351.2s_353.9s",
+      "start_s": 351.2,
+      "end_s": 353.9,
+      "duration_s": 2.6999999999999886,
+      "asr_processing_s": 0.7942,
+      "speaker_processing_s": 0.1819,
+      "end_to_end_latency_s": 0.8515807000221685
+    },
+    {
+      "seq": 71,
+      "chunk_id": "chunk_356.7s_358.6s",
+      "start_s": 356.7,
+      "end_s": 358.6,
+      "duration_s": 1.900000000000034,
+      "asr_processing_s": 0.5725,
+      "speaker_processing_s": 0.1667,
+      "end_to_end_latency_s": 0.5804049998987466
+    },
+    {
+      "seq": 72,
+      "chunk_id": "chunk_358.9s_360.4s",
+      "start_s": 358.9,
+      "end_s": 360.4,
+      "duration_s": 1.5,
+      "asr_processing_s": 0.5164,
+      "speaker_processing_s": 0.1544,
+      "end_to_end_latency_s": 0.527299000066705
+    },
+    {
+      "seq": 73,
+      "chunk_id": "chunk_360.9s_367.0s",
+      "start_s": 360.9,
+      "end_s": 367.0,
+      "duration_s": 6.100000000000023,
+      "asr_processing_s": 1.0933,
+      "speaker_processing_s": 0.2304,
+      "end_to_end_latency_s": 1.1079359999857843
+    },
+    {
+      "seq": 74,
+      "chunk_id": "chunk_368.8s_370.1s",
+      "start_s": 368.8,
+      "end_s": 370.1,
+      "duration_s": 1.3000000000000114,
+      "asr_processing_s": 0.5537,
+      "speaker_processing_s": 0.1626,
+      "end_to_end_latency_s": 0.5640254999743775
+    },
+    {
+      "seq": 75,
+      "chunk_id": "chunk_371.1s_373.0s",
+      "start_s": 371.1,
+      "end_s": 373.0,
+      "duration_s": 1.8999999999999773,
+      "asr_processing_s": 0.5561,
+      "speaker_processing_s": 0.1897,
+      "end_to_end_latency_s": 0.5623049000278115
+    },
+    {
+      "seq": 76,
+      "chunk_id": "chunk_373.1s_375.4s",
+      "start_s": 373.1,
+      "end_s": 375.4,
+      "duration_s": 2.2999999999999545,
+      "asr_processing_s": 0.5719,
+      "speaker_processing_s": 0.1135,
+      "end_to_end_latency_s": 0.6254732999950647
+    },
+    {
+      "seq": 77,
+      "chunk_id": "chunk_375.6s_383.3s",
+      "start_s": 375.6,
+      "end_s": 383.3,
+      "duration_s": 7.699999999999989,
+      "asr_processing_s": 1.3647,
+      "speaker_processing_s": 0.3642,
+      "end_to_end_latency_s": 1.4212330000009388
+    },
+    {
+      "seq": 78,
+      "chunk_id": "chunk_383.6s_387.9s",
+      "start_s": 383.6,
+      "end_s": 387.9,
+      "duration_s": 4.2999999999999545,
+      "asr_processing_s": 0.7169,
+      "speaker_processing_s": 0.1323,
+      "end_to_end_latency_s": 0.7240681999828666
+    },
+    {
+      "seq": 79,
+      "chunk_id": "chunk_388.1s_394.9s",
+      "start_s": 388.1,
+      "end_s": 394.9,
+      "duration_s": 6.7999999999999545,
+      "asr_processing_s": 1.3494,
+      "speaker_processing_s": 0.5702,
+      "end_to_end_latency_s": 1.361486200010404
+    },
+    {
+      "seq": 80,
+      "chunk_id": "chunk_395.1s_397.1s",
+      "start_s": 395.1,
+      "end_s": 397.1,
+      "duration_s": 2.0,
+      "asr_processing_s": 0.5306,
+      "speaker_processing_s": 0.136,
+      "end_to_end_latency_s": 0.5370388999581337
+    },
+    {
+      "seq": 81,
+      "chunk_id": "chunk_397.3s_403.5s",
+      "start_s": 397.3,
+      "end_s": 403.5,
+      "duration_s": 6.199999999999989,
+      "asr_processing_s": 1.0107,
+      "speaker_processing_s": 0.2402,
+      "end_to_end_latency_s": 1.0201064000139013
+    },
+    {
+      "seq": 82,
+      "chunk_id": "chunk_403.7s_407.8s",
+      "start_s": 403.7,
+      "end_s": 407.8,
+      "duration_s": 4.100000000000023,
+      "asr_processing_s": 0.8512,
+      "speaker_processing_s": 0.3438,
+      "end_to_end_latency_s": 0.9035526000661775
+    },
+    {
+      "seq": 83,
+      "chunk_id": "chunk_409.0s_414.9s",
+      "start_s": 409.0,
+      "end_s": 414.9,
+      "duration_s": 5.899999999999977,
+      "asr_processing_s": 1.1023,
+      "speaker_processing_s": 0.5389,
+      "end_to_end_latency_s": 1.1530492999590933
+    },
+    {
+      "seq": 84,
+      "chunk_id": "chunk_415.1s_418.4s",
+      "start_s": 415.1,
+      "end_s": 418.4,
+      "duration_s": 3.2999999999999545,
+      "asr_processing_s": 0.6593,
+      "speaker_processing_s": 0.2234,
+      "end_to_end_latency_s": 0.6647509000031278
+    },
+    {
+      "seq": 85,
+      "chunk_id": "chunk_419.5s_420.5s",
+      "start_s": 419.5,
+      "end_s": 420.5,
+      "duration_s": 1.0,
+      "asr_processing_s": 0.4992,
+      "speaker_processing_s": 0.2527,
+      "end_to_end_latency_s": 0.5480540000135079
+    },
+    {
+      "seq": 86,
+      "chunk_id": "chunk_421.1s_430.5s",
+      "start_s": 421.1,
+      "end_s": 430.5,
+      "duration_s": 9.399999999999977,
+      "asr_processing_s": 1.8411,
+      "speaker_processing_s": 0.7509,
+      "end_to_end_latency_s": 1.8995898999273777
+    },
+    {
+      "seq": 87,
+      "chunk_id": "chunk_430.7s_435.5s",
+      "start_s": 430.7,
+      "end_s": 435.5,
+      "duration_s": 4.800000000000011,
+      "asr_processing_s": 1.2496,
+      "speaker_processing_s": 0.5338,
+      "end_to_end_latency_s": 1.3012736999662593
+    },
+    {
+      "seq": 88,
+      "chunk_id": "chunk_435.6s_442.8s",
+      "start_s": 435.6,
+      "end_s": 442.8,
+      "duration_s": 7.199999999999989,
+      "asr_processing_s": 1.2918,
+      "speaker_processing_s": 0.5999,
+      "end_to_end_latency_s": 1.343830900033936
+    },
+    {
+      "seq": 89,
+      "chunk_id": "chunk_443.5s_451.7s",
+      "start_s": 443.5,
+      "end_s": 451.7,
+      "duration_s": 8.199999999999989,
+      "asr_processing_s": 1.4309,
+      "speaker_processing_s": 0.761,
+      "end_to_end_latency_s": 1.4389161999570206
+    },
+    {
+      "seq": 90,
+      "chunk_id": "chunk_452.3s_455.5s",
+      "start_s": 452.3,
+      "end_s": 455.5,
+      "duration_s": 3.1999999999999886,
+      "asr_processing_s": 0.913,
+      "speaker_processing_s": 0.4706,
+      "end_to_end_latency_s": 0.9189237999962643
+    },
+    {
+      "seq": 91,
+      "chunk_id": "chunk_455.8s_460.2s",
+      "start_s": 455.8,
+      "end_s": 460.2,
+      "duration_s": 4.399999999999977,
+      "asr_processing_s": 0.7521,
+      "speaker_processing_s": 0.1709,
+      "end_to_end_latency_s": 0.7988939000060782
+    },
+    {
+      "seq": 92,
+      "chunk_id": "chunk_460.5s_475.8s",
+      "start_s": 460.5,
+      "end_s": 475.8,
+      "duration_s": 15.300000000000011,
+      "asr_processing_s": 2.1272,
+      "speaker_processing_s": 0.82,
+      "end_to_end_latency_s": 2.1663754999171942
+    },
+    {
+      "seq": 93,
+      "chunk_id": "chunk_477.1s_482.9s",
+      "start_s": 477.1,
+      "end_s": 482.9,
+      "duration_s": 5.7999999999999545,
+      "asr_processing_s": 0.9603,
+      "speaker_processing_s": 0.2098,
+      "end_to_end_latency_s": 1.0162535000126809
+    },
+    {
+      "seq": 94,
+      "chunk_id": "chunk_483.5s_485.9s",
+      "start_s": 483.5,
+      "end_s": 485.9,
+      "duration_s": 2.3999999999999773,
+      "asr_processing_s": 0.7433,
+      "speaker_processing_s": 0.1312,
+      "end_to_end_latency_s": 0.7508920000400394
+    },
+    {
+      "seq": 95,
+      "chunk_id": "chunk_486.3s_490.2s",
+      "start_s": 486.3,
+      "end_s": 490.2,
+      "duration_s": 3.8999999999999773,
+      "asr_processing_s": 0.7036,
+      "speaker_processing_s": 0.1671,
+      "end_to_end_latency_s": 0.7573097998974845
+    },
+    {
+      "seq": 96,
+      "chunk_id": "chunk_490.4s_494.1s",
+      "start_s": 490.4,
+      "end_s": 494.1,
+      "duration_s": 3.7000000000000455,
+      "asr_processing_s": 0.783,
+      "speaker_processing_s": 0.167,
+      "end_to_end_latency_s": 0.8345842000562698
+    },
+    {
+      "seq": 97,
+      "chunk_id": "chunk_494.2s_501.3s",
+      "start_s": 494.2,
+      "end_s": 501.3,
+      "duration_s": 7.100000000000023,
+      "asr_processing_s": 1.7505,
+      "speaker_processing_s": 0.8796,
+      "end_to_end_latency_s": 1.8524498000042513
+    },
+    {
+      "seq": 98,
+      "chunk_id": "chunk_501.5s_502.3s",
+      "start_s": 501.5,
+      "end_s": 502.3,
+      "duration_s": 0.8000000000000114,
+      "asr_processing_s": 0.3479,
+      "speaker_processing_s": 0.1381,
+      "end_to_end_latency_s": 0.7511457999935374
+    },
+    {
+      "seq": 99,
+      "chunk_id": "chunk_502.5s_505.6s",
+      "start_s": 502.5,
+      "end_s": 505.6,
+      "duration_s": 3.1000000000000227,
+      "asr_processing_s": 0.6701,
+      "speaker_processing_s": 0.1558,
+      "end_to_end_latency_s": 0.6808996999170631
+    },
+    {
+      "seq": 100,
+      "chunk_id": "chunk_505.8s_508.7s",
+      "start_s": 505.8,
+      "end_s": 508.7,
+      "duration_s": 2.8999999999999773,
+      "asr_processing_s": 0.6406,
+      "speaker_processing_s": 0.1086,
+      "end_to_end_latency_s": 0.6563218000810593
+    },
+    {
+      "seq": 101,
+      "chunk_id": "chunk_508.8s_519.8s",
+      "start_s": 508.8,
+      "end_s": 519.8,
+      "duration_s": 10.999999999999943,
+      "asr_processing_s": 1.6449,
+      "speaker_processing_s": 0.5455,
+      "end_to_end_latency_s": 1.6956384000368416
+    },
+    {
+      "seq": 102,
+      "chunk_id": "chunk_521.5s_531.9s",
+      "start_s": 521.5,
+      "end_s": 531.9,
+      "duration_s": 10.399999999999977,
+      "asr_processing_s": 1.8576,
+      "speaker_processing_s": 0.698,
+      "end_to_end_latency_s": 1.9116508000297472
+    },
+    {
+      "seq": 103,
+      "chunk_id": "chunk_532.3s_533.3s",
+      "start_s": 532.3,
+      "end_s": 533.3,
+      "duration_s": 1.0,
+      "asr_processing_s": 0.4494,
+      "speaker_processing_s": 0.0819,
+      "end_to_end_latency_s": 0.4998959000222385
+    },
+    {
+      "seq": 104,
+      "chunk_id": "chunk_534.1s_536.5s",
+      "start_s": 534.1,
+      "end_s": 536.5,
+      "duration_s": 2.3999999999999773,
+      "asr_processing_s": 0.6523,
+      "speaker_processing_s": 0.1192,
+      "end_to_end_latency_s": 0.6638177999993786
+    },
+    {
+      "seq": 105,
+      "chunk_id": "chunk_539.4s_554.2s",
+      "start_s": 539.4,
+      "end_s": 554.2,
+      "duration_s": 14.800000000000068,
+      "asr_processing_s": 2.6298,
+      "speaker_processing_s": 1.0562,
+      "end_to_end_latency_s": 2.688659999985248
+    },
+    {
+      "seq": 106,
+      "chunk_id": "chunk_555.0s_557.4s",
+      "start_s": 555.0,
+      "end_s": 557.4,
+      "duration_s": 2.3999999999999773,
+      "asr_processing_s": 0.6982,
+      "speaker_processing_s": 0.1479,
+      "end_to_end_latency_s": 0.7101388999726623
+    },
+    {
+      "seq": 107,
+      "chunk_id": "chunk_557.7s_562.2s",
+      "start_s": 557.7,
+      "end_s": 562.2,
+      "duration_s": 4.5,
+      "asr_processing_s": 0.8172,
+      "speaker_processing_s": 0.114,
+      "end_to_end_latency_s": 0.8241700000362471
+    },
+    {
+      "seq": 108,
+      "chunk_id": "chunk_563.2s_568.3s",
+      "start_s": 563.2,
+      "end_s": 568.3,
+      "duration_s": 5.099999999999909,
+      "asr_processing_s": 1.0366,
+      "speaker_processing_s": 0.1565,
+      "end_to_end_latency_s": 1.0917196999071166
+    },
+    {
+      "seq": 109,
+      "chunk_id": "chunk_569.1s_575.2s",
+      "start_s": 569.1,
+      "end_s": 575.2,
+      "duration_s": 6.100000000000023,
+      "asr_processing_s": 1.0659,
+      "speaker_processing_s": 0.1886,
+      "end_to_end_latency_s": 1.0783051999751478
+    },
+    {
+      "seq": 110,
+      "chunk_id": "chunk_575.4s_586.5s",
+      "start_s": 575.4,
+      "end_s": 586.5,
+      "duration_s": 11.100000000000023,
+      "asr_processing_s": 1.8058,
+      "speaker_processing_s": 0.7172,
+      "end_to_end_latency_s": 1.840440500061959
+    },
+    {
+      "seq": 111,
+      "chunk_id": "chunk_587.2s_590.0s",
+      "start_s": 587.2,
+      "end_s": 590.0,
+      "duration_s": 2.7999999999999545,
+      "asr_processing_s": 1.4352,
+      "speaker_processing_s": 0.1388,
+      "end_to_end_latency_s": 1.442750700050965
+    },
+    {
+      "seq": 112,
+      "chunk_id": "chunk_590.3s_597.4s",
+      "start_s": 590.3,
+      "end_s": 597.4,
+      "duration_s": 7.100000000000023,
+      "asr_processing_s": 1.4152,
+      "speaker_processing_s": 0.4394,
+      "end_to_end_latency_s": 1.4235298000276089
+    },
+    {
+      "seq": 113,
+      "chunk_id": "chunk_597.7s_602.0s",
+      "start_s": 597.7,
+      "end_s": 602.0,
+      "duration_s": 4.2999999999999545,
+      "asr_processing_s": 0.8657,
+      "speaker_processing_s": 0.1272,
+      "end_to_end_latency_s": 0.8732667999574915
+    },
+    {
+      "seq": 114,
+      "chunk_id": "chunk_602.3s_610.1s",
+      "start_s": 602.3,
+      "end_s": 610.1,
+      "duration_s": 7.800000000000068,
+      "asr_processing_s": 1.5607,
+      "speaker_processing_s": 0.6531,
+      "end_to_end_latency_s": 1.6291113999905065
+    },
+    {
+      "seq": 115,
+      "chunk_id": "chunk_611.9s_616.7s",
+      "start_s": 611.9,
+      "end_s": 616.7,
+      "duration_s": 4.800000000000068,
+      "asr_processing_s": 0.9216,
+      "speaker_processing_s": 0.1146,
+      "end_to_end_latency_s": 0.9742101000156254
+    },
+    {
+      "seq": 116,
+      "chunk_id": "chunk_616.9s_628.9s",
+      "start_s": 616.9,
+      "end_s": 628.9,
+      "duration_s": 12.0,
+      "asr_processing_s": 1.8983,
+      "speaker_processing_s": 0.5275,
+      "end_to_end_latency_s": 1.9273779999930412
+    },
+    {
+      "seq": 117,
+      "chunk_id": "chunk_629.1s_645.1s",
+      "start_s": 629.1,
+      "end_s": 645.1,
+      "duration_s": 16.0,
+      "asr_processing_s": 2.3873,
+      "speaker_processing_s": 0.89,
+      "end_to_end_latency_s": 2.40617469989229
+    },
+    {
+      "seq": 118,
+      "chunk_id": "chunk_645.2s_648.5s",
+      "start_s": 645.2,
+      "end_s": 648.5,
+      "duration_s": 3.2999999999999545,
+      "asr_processing_s": 0.772,
+      "speaker_processing_s": 0.1819,
+      "end_to_end_latency_s": 0.7800827000755817
+    },
+    {
+      "seq": 119,
+      "chunk_id": "chunk_649.5s_650.4s",
+      "start_s": 649.5,
+      "end_s": 650.4,
+      "duration_s": 0.8999999999999773,
+      "asr_processing_s": 0.4266,
+      "speaker_processing_s": 0.173,
+      "end_to_end_latency_s": 0.47390149999409914
+    },
+    {
+      "seq": 120,
+      "chunk_id": "chunk_651.1s_654.5s",
+      "start_s": 651.1,
+      "end_s": 654.5,
+      "duration_s": 3.3999999999999773,
+      "asr_processing_s": 0.8629,
+      "speaker_processing_s": 0.0658,
+      "end_to_end_latency_s": 0.8739856999600306
+    },
+    {
+      "seq": 121,
+      "chunk_id": "chunk_654.7s_654.9s",
+      "start_s": 654.7,
+      "end_s": 654.9,
+      "duration_s": 0.1999999999999318,
+      "asr_processing_s": 0.4066,
+      "speaker_processing_s": 0.0767,
+      "end_to_end_latency_s": 0.7211101000430062
+    },
+    {
+      "seq": 122,
+      "chunk_id": "chunk_655.1s_665.5s",
+      "start_s": 655.1,
+      "end_s": 665.5,
+      "duration_s": 10.399999999999977,
+      "asr_processing_s": 2.0048,
+      "speaker_processing_s": 0.8141,
+      "end_to_end_latency_s": 2.0614889999851584
+    },
+    {
+      "seq": 123,
+      "chunk_id": "chunk_666.4s_675.2s",
+      "start_s": 666.4,
+      "end_s": 675.2,
+      "duration_s": 8.800000000000068,
+      "asr_processing_s": 1.5439,
+      "speaker_processing_s": 0.5338,
+      "end_to_end_latency_s": 1.5536666000261903
+    },
+    {
+      "seq": 124,
+      "chunk_id": "chunk_675.6s_691.4s",
+      "start_s": 675.6,
+      "end_s": 691.4,
+      "duration_s": 15.799999999999955,
+      "asr_processing_s": 2.3302,
+      "speaker_processing_s": 0.8936,
+      "end_to_end_latency_s": 2.3919851999962702
+    },
+    {
+      "seq": 125,
+      "chunk_id": "chunk_691.9s_694.0s",
+      "start_s": 691.9,
+      "end_s": 694.0,
+      "duration_s": 2.1000000000000227,
+      "asr_processing_s": 0.6442,
+      "speaker_processing_s": 0.1092,
+      "end_to_end_latency_s": 0.6519793000770733
+    },
+    {
+      "seq": 126,
+      "chunk_id": "chunk_694.1s_701.5s",
+      "start_s": 694.1,
+      "end_s": 701.5,
+      "duration_s": 7.399999999999977,
+      "asr_processing_s": 1.0746,
+      "speaker_processing_s": 0.1883,
+      "end_to_end_latency_s": 1.0852809000061825
+    },
+    {
+      "seq": 127,
+      "chunk_id": "chunk_702.2s_706.9s",
+      "start_s": 702.2,
+      "end_s": 706.9,
+      "duration_s": 4.699999999999932,
+      "asr_processing_s": 0.9845,
+      "speaker_processing_s": 0.1384,
+      "end_to_end_latency_s": 0.9976237999508157
+    },
+    {
+      "seq": 128,
+      "chunk_id": "chunk_707.1s_710.5s",
+      "start_s": 707.1,
+      "end_s": 710.5,
+      "duration_s": 3.3999999999999773,
+      "asr_processing_s": 0.9188,
+      "speaker_processing_s": 0.0592,
+      "end_to_end_latency_s": 0.9240138999884948
+    },
+    {
+      "seq": 129,
+      "chunk_id": "chunk_711.2s_712.1s",
+      "start_s": 711.2,
+      "end_s": 712.1,
+      "duration_s": 0.8999999999999773,
+      "asr_processing_s": 0.7674,
+      "speaker_processing_s": 0.1176,
+      "end_to_end_latency_s": 0.8153644000412896
+    },
+    {
+      "seq": 130,
+      "chunk_id": "chunk_712.4s_716.2s",
+      "start_s": 712.4,
+      "end_s": 716.2,
+      "duration_s": 3.800000000000068,
+      "asr_processing_s": 0.8565,
+      "speaker_processing_s": 0.1248,
+      "end_to_end_latency_s": 0.907936800038442
+    },
+    {
+      "seq": 131,
+      "chunk_id": "chunk_717.1s_721.0s",
+      "start_s": 717.1,
+      "end_s": 721.0,
+      "duration_s": 3.8999999999999773,
+      "asr_processing_s": 0.8543,
+      "speaker_processing_s": 0.1482,
+      "end_to_end_latency_s": 0.9017803999595344
+    },
+    {
+      "seq": 132,
+      "chunk_id": "chunk_721.2s_729.0s",
+      "start_s": 721.2,
+      "end_s": 729.0,
+      "duration_s": 7.7999999999999545,
+      "asr_processing_s": 1.5643,
+      "speaker_processing_s": 0.5887,
+      "end_to_end_latency_s": 1.5795769999967888
+    },
+    {
+      "seq": 133,
+      "chunk_id": "chunk_729.3s_730.3s",
+      "start_s": 729.3,
+      "end_s": 730.3,
+      "duration_s": 1.0,
+      "asr_processing_s": 0.4885,
+      "speaker_processing_s": 0.1654,
+      "end_to_end_latency_s": 0.5395193999866024
+    },
+    {
+      "seq": 134,
+      "chunk_id": "chunk_730.5s_734.9s",
+      "start_s": 730.5,
+      "end_s": 734.9,
+      "duration_s": 4.399999999999977,
+      "asr_processing_s": 0.7672,
+      "speaker_processing_s": 0.1545,
+      "end_to_end_latency_s": 0.7772639999166131
+    },
+    {
+      "seq": 135,
+      "chunk_id": "chunk_735.0s_747.2s",
+      "start_s": 735.0,
+      "end_s": 747.2,
+      "duration_s": 12.200000000000045,
+      "asr_processing_s": 2.1718,
+      "speaker_processing_s": 0.7315,
+      "end_to_end_latency_s": 2.196403699927032
+    },
+    {
+      "seq": 136,
+      "chunk_id": "chunk_747.4s_749.3s",
+      "start_s": 747.4,
+      "end_s": 749.3,
+      "duration_s": 1.8999999999999773,
+      "asr_processing_s": 0.6008,
+      "speaker_processing_s": 0.227,
+      "end_to_end_latency_s": 0.6099487999454141
+    },
+    {
+      "seq": 137,
+      "chunk_id": "chunk_750.0s_755.0s",
+      "start_s": 750.0,
+      "end_s": 755.0,
+      "duration_s": 5.0,
+      "asr_processing_s": 0.9721,
+      "speaker_processing_s": 0.1693,
+      "end_to_end_latency_s": 1.0232703000074252
+    },
+    {
+      "seq": 138,
+      "chunk_id": "chunk_755.6s_758.9s",
+      "start_s": 755.6,
+      "end_s": 758.9,
+      "duration_s": 3.2999999999999545,
+      "asr_processing_s": 0.7363,
+      "speaker_processing_s": 0.078,
+      "end_to_end_latency_s": 0.7442900000605732
+    },
+    {
+      "seq": 139,
+      "chunk_id": "chunk_759.8s_763.2s",
+      "start_s": 759.8,
+      "end_s": 763.2,
+      "duration_s": 3.400000000000091,
+      "asr_processing_s": 0.7421,
+      "speaker_processing_s": 0.1148,
+      "end_to_end_latency_s": 0.7705472999950871
+    },
+    {
+      "seq": 140,
+      "chunk_id": "chunk_763.5s_775.1s",
+      "start_s": 763.5,
+      "end_s": 775.1,
+      "duration_s": 11.600000000000023,
+      "asr_processing_s": 2.3898,
+      "speaker_processing_s": 0.8497,
+      "end_to_end_latency_s": 2.4171259999275208
+    },
+    {
+      "seq": 141,
+      "chunk_id": "chunk_775.4s_790.8s",
+      "start_s": 775.4,
+      "end_s": 790.8,
+      "duration_s": 15.399999999999977,
+      "asr_processing_s": 2.3103,
+      "speaker_processing_s": 0.9489,
+      "end_to_end_latency_s": 2.3333861000137404
+    },
+    {
+      "seq": 142,
+      "chunk_id": "chunk_792.1s_795.5s",
+      "start_s": 792.1,
+      "end_s": 795.5,
+      "duration_s": 3.3999999999999773,
+      "asr_processing_s": 0.6641,
+      "speaker_processing_s": 0.1767,
+      "end_to_end_latency_s": 0.7180225000483915
+    },
+    {
+      "seq": 143,
+      "chunk_id": "chunk_795.7s_797.4s",
+      "start_s": 795.7,
+      "end_s": 797.4,
+      "duration_s": 1.6999999999999318,
+      "asr_processing_s": 0.5451,
+      "speaker_processing_s": 0.1957,
+      "end_to_end_latency_s": 0.5967374000465497
+    },
+    {
+      "seq": 144,
+      "chunk_id": "chunk_797.6s_797.9s",
+      "start_s": 797.6,
+      "end_s": 797.9,
+      "duration_s": 0.2999999999999545,
+      "asr_processing_s": 0.3661,
+      "speaker_processing_s": 0.1268,
+      "end_to_end_latency_s": 0.415565799921751
+    },
+    {
+      "seq": 145,
+      "chunk_id": "chunk_798.1s_800.4s",
+      "start_s": 798.1,
+      "end_s": 800.4,
+      "duration_s": 2.2999999999999545,
+      "asr_processing_s": 0.7652,
+      "speaker_processing_s": 0.2122,
+      "end_to_end_latency_s": 0.7758221999974921
+    }
+  ]
+}

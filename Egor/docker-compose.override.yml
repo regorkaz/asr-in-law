@@ -1,15 +1,21 @@
+# Dev overlay — bind-mounts source for hot-reload and shares model cache
+# Loaded automatically by `docker compose up`. For production use:
+#   docker compose -f docker-compose.yml -f docker-compose.prod.yml up
+
 services:
   asr_worker:
     volumes:
       - ./asr_service:/app
       - ./data/cache:/root/.cache
-    environment:
-      - MOCK_MODE=false
 
   speaker_worker:
     volumes:
       - ./speaker_service:/app
       - ./data/cache:/root/.cache
-    environment:
-      - MOCK_MODE=false
-      - HF_TOKEN=${HF_TOKEN}
+
+  webgateway:
+    volumes:
+      - ./webgateway:/app/webgateway
+      - ./gateway:/app/gateway
+      - ./data:/app/data
+      - ./logs:/app/logs

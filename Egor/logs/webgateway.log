@@ -1,0 +1,64 @@
+2026-04-24 09:23:09,182 [INFO] webgateway: Enrollment saved: /app/data/input/voices/test.wav (6100 ms)
+2026-04-24 09:23:09,203 [INFO] webgateway: Sent reload signal to speaker worker
+2026-04-24 09:23:17,365 [INFO] webgateway: Session 254ba25334fb: consent accepted from 172.18.0.1
+2026-04-24 09:23:22,205 [INFO] root: Loading Silero VAD model...
+2026-04-24 09:23:22,370 [INFO] root: Silero VAD model loaded
+2026-04-24 09:23:22,659 [INFO] root: Streaming VAD segment #0: chunk_1.8s_2.9s (1.1 s)
+2026-04-24 09:23:22,661 [INFO] root: Produced segment: seq=0 chunk_id=chunk_1.8s_2.9s
+2026-04-24 09:23:22,682 [INFO] root: Sent chunk seq=0 (chunk_1.8s_2.9s) to workers
+2026-04-24 09:23:22,836 [INFO] root: Collected Speaker result: seq=0 chunk=chunk_1.8s_2.9s (1/0)
+2026-04-24 09:23:23,074 [INFO] root: Streaming VAD segment #1: chunk_3.2s_5.2s (2.0 s)
+2026-04-24 09:23:23,076 [INFO] root: Produced segment: seq=1 chunk_id=chunk_3.2s_5.2s
+2026-04-24 09:23:23,082 [INFO] root: Sent chunk seq=1 (chunk_3.2s_5.2s) to workers
+2026-04-24 09:23:23,231 [INFO] root: Collected Speaker result: seq=1 chunk=chunk_3.2s_5.2s (2/1)
+2026-04-24 09:23:36,275 [INFO] root: Streaming VAD segment #2: chunk_5.8s_18.4s (12.6 s)
+2026-04-24 09:23:36,276 [INFO] root: Produced segment: seq=2 chunk_id=chunk_5.8s_18.4s
+2026-04-24 09:23:36,292 [INFO] root: Sent chunk seq=2 (chunk_5.8s_18.4s) to workers
+2026-04-24 09:23:37,229 [INFO] root: Collected Speaker result: seq=2 chunk=chunk_5.8s_18.4s (3/2)
+2026-04-24 09:23:47,277 [INFO] root: Streaming VAD segment #3: chunk_18.7s_29.4s (10.7 s)
+2026-04-24 09:23:47,280 [INFO] root: Produced segment: seq=3 chunk_id=chunk_18.7s_29.4s
+2026-04-24 09:23:47,296 [INFO] root: Sent chunk seq=3 (chunk_18.7s_29.4s) to workers
+2026-04-24 09:23:48,007 [INFO] root: Collected Speaker result: seq=3 chunk=chunk_18.7s_29.4s (4/4)
+2026-04-24 09:23:49,340 [INFO] root: Streaming VAD segment #4: chunk_29.7s_31.4s (1.7 s)
+2026-04-24 09:23:49,342 [INFO] root: Produced segment: seq=4 chunk_id=chunk_29.7s_31.4s
+2026-04-24 09:23:49,348 [INFO] root: Sent chunk seq=4 (chunk_29.7s_31.4s) to workers
+2026-04-24 09:23:49,358 [INFO] root: Sender: end of stream, 5 chunks sent
+2026-04-24 09:23:49,470 [INFO] root: Collected Speaker result: seq=4 chunk=chunk_29.7s_31.4s (5/4)
+2026-04-24 09:25:49,324 [WARNING] webgateway: Session 254ba25334fb: pipeline did not finish within timeout
+2026-04-24 09:25:49,368 [INFO] webgateway: Session 254ba25334fb: recording saved to /app/data/output/254ba25334fb.wav
+2026-04-24 09:25:49,369 [INFO] webgateway: Session 254ba25334fb: closed
+2026-04-24 09:29:53,615 [INFO] webgateway: Session bf1ea90df521: consent accepted from 172.18.0.1
+2026-04-24 09:29:53,626 [INFO] root: Loading Silero VAD model...
+2026-04-24 09:29:53,747 [INFO] root: Silero VAD model loaded
+2026-04-24 09:29:55,207 [INFO] root: Streaming VAD segment #0: chunk_0.4s_0.9s (0.5 s)
+2026-04-24 09:29:55,211 [INFO] root: Produced segment: seq=0 chunk_id=chunk_0.4s_0.9s
+2026-04-24 09:29:55,217 [INFO] root: Sent chunk seq=0 (chunk_0.4s_0.9s) to workers
+2026-04-24 09:29:55,362 [INFO] root: Collected Speaker result: seq=0 chunk=chunk_0.4s_0.9s (1/0)
+2026-04-24 09:29:56,504 [INFO] root: Streaming VAD segment #1: chunk_1.3s_2.2s (0.9 s)
+2026-04-24 09:29:56,506 [INFO] root: Produced segment: seq=1 chunk_id=chunk_1.3s_2.2s
+2026-04-24 09:29:56,511 [INFO] root: Sent chunk seq=1 (chunk_1.3s_2.2s) to workers
+2026-04-24 09:29:56,660 [INFO] root: Collected Speaker result: seq=1 chunk=chunk_1.3s_2.2s (6/5)
+2026-04-24 09:30:00,407 [INFO] root: Streaming VAD segment #2: chunk_2.8s_6.1s (3.3 s)
+2026-04-24 09:30:00,411 [INFO] root: Produced segment: seq=2 chunk_id=chunk_2.8s_6.1s
+2026-04-24 09:30:00,417 [INFO] root: Sent chunk seq=2 (chunk_2.8s_6.1s) to workers
+2026-04-24 09:30:00,562 [INFO] root: Collected Speaker result: seq=2 chunk=chunk_2.8s_6.1s (7/5)
+2026-04-24 09:30:05,609 [INFO] root: Streaming VAD segment #3: chunk_7.0s_11.3s (4.3 s)
+2026-04-24 09:30:05,621 [INFO] root: Produced segment: seq=3 chunk_id=chunk_7.0s_11.3s
+2026-04-24 09:30:05,630 [INFO] root: Sent chunk seq=3 (chunk_7.0s_11.3s) to workers
+2026-04-24 09:30:05,749 [INFO] root: Collected Speaker result: seq=3 chunk=chunk_7.0s_11.3s (8/5)
+2026-04-24 09:30:05,835 [INFO] root: Streaming VAD segment #4: chunk_11.6s_11.7s (0.1 s)
+2026-04-24 09:30:05,854 [INFO] root: Produced segment: seq=4 chunk_id=chunk_11.6s_11.7s
+2026-04-24 09:30:05,861 [INFO] root: Sent chunk seq=4 (chunk_11.6s_11.7s) to workers
+2026-04-24 09:30:05,878 [INFO] root: Sender: end of stream, 5 chunks sent
+2026-04-24 09:30:06,159 [INFO] root: Collected Speaker result: seq=4 chunk=chunk_11.6s_11.7s (2/3)
+2026-04-24 09:32:05,811 [WARNING] webgateway: Session bf1ea90df521: pipeline did not finish within timeout
+2026-04-24 09:32:05,841 [INFO] webgateway: Session bf1ea90df521: recording saved to /app/data/output/bf1ea90df521.wav
+2026-04-24 09:32:05,843 [INFO] webgateway: Session bf1ea90df521: closed
+2026-04-24 09:33:40,252 [ERROR] root: Collector thread error: Connection closed by server.
+2026-04-24 09:33:40,267 [ERROR] root: Collector thread error: Connection closed by server.
+2026-04-24 09:33:40,304 [INFO] root: Timings written: /app/data/output/bf1ea90df521_timings.json
+2026-04-24 09:33:40,307 [INFO] root: Transcript file closed: /app/data/output/bf1ea90df521_transcript.txt
+2026-04-24 09:33:40,309 [ERROR] root: Pipeline finished with error: Connection closed by server.
+2026-04-24 09:33:40,335 [INFO] root: Timings written: /app/data/output/254ba25334fb_timings.json
+2026-04-24 09:33:40,337 [INFO] root: Transcript file closed: /app/data/output/254ba25334fb_transcript.txt
+2026-04-24 09:33:40,339 [ERROR] root: Pipeline finished with error: Connection closed by server.

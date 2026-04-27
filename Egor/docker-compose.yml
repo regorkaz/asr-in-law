@@ -15,7 +15,6 @@ services:
     environment:
       - REDIS_HOST=redis
       - REDIS_PORT=6379
-      - MOCK_MODE=true
       - PYTHONUNBUFFERED=1
     volumes:
       - ./logs:/app/logs
@@ -29,12 +28,29 @@ services:
     environment:
       - REDIS_HOST=redis
       - REDIS_PORT=6379
-      - MOCK_MODE=true
-      - PYTHONUNBUFFERED=1
       - HF_TOKEN=${HF_TOKEN}
       - ENROLLMENT_DIR=/data/input/voices
     volumes:
-      - ./data/input/voices:/data/input/voices:ro
+      - ./data:/data:ro
+      - ./logs:/app/logs
+    depends_on:
+      redis:
+        condition: service_healthy
+
+  webgateway:
+    build:
+      context: .
+      dockerfile: ./webgateway/Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - DATA_DIR=/app/data
+      - LOG_DIR=/app/logs
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./data:/app/data
       - ./logs:/app/logs
     depends_on:
       redis:
