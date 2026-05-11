@@ -1,0 +1,16 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.6
+python-multipart>=0.0.9
+numpy>=1.26
+soundfile>=0.12
+jiwer>=3.0.4
+scipy>=1.11
+librosa>=0.10.1
+sounddevice>=0.4.6
+websocket-client>=1.7
+requests>=2.31
+webrtcvad>=2.0.10
+torch>=2.2
+speechbrain>=1.0.0
+tone @ git+https://github.com/voicekit-team/T-one.git
