@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f5f5f7;
+  color: #1f2933;
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  margin: 0 0 6px;
+  font-size: 32px;
+}
+
+.header p {
+  margin: 0;
+  color: #667085;
+}
+
+.badge {
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #e5e7eb;
+  color: #374151;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.badge.ok {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.badge.warn {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.badge.err {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 18px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
+}
+
+.card h2 {
+  margin: 0 0 12px;
+  font-size: 20px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 12px;
+  align-items: end;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  color: #344054;
+}
+
+input {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px 12px;
+  border: 1px solid #d0d5dd;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+button {
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 14px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button.secondary {
+  background: #475467;
+}
+
+button:disabled {
+  background: #cbd5e1;
+  cursor: not-allowed;
+}
+
+.info {
+  margin-top: 12px;
+  display: grid;
+  gap: 4px;
+  color: #475467;
+  font-size: 14px;
+}
+
+.muted {
+  color: #667085;
+  margin: 0 0 10px;
+}
+
+.pre {
+  min-height: 40px;
+  max-height: 220px;
+  overflow: auto;
+  background: #111827;
+  color: #e5e7eb;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  white-space: pre-wrap;
+}
+
+.events {
+  max-height: 320px;
+}
+
+.transcript {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.segment {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 10px 12px;
+  background: #f9fafb;
+}
+
+.segment .meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: #667085;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.segment .speaker {
+  font-weight: 700;
+}
+
+.speaker-lawyer {
+  color: #1d4ed8;
+}
+
+.speaker-client {
+  color: #047857;
+}
+
+.speaker-unknown {
+  color: #6b7280;
+}
+
+.segment .text {
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+@media (max-width: 760px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+}

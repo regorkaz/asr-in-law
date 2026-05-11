@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Legal ASR Service</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <div>
+        <h1>Legal ASR Service</h1>
+        <p>Streaming ASR для юридических консультаций на базе T-one</p>
+      </div>
+      <div id="statusBadge" class="badge">Не подключено</div>
+    </header>
+
+    <section class="card">
+      <h2>1. Сессия</h2>
+
+      <div class="row">
+        <label>
+          Название консультации
+          <input id="sessionTitle" type="text" placeholder="Например: консультация по трудовому спору" />
+        </label>
+
+        <label>
+          Threshold speaker-id
+          <input id="speakerThreshold" type="number" min="0" max="1" step="0.01" placeholder="0.72" />
+        </label>
+      </div>
+
+      <div class="actions">
+        <button id="createSessionBtn">Создать сессию</button>
+      </div>
+
+      <div class="info">
+        <div><b>Session ID:</b> <span id="sessionId">—</span></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>2. Голос юриста</h2>
+      <p class="muted">
+        Перед консультацией запишите или загрузите короткий фрагмент голоса юриста.
+      </p>
+
+      <div class="actions">
+        <button id="startEnrollBtn" disabled>Начать запись юриста</button>
+        <button id="stopEnrollBtn" disabled>Остановить и отправить</button>
+      </div>
+
+      <div class="info">
+        <div><b>Длительность записи голоса:</b> <span id="enrollAudioSec">0.0</span> сек</div>
+      </div>
+
+      <div class="row">
+        <label>
+          Или загрузить аудиофайл юриста
+          <input id="enrollFile" type="file" accept="audio/*" disabled />
+        </label>
+        <button id="uploadEnrollBtn" disabled>Отправить файл</button>
+      </div>
+
+      <pre id="enrollResult" class="pre"></pre>
+    </section>
+
+    <section class="card">
+      <h2>3. Консультация</h2>
+
+      <div class="actions">
+        <button id="startStreamBtn" disabled>Старт микрофона</button>
+        <button id="stopStreamBtn" disabled>Стоп и финализация</button>
+      </div>
+
+      <div class="row">
+        <label>
+          Или загрузить аудиофайл консультации
+          <input id="consultationFile" type="file" accept="audio/*" disabled />
+        </label>
+        <button id="streamFileBtn" disabled>Отправить файл как stream</button>
+      </div>
+
+      <div class="info">
+        <div><b>WebSocket:</b> <span id="wsState">—</span></div>
+        <div><b>Отправлено аудио:</b> <span id="sentAudioSec">0.0</span> сек</div>
+        <div><b>Источник:</b> <span id="audioSourceMode">—</span></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Live transcript</h2>
+      <div id="transcript" class="transcript"></div>
+    </section>
+
+    <section class="card">
+      <h2>Итоговый transcript.json</h2>
+      <p class="muted">
+        После остановки и финализации консультации можно скачать итоговую расшифровку.
+      </p>
+      <div class="actions">
+        <button id="downloadTranscriptBtn" disabled>Скачать transcript.json</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Raw events</h2>
+      <pre id="eventsLog" class="pre events"></pre>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
