@@ -3,9 +3,27 @@ from pathlib import Path
 from typing import Iterator
 import numpy as np
 import soundfile as sf
+import librosa
+import warnings
 from scipy.signal import resample_poly
 
 PCM16_MAX = np.iinfo(np.int16).max
+
+SUPPORTED_AUDIO_EXTENSIONS = {
+    ".wav",
+    ".flac",
+    ".ogg",
+    ".mp3",
+    ".m4a",
+    ".aac",
+    ".mp4",
+    ".webm",
+    ".wma",
+}
+
+
+def is_supported_audio_path(path: str | Path) -> bool:
+    return Path(path).suffix.lower() in SUPPORTED_AUDIO_EXTENSIONS
 
 def bytes_to_int16_pcm(audio_bytes: bytes) -> np.ndarray:
     if not audio_bytes:
@@ -43,12 +61,28 @@ def resample_audio(audio: np.ndarray, orig_sr: int, target_sr: int) -> np.ndarra
     return resample_poly(audio.astype(np.float32), up, down).astype(np.float32)
 
 def load_audio_file(path: str | Path, target_sr: int = 16_000) -> tuple[np.ndarray, int]:
-    audio, sr = sf.read(str(path), dtype='float32', always_2d=False)
-    audio = ensure_mono(audio)
-    if sr != target_sr:
-        audio = resample_audio(audio, sr, target_sr)
-        sr = target_sr
-    return audio.astype(np.float32), sr
+    path = Path(path)
+
+    try:
+        audio, sr = sf.read(str(path), dtype='float32', always_2d=False)
+        audio = ensure_mono(audio)
+
+        if sr != target_sr:
+            audio = resample_audio(audio, sr, target_sr)
+            sr = target_sr
+
+        return audio.astype(np.float32), sr
+
+    except Exception:
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore", UserWarning)
+            warnings.simplefilter("ignore", FutureWarning)
+            audio, sr = librosa.load(str(path), sr=target_sr, mono=True)
+
+        audio = np.asarray(audio, dtype=np.float32)
+        audio = np.nan_to_num(audio)
+
+        return audio.astype(np.float32), target_sr
 
 def write_wav_file(path: str | Path, audio: np.ndarray, sr: int) -> None:
     path = Path(path)
