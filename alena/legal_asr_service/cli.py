@@ -6,6 +6,7 @@ import sys
 import threading
 import time
 from pathlib import Path
+from typing import Iterator
 
 import numpy as np
 import requests
@@ -45,7 +46,7 @@ def make_parser() -> argparse.ArgumentParser:
     p.add_argument('--api', default='http://localhost:8000')
     p.add_argument('--session-id', required=True)
     p.add_argument('--file', required=True)
-    p.add_argument('--block-ms', type=int, default=20)
+    p.add_argument('--block-ms', type=int, default=300)
 
     p = sub.add_parser('stream-mic')
     p.add_argument('--api', default='http://localhost:8000')
@@ -116,24 +117,104 @@ def _stream_pcm16(ws, audio: np.ndarray, sr: int, block_ms: int) -> None:
 def _ws_url(api: str, session_id: str) -> str:
     return api.replace('http://', 'ws://').replace('https://', 'wss://').rstrip('/') + f'/ws/audio/{session_id}'
 
+def _iter_pcm16_frames(audio: np.ndarray, sr: int, block_ms: int) -> Iterator[bytes]:
+    block_samples = max(1, int(sr * block_ms / 1000))
+    pcm = float32_to_int16(audio).astype(np.int16)
+    total = len(pcm)
+
+    for start in range(0, total, block_samples):
+        frame = pcm[start:start + block_samples]
+        if frame.size == 0:
+            continue
+        if frame.size < block_samples:
+            frame = np.pad(frame, (0, block_samples - frame.size))
+        yield frame.tobytes()
+
+
+def _stream_audio_over_wsapp(
+    ws_url: str,
+    frames: Iterator[bytes],
+    block_ms: int,
+    finalize_timeout: float = 120.0,
+) -> None:
+    connected = threading.Event()
+    finalized = threading.Event()
+    closed = threading.Event()
+    error_holder: dict[str, object | None] = {"error": None}
+
+    def on_open(ws):
+        connected.set()
+
+    def on_message(ws, message):
+        try:
+            obj = json.loads(message)
+            print(json.dumps(obj, ensure_ascii=False, indent=2))
+            if obj.get("event") == "final":
+                finalized.set()
+                ws.close()
+        except Exception:
+            print(message)
+
+    def on_error(ws, error):
+        error_holder["error"] = error
+        print(f"WebSocket error: {error}", file=sys.stderr)
+
+    def on_close(ws, close_status_code, close_msg):
+        closed.set()
+
+    wsapp = websocket.WebSocketApp(
+        ws_url,
+        on_open=on_open,
+        on_message=on_message,
+        on_error=on_error,
+        on_close=on_close,
+    )
+
+    thread = threading.Thread(
+        target=lambda: wsapp.run_forever(
+            ping_interval=20,
+            ping_timeout=10,
+        ),
+        daemon=True,
+    )
+    thread.start()
+
+    if not connected.wait(timeout=10):
+        raise RuntimeError("WebSocket connection was not established.")
+
+    try:
+        for frame in frames:
+            if error_holder["error"] is not None:
+                raise RuntimeError(f"WebSocket error: {error_holder['error']}")
+            wsapp.send(frame, opcode=websocket.ABNF.OPCODE_BINARY)
+            time.sleep(block_ms / 1000.0)
+
+        wsapp.send(json.dumps({"type": "finalize"}))
+
+        if not finalized.wait(timeout=finalize_timeout):
+            print("Warning: final result was not received within timeout.", file=sys.stderr)
+
+    finally:
+        try:
+            wsapp.close()
+        except Exception:
+            pass
+        closed.wait(timeout=5)
+        thread.join(timeout=5)
+
 
 def cmd_stream_file(args) -> None:
     audio, sr = load_audio_file(args.file, target_sr=SETTINGS.sample_rate)
-    ws = websocket.WebSocket()
-    ws.connect(_ws_url(args.api, args.session_id))
-    try:
-        _stream_pcm16(ws, audio, sr, args.block_ms)
-        ws.send(json.dumps({'type': 'finalize'}))
-        while True:
-            try:
-                msg = ws.recv()
-            except Exception:
-                break
-            if not msg:
-                break
-            print(msg)
-    finally:
-        ws.close()
+    ws_url = (
+        args.api.replace("http://", "ws://")
+        .replace("https://", "wss://")
+        .rstrip("/")
+        + f"/ws/audio/{args.session_id}"
+    )
+
+    block_ms = args.block_ms or 300
+    frames = _iter_pcm16_frames(audio, sr, block_ms)
+    _stream_audio_over_wsapp(ws_url, frames, block_ms)
 
 
 def cmd_stream_mic(args) -> None:
@@ -184,34 +265,33 @@ def cmd_stream_mic(args) -> None:
 
 
 def cmd_demo(args) -> None:
-    session = api_post(args.api, '/sessions', json={'title': args.title, 'speaker_similarity_threshold': args.threshold})
-    session_id = session['session_id']
-    print('Created session:', session_id)
+    session = api_post(
+        args.api,
+        "/sessions",
+        json={"title": args.title, "speaker_similarity_threshold": args.threshold},
+    )
+    session_id = session["session_id"]
+    print("Created session:", session_id)
 
-    with open(args.lawyer_file, 'rb') as f:
-        files = {'file': (Path(args.lawyer_file).name, f, 'application/octet-stream')}
-        enroll = api_post(args.api, f'/sessions/{session_id}/enroll', files=files)
-    print('Enrolled:', enroll)
+    with open(args.lawyer_file, "rb") as f:
+        files = {"file": (Path(args.lawyer_file).name, f, "application/octet-stream")}
+        enroll = api_post(args.api, f"/sessions/{session_id}/enroll", files=files)
+    print("Enrolled:", enroll)
 
     audio, sr = load_audio_file(args.consultation_file, target_sr=SETTINGS.sample_rate)
-    ws = websocket.WebSocket()
-    ws.connect(_ws_url(args.api, session_id))
-    try:
-        _stream_pcm16(ws, audio, sr, 20)
-        ws.send(json.dumps({'type': 'finalize'}))
-        while True:
-            try:
-                msg = ws.recv()
-            except Exception:
-                break
-            if not msg:
-                break
-            print(msg)
-    finally:
-        ws.close()
+    ws_url = (
+        args.api.replace("http://", "ws://")
+        .replace("https://", "wss://")
+        .rstrip("/")
+        + f"/ws/audio/{session_id}"
+    )
 
-    transcript = api_get(args.api, f'/sessions/{session_id}/transcript')
-    print('\nFinal transcript:')
+    block_ms = 300
+    frames = _iter_pcm16_frames(audio, sr, block_ms)
+    _stream_audio_over_wsapp(ws_url, frames, block_ms)
+
+    transcript = api_get(args.api, f"/sessions/{session_id}/transcript")
+    print("\nFinal transcript:")
     print(json.dumps(transcript, ensure_ascii=False, indent=2))
 
 
