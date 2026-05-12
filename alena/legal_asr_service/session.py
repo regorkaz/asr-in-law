@@ -5,12 +5,13 @@ from pathlib import Path
 from typing import Any
 import json
 import uuid
+import time
 
 import numpy as np
 
 from .config import SETTINGS
 from .schemas import TranscriptDocument, Segment, SessionCreateRequest, SessionCreateResponse, EnrollmentResponse, utc_now_iso
-from .speaker_id import LawyerSpeakerMatcher
+from .speaker_id import LawyerSpeakerMatcher, SpeakerEmbeddingExtractor
 from .streaming import StreamingSessionProcessor, StreamingSpeakerTracker
 from .tone_asr import ToneStreamingASR
 
@@ -32,23 +33,41 @@ class SessionRecord:
     metadata: dict[str, Any] = field(default_factory=dict)
 
     asr: ToneStreamingASR = field(default_factory=ToneStreamingASR)
+    speaker_extractor: SpeakerEmbeddingExtractor | None = None
+    _last_persist_monotonic: float = field(default_factory=time.monotonic, init=False)
     matcher: LawyerSpeakerMatcher = field(init=False)
     processor: StreamingSessionProcessor = field(init=False)
     segments: list[Segment] = field(default_factory=list)
     session_dir: Path = field(init=False)
 
     def __post_init__(self) -> None:
-        self.matcher = LawyerSpeakerMatcher(threshold=self.speaker_similarity_threshold)
+        self.matcher = LawyerSpeakerMatcher(
+            threshold=self.speaker_similarity_threshold,
+            extractor=self.speaker_extractor,
+        )
+
         self.processor = StreamingSessionProcessor(
             session_id=self.session_id,
             asr=self.asr,
-            speaker_tracker=StreamingSpeakerTracker(matcher=self.matcher, sample_rate=self.sample_rate),
+            speaker_tracker=StreamingSpeakerTracker(
+                matcher=self.matcher,
+                sample_rate=self.sample_rate,
+                enable_speaker_id=SETTINGS.enable_speaker_id,
+            ),
             sample_rate=self.sample_rate,
         )
         self.session_dir = self.output_dir / self.session_id
         self.session_dir.mkdir(parents=True, exist_ok=True)
         self._persist_state()
         self._persist_transcript(finalized=False)
+
+    def _maybe_persist(self, force: bool = False) -> None:
+        now = time.monotonic()
+        if force or (now - self._last_persist_monotonic >= SETTINGS.persist_interval_sec):
+            self._persist_state()
+            self._persist_transcript(finalized=False)
+            self.processor.timing.write_json(self.timings_path, finalized=False)
+            self._last_persist_monotonic = now
 
     def create_response(self) -> SessionCreateResponse:
         return SessionCreateResponse(
@@ -89,21 +108,36 @@ class SessionRecord:
 
     def process_audio_bytes(self, audio_bytes: bytes) -> dict[str, Any]:
         events = self.processor.feed_bytes(audio_bytes)
-        for item in events['segments']:
+        for item in events["segments"]:
+            if "raw_phrase" in item and hasattr(item["raw_phrase"], "model_dump"):
+                item["raw_phrase"] = item["raw_phrase"].model_dump()
+            elif "raw_phrase" in item and hasattr(item["raw_phrase"], "__dict__") and not isinstance(item["raw_phrase"],
+                                                                                                     dict):
+                item["raw_phrase"] = dict(item["raw_phrase"].__dict__)
+
             segment = Segment(**item)
             self.segments.append(segment)
             self._append_jsonl('segments.jsonl', segment.model_dump())
-        self._persist_state()
-        self._persist_transcript(finalized=False)
+        if events["segments"]:
+            self._maybe_persist(force=False)
+
         return events
 
     def finalize(self) -> TranscriptDocument:
         events = self.processor.finalize()
-        for item in events['segments']:
+        for item in events["segments"]:
+            if "raw_phrase" in item and hasattr(item["raw_phrase"], "model_dump"):
+                item["raw_phrase"] = item["raw_phrase"].model_dump()
+            elif "raw_phrase" in item and hasattr(item["raw_phrase"], "__dict__") and not isinstance(item["raw_phrase"],
+                                                                                                     dict):
+                item["raw_phrase"] = dict(item["raw_phrase"].__dict__)
+
             segment = Segment(**item)
             self.segments.append(segment)
             self._append_jsonl('segments.jsonl', segment.model_dump())
+        self._persist_state()
         self._persist_transcript(finalized=True)
+        self.processor.timing.write_json(self.timings_path, finalized=True)
         return self.get_transcript(finalized=True)
 
     def get_transcript(self, finalized: bool = False) -> TranscriptDocument:
@@ -147,12 +181,24 @@ class SessionRecord:
     def transcript_path(self) -> Path:
         return self.session_dir / 'transcript.json'
 
+    @property
+    def timings_path(self) -> Path:
+        return self.session_dir / 'timings.json'
+
 
 class SessionManager:
     def __init__(self, output_dir: Path = SETTINGS.output_dir) -> None:
         self.output_dir = output_dir
         self.output_dir.mkdir(parents=True, exist_ok=True)
         self.sessions: dict[str, SessionRecord] = {}
+
+        self.shared_asr = ToneStreamingASR()
+        self.shared_speaker_extractor = SpeakerEmbeddingExtractor()
+
+    def preload_models(self) -> None:
+        self.shared_asr.load()
+        if SETTINGS.enable_speaker_id:
+            self.shared_speaker_extractor.load()
 
     def create_session(self, req: SessionCreateRequest | None = None) -> SessionRecord:
         req = req or SessionCreateRequest()
@@ -164,6 +210,8 @@ class SessionManager:
             title=req.title,
             speaker_similarity_threshold=threshold,
             output_dir=self.output_dir,
+            asr=self.shared_asr,
+            speaker_extractor=self.shared_speaker_extractor,
         )
         self.sessions[session_id] = record
         return record
@@ -186,6 +234,8 @@ class SessionManager:
             lawyer_enrolled=data.get('lawyer_enrolled', False),
             output_dir=self.output_dir,
             metadata=data.get('metadata', {}),
+            asr=self.shared_asr,
+            speaker_extractor=self.shared_speaker_extractor,
         )
         transcript_path = session_dir / 'transcript.json'
         if transcript_path.exists():
