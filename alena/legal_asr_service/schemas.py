@@ -37,7 +37,7 @@ class Segment(BaseModel):
     speaker_similarity: float | None = None
     text: str
     asr_confidence: float | None = None
-    raw_phrase: dict[str, Any] | None = None
+    raw_phrase: Any | None = None
     metadata: dict[str, Any] = Field(default_factory=dict)
 
 class TranscriptDocument(BaseModel):
