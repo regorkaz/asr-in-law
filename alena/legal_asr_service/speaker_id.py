@@ -69,10 +69,14 @@ class SpeakerEmbeddingExtractor:
 
 
 class LawyerSpeakerMatcher:
-    def __init__(self, threshold: float = 0.72) -> None:
+    def __init__(
+        self,
+        threshold: float = 0.72,
+        extractor: SpeakerEmbeddingExtractor | None = None,
+    ) -> None:
         self.threshold = threshold
         self.profile: SpeakerProfile | None = None
-        self.extractor = SpeakerEmbeddingExtractor()
+        self.extractor = extractor or SpeakerEmbeddingExtractor()
 
     def enroll_from_audio(self, audio: np.ndarray, sample_rate: int, source_path: str | None = None) -> SpeakerProfile:
         embedding = self.extractor.encode_audio(audio, sample_rate)
